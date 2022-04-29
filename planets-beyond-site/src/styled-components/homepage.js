@@ -13,7 +13,7 @@ export const Main = styled.main`
 
 export const Title = styled.h1`
   position: relative;
-  top: 35%;
+  top: 30%;
   font-family: 'League Spartan', sans-serif;
   font-size: 4em;
 `;
@@ -26,13 +26,17 @@ export const Button = styled.button`
   border: 1px solid #ffffff21;
   /* border-radius: 0.7em; */
   padding: 10px 70px;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 18px;
   &:hover {
       background-color: #ffffff21;
       border: #ffffff21;
       cursor: pointer;
     };
     &:active {
-        background-color: red;
+        background-color: #ddd;
+        color:rgb(7,7,36);
+        font-family: 'League Spartan', sans-serif;
     }
 `;
 
