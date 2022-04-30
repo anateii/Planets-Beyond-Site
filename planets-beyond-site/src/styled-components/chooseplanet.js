@@ -18,7 +18,7 @@ export const Subtitle= styled.h4 `
 text-align: center;
 padding-left: 4rem;
 font-family: 'League Spartan', sans-serif;
-font-weight: 500;
+font-weight: 400;
 margin-top: -1rem;
 position: relative;
 
@@ -59,14 +59,8 @@ justify-content: center;
 align-items: center;
 
 &>img{
-    width: 150px;};
+    width: 150px;
 };
-
-&>span {
-    color: #ffffff99;
-    &:hover {
-    color: #ffffff;
-    cursor: pointer;
 };
 
 &div:nth-of-type(6n)> img {
