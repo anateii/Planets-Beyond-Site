@@ -5,7 +5,7 @@ const BACKGROUND = 'transparent';
 
 
 export const Title= styled.h1 `
-text-align: left;
+text-align: center;
 padding-left: 4rem;
 font-family: 'Antonio', sans-serif;
 letter-spacing: 0.1rem;
@@ -15,7 +15,7 @@ margin-top: 0.5rem;
 `;
 
 export const Subtitle= styled.h4 `
-text-align: left;
+text-align: center;
 padding-left: 4rem;
 font-family: 'League Spartan', sans-serif;
 font-weight: 500;
@@ -41,27 +41,37 @@ grid-row-gap: 20px;
 
 
 export const Col = styled.div `
+
+&:hover {cursor:pointer;};
 background-color: transparent;
-border-radius: 50%;
 font-family: 'Antonio', sans-serif;
 font-size: 25px;  
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 &>div {
-background-color: #ffffff21;
+background-color:transparent;
 height: 100%;
 width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-&>img{width: 150px;};
+
+&>img{
+    width: 150px;};
 };
+
 &>span {
-    color: pink;
+    color: #ffffff99;
+    &:hover {
+    color: #ffffff;
+    cursor: pointer;
 };
+
 &div:nth-of-type(6n)> img {
     width: 170px;
-}
+};
+
+
 `;
