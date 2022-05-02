@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 
-export const Container = styled.div `
+export const SideBar = styled.div `
 background-color: red; 
-height: 500px;
-width: 800px;
+height: 100%;
+width: 3em;
 
 `
