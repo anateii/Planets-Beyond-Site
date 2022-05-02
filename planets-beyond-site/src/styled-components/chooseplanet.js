@@ -5,7 +5,7 @@ const BACKGROUND = 'transparent';
 
 
 export const Title= styled.h1 `
-text-align: center;
+text-align: left;
 padding-left: 4rem;
 font-family: 'Antonio', sans-serif;
 letter-spacing: 0.1rem;
@@ -15,7 +15,7 @@ margin-top: 0.5rem;
 `;
 
 export const Subtitle= styled.h4 `
-text-align: center;
+text-align: left;
 padding-left: 4rem;
 font-family: 'League Spartan', sans-serif;
 font-weight: 400;
@@ -42,7 +42,7 @@ grid-row-gap: 20px;
 
 export const Col = styled.div `
 
-&:hover {cursor:pointer;};
+/* &:hover {cursor:pointer;}; */
 background-color: transparent;
 font-family: 'Antonio', sans-serif;
 font-size: 25px;  

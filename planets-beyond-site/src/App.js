@@ -6,9 +6,11 @@ import { ChoosePlanet } from './components/ChoosePlanet';
 import { PlanetPage } from './components/PlanetPage';
 
 
+
 function App() {
   return (
 <BrowserRouter>
+
  <Routes>
    <Route path="/" element={<Homepage/>} />
    <Route path="/destination" element={<ChoosePlanet/>} />

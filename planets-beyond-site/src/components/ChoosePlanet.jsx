@@ -1,5 +1,6 @@
 import { Main } from "../styled-components/homepage";
 import starsBackground from "../assets/stars.svg";
+import cursor from "../assets/cursor.png"
 import {
   Title,
   Subtitle,
@@ -16,11 +17,12 @@ import Saturn from "../assets/planet-saturn.svg";
 import Uranus from "../assets/planet-uranus.svg";
 import Neptune from "../assets/planet-neptune.svg";
 
+
 export const ChoosePlanet = () => {
   const navigate = useNavigate();
 
   return (
-    <Main style={{ backgroundImage: `url(${starsBackground})` }}>
+    <Main style={{backgroundImage: `url(${starsBackground})`, cursor: `url(${cursor}), auto`}}>
       <Title>Where next?</Title>
       <Subtitle>Choose your destination</Subtitle>
       <Container>
