@@ -11,7 +11,7 @@ const Sidebar = (props) => {
   return (
     <>
       <SideBar className={sidebarClass}>
-        <Icon onClick={()=>(navigate("/planet/overview"))}>Overview</Icon>
+        
         <Icon onClick={()=>(navigate("/planet/internal-structure"))}>Internal Structure</Icon>
         <Icon onClick={()=>(navigate("/planet/surface-geology"))}>Surface Geology</Icon>
         <Icon>Video</Icon>
