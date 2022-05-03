@@ -8,72 +8,42 @@ import {
   Col,
 } from "../styled-components/chooseplanet";
 import { useNavigate } from "react-router-dom";
-import Mercury from "../assets/planet-mercury.svg";
-import Venus from "../assets/planet-venus.svg";
-import Earth from "../assets/planet-earth.svg";
-import Mars from "../assets/planet-mars.svg";
-import Jupiter from "../assets/planet-jupiter.svg";
-import Saturn from "../assets/planet-saturn.svg";
-import Uranus from "../assets/planet-uranus.svg";
-import Neptune from "../assets/planet-neptune.svg";
+import { useEffect, useState } from "react";
 
 
 export const ChoosePlanet = () => {
   const navigate = useNavigate();
+  const [planets, setPlanets]= useState([])
+
+  useEffect(()=>{
+    fetchPlanets()
+  }, [])
+
+
+  const fetchPlanets = async() =>{
+    let response = await fetch("http://localhost:8000/planets/")
+    try {
+      let data = await response.json()
+      console.log("DATA", data)
+      setPlanets(data)
+    } catch (error) {
+      console.log("There was an error", error)
+    }
+  }
 
   return (
     <Main style={{backgroundImage: `url(${starsBackground})`, cursor: `url(${cursor}), auto`}}>
       <Title>Where next?</Title>
       <Subtitle>Choose your destination</Subtitle>
       <Container>
-        <Col onClick={() => navigate("/planet")}>
+       {planets.map((planet, id)=>( 
+       
+       <Col onClick={() => navigate(`/planet/${planet.id}`)} key={id}>
           <div>
-            <img src={Mercury} alt="" />
-            <span>Mercury</span>
+            <img src={planet.imgOv} alt="" />
+            <span>{planet.name}</span>
           </div>
-        </Col>
-        <Col>
-          <div>
-            <img src={Venus} alt="" />
-            <span>Venus</span>
-          </div>
-        </Col>
-        <Col>
-          <div>
-            <img src={Earth} alt="" />
-            <span>Earth</span>
-          </div>
-        </Col>
-        <Col>
-          <div>
-            <img src={Mars} alt="" />
-            <span>Mars</span>
-          </div>
-        </Col>
-        <Col>
-          <div>
-            <img src={Jupiter} alt="" />
-            <span>Jupiter</span>
-          </div>
-        </Col>
-        <Col>
-          <div>
-            <img src={Saturn} alt="" />
-            <span>Saturn</span>
-          </div>
-        </Col>
-        <Col>
-          <div>
-            <img src={Uranus} alt="" />
-            <span>Uranus</span>
-          </div>
-        </Col>
-        <Col>
-          <div>
-            <img src={Neptune} alt="" />
-            <span>Neptune</span>
-          </div>
-        </Col>
+        </Col> ))}
       </Container>
     </Main>
   );

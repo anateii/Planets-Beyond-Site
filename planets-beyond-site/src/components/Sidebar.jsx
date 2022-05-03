@@ -5,14 +5,15 @@ import { useNavigate } from "react-router-dom";
 const Sidebar = (props) => {
   const navigate = useNavigate();
 
+
   const sidebarClass = props.isOpen ? "sidebar open" : "sidebar";
 
   return (
     <>
       <SideBar className={sidebarClass}>
-        <Icon>Overview</Icon>
-        <Icon>Internal Structure</Icon>
-        <Icon>Surface Geology</Icon>
+        <Icon onClick={()=>(navigate("/planet/overview"))}>Overview</Icon>
+        <Icon onClick={()=>(navigate("/planet/internal-structure"))}>Internal Structure</Icon>
+        <Icon onClick={()=>(navigate("/planet/surface-geology"))}>Surface Geology</Icon>
         <Icon>Video</Icon>
         <Icon
           onClick={() => {
