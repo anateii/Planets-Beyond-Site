@@ -65,7 +65,20 @@ export const Text = styled.div`
     text-align: left;
     line-height: 1.5em;
     margin-top: 0;
-  }
+  };
+  & > div {
+    text-align: left;
+    display: inline-block;
+   font-weight: 300;
+   font-size: 18px;
+   color: #ffffff80;
+  };
+  & > div > div {
+display: initial;
+font-weight: 600;
+text-decoration: underline;
+&:hover{#fff;} ;
+  };
   display: flex;
   flex-direction: column;
 `;
