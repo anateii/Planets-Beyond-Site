@@ -44,7 +44,8 @@ return (
          </Planet>
          <Text>
            <h1>{planet.name}</h1>
-           {planet.description}</Text>
+           <h6>{planet.description}</h6>
+           </Text>
        </Container>
            
     </Main>

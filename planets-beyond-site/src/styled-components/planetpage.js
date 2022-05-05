@@ -26,32 +26,37 @@ export const Icon = styled.div`
   }
   font-size: 16px;
   color: #ffffff60;
-  &:hover {color:#fff;};
+  &:hover {
+    color: #fff;
+  }
 `;
 
+export const Container = styled.div`
+  background-color: transparent;
+  height: 500px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  position: absolute;
+  top: 2em;
+  left: 5em;
+`;
 
-export const Container = styled.div `
-background-color: transparent;
-    height: 500px;
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    position: absolute;
-    top: 2em;
-    left: 5em;
-`
+export const Planet = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
-export const Planet = styled.div `
-
-display: flex;
-flex-direction: column;
-`
-
-
-export const Text = styled.div `
-font-family: 'Antonio', sans-serif;
-display: flex;
-flex-direction: column;
-`
+export const Text = styled.div`
+  & > h1 {
+    font-family: "Antonio", sans-serif;
+  }
+  & > h6 {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400;
+  }
+  display: flex;
+  flex-direction: column;
+`;
