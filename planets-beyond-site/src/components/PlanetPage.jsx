@@ -53,6 +53,7 @@ export const PlanetPage = () => {
             }}
           >
           Nasa
+          <i class="bi bi-box-arrow-up-right"></i>
           </div>
         </div>
         </Text>
