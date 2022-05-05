@@ -6,11 +6,9 @@ const Sidebar = (props) => {
   const navigate = useNavigate();
 
 
-  const sidebarClass = props.isOpen ? "sidebar open" : "sidebar";
-
   return (
     <>
-      <SideBar className={sidebarClass}>
+      <SideBar>
         
         <Icon onClick={()=>(navigate("/planet/internal-structure"))}>Internal Structure</Icon>
         <Icon onClick={()=>(navigate("/planet/surface-geology"))}>Surface Geology</Icon>
@@ -25,9 +23,6 @@ const Sidebar = (props) => {
             Go back
           </div>
         </Icon>
-        <button onClick={props.toggleSidebar} className="sidebar-toggle">
-          Toggle Sidebar
-        </button>
       </SideBar>
     </>
   );

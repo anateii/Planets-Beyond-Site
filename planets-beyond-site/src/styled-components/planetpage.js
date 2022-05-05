@@ -28,3 +28,30 @@ export const Icon = styled.div`
   color: #ffffff60;
   &:hover {color:#fff;};
 `;
+
+
+export const Container = styled.div `
+background-color: transparent;
+    height: 500px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    position: absolute;
+    top: 2em;
+    left: 5em;
+`
+
+export const Planet = styled.div `
+background-color: orange;
+display: flex;
+flex-direction: column;
+`
+
+
+export const Text = styled.div `
+background-color: blue;
+display: flex;
+flex-direction: column;
+`

@@ -25,6 +25,7 @@ export const ChoosePlanet = () => {
     try {
       let data = await response.json()
       console.log("DATA", data)
+      console.log (data.hello[0])
       setPlanets(data)
     } catch (error) {
       console.log("There was an error", error)
