@@ -8,29 +8,15 @@ import {
   Col,
 } from "../styled-components/chooseplanet";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 
-export const ChoosePlanet = () => {
+
+export const ChoosePlanet = ({planets}) => {
   const navigate = useNavigate();
-  const [planets, setPlanets]= useState([])
-
-  useEffect(()=>{
-    fetchPlanets()
-  }, [])
 
 
-  const fetchPlanets = async() =>{
-    let response = await fetch("http://localhost:8000/planets/")
-    try {
-      let data = await response.json()
-      console.log("DATA", data)
-      console.log (data.hello[0])
-      setPlanets(data)
-    } catch (error) {
-      console.log("There was an error", error)
-    }
-  }
+
+  
 
   return (
     <Main style={{backgroundImage: `url(${starsBackground})`, cursor: `url(${cursor}), auto`}}>
@@ -43,8 +29,9 @@ export const ChoosePlanet = () => {
           <div>
             <img src={planet.imgOv} alt="" />
             <span>{planet.name}</span>
-          </div>
-        </Col> ))}
+          </div> 
+      
+        </Col> )) }
       </Container>
     </Main>
   );

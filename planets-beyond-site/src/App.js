@@ -6,9 +6,31 @@ import { ChoosePlanet } from './components/ChoosePlanet';
 import { PlanetPage } from './components/PlanetPage';
 import {Internal} from './components/Internal';
 import {Geology} from './components/Geology';
-
+import { useEffect, useState } from "react";
 
 function App() {
+
+  const [planets, setPlanets]= useState([])
+
+
+
+
+  const fetchPlanets = async() =>{
+    let response = await fetch("http://localhost:8000/planets/")
+    try {
+      let data = await response.json()
+      console.log("DATA", data)
+      setPlanets(data)
+    } catch (error) {
+      console.log("There was an error", error)
+    }
+  }
+
+  useEffect(()=>{
+    fetchPlanets()
+  }, [])
+
+
   return (
 <BrowserRouter>
 
@@ -16,8 +38,8 @@ function App() {
    <Route path="/planet/internal-structure" element={<Internal/>}/>
    <Route path="/planet/surface-geology" element={<Geology/>}/>
    <Route path="/" element={<Homepage/>} />
-   <Route path="/destination" element={<ChoosePlanet/>} />
-   <Route path="/planet/:id" element ={<PlanetPage/>} />
+   <Route path="/destination" element={<ChoosePlanet planets={planets}/>} />
+   <Route path="/planet/:id" element ={<PlanetPage />} />
  </Routes>
 </BrowserRouter>
   )

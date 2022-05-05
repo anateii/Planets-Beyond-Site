@@ -44,14 +44,14 @@ background-color: transparent;
 `
 
 export const Planet = styled.div `
-background-color: orange;
+
 display: flex;
 flex-direction: column;
 `
 
 
 export const Text = styled.div `
-background-color: blue;
+font-family: 'Antonio', sans-serif;
 display: flex;
 flex-direction: column;
 `
