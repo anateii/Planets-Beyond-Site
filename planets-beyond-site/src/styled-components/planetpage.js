@@ -64,6 +64,7 @@ export const Text = styled.div`
     font-weight: 400;
     text-align: left;
     line-height: 1.5em;
+    margin-top: 0;
   }
   display: flex;
   flex-direction: column;
