@@ -32,7 +32,6 @@ export const Icon = styled.div`
 `;
 
 export const Container = styled.div`
-  
   height: 500px;
   width: 70%;
   display: grid;
@@ -45,12 +44,11 @@ export const Container = styled.div`
 `;
 
 export const Planet = styled.div`
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  &>img {
-    width:400px;
+  & > img {
+    width: 400px;
   }
 `;
 
@@ -71,14 +69,16 @@ export const Text = styled.div`
     display: inline-block;
    font-weight: 300;
    font-size: 18px;
-   color: #ffffff80;
+   color: #ffffff60;
   };
   & > div > div {
 display: initial;
 font-weight: 600;
 text-decoration: underline;
-&:hover{#fff;} ;
+margin-left: 6px;
+
   };
+  & > div > div:hover {color:#fff};
   display: flex;
   flex-direction: column;
 `;

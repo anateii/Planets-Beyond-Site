@@ -46,14 +46,14 @@ export const PlanetPage = () => {
           <h1>{planet.name}</h1>
           <h6>{planet.description}</h6> 
           <div>
-          Source:
+          Source: 
           <div
             onClick={() => {
               window.open ("https://solarsystem.nasa.gov/planets/neptune/overview/", "_blank")
             }}
           >
-            Nasa
-          </div>{" "}
+          Nasa
+          </div>
         </div>
         </Text>
        
