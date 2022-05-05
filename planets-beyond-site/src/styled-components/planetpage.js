@@ -32,30 +32,38 @@ export const Icon = styled.div`
 `;
 
 export const Container = styled.div`
-  background-color: transparent;
+  
   height: 500px;
-  width: 90%;
+  width: 70%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   position: absolute;
   top: 2em;
-  left: 5em;
+  left: 12em;
 `;
 
 export const Planet = styled.div`
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  &>img {
+    width:400px;
+  }
 `;
 
 export const Text = styled.div`
   & > h1 {
     font-family: "Antonio", sans-serif;
+    text-align: left;
   }
   & > h6 {
     font-family: "League Spartan", sans-serif;
     font-weight: 400;
+    text-align: left;
+    line-height: 1.5em;
   }
   display: flex;
   flex-direction: column;
