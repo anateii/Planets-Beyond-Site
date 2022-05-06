@@ -34,7 +34,7 @@ function App() {
 
  <Routes>
   
-   <Route path="/planet/internal-structure" element={<Internal planets={planets}/>}/>
+   <Route path="/planet/:id/internal-structure" element={<Internal planets={planets}/>}/>
    <Route path="/planet/:id/surface-geology" element={<Geology planets={planets}/>}/>
    <Route path="/" element={<Homepage/>} />
    <Route path="/destination" element={<ChoosePlanet planets={planets}/>} />

@@ -36,6 +36,8 @@ export const PlanetPage = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+console.log("PLANET", planet)
+
   return (
     <Main
       style={{
@@ -65,7 +67,7 @@ export const PlanetPage = () => {
                   }}
                 >
                   Nasa
-                  <i class="bi bi-box-arrow-up-right"></i>
+                  <i className="bi bi-box-arrow-up-right"></i>
                 </div>
               </div>
             </Text>
