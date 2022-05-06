@@ -2,7 +2,7 @@ import { Main } from "../styled-components/homepage"
 import starsBackground from "../assets/stars.svg"
 import cursor from "../assets/cursor.png"
 import Sidebar from "./Sidebar"
-import { Container, Section, Planet, Text } from "../styled-components/planetpage"
+import { Container, Section, Planet, Text, Button} from "../styled-components/planetpage"
 import { useParams } from "react-router-dom"
 import { useState } from "react"
 import { useEffect } from "react"
@@ -60,8 +60,10 @@ const fetchResult = async() =>{
                 >
                   Nasa
                   <i className="bi bi-box-arrow-up-right"></i>
+                  
                 </div>
               </div>
+              <Button>Play me</Button>
             </Text>
     </Container>
     <Section>

@@ -59,6 +59,7 @@ export const Overview =({planet}) => {
                         <i className="bi bi-box-arrow-up-right"></i>
                       </div>
                     </div>
+                    
                   </Text>
                  </Container>
                 <Section>

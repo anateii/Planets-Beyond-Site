@@ -124,3 +124,24 @@ top: 80%;
 }
 
 `
+
+export const Button = styled.button `
+background-color: #fff0;
+width: 50%;
+margin-top: 25%;
+color: #fff;
+border: 1px solid #ffffff21;
+padding: 10px 70px;
+font-family: 'League Spartan', sans-serif;
+font-size: 18px;
+&:hover {
+    background-color: #ffffff21;
+    border: #ffffff21;
+    
+  };
+  &:active {
+      background-color: #ddd;
+      color:rgb(7,7,36);
+      font-family: 'League Spartan', sans-serif;
+  }
+`

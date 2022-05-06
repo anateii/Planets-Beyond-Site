@@ -25,7 +25,6 @@ export const Button = styled.button`
   top: 45%;
   position: relative;
   border: 1px solid #ffffff21;
-  /* border-radius: 0.7em; */
   padding: 10px 70px;
   font-family: 'League Spartan', sans-serif;
   font-size: 18px;
