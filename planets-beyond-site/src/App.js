@@ -35,11 +35,12 @@ function App() {
 <BrowserRouter>
 
  <Routes>
-   <Route path="/planet/internal-structure" element={<Internal/>}/>
-   <Route path="/planet/surface-geology" element={<Geology/>}/>
+  
+   <Route path="/planet/:id/internal-structure" element={<Internal/>}/>
+   <Route path="/planet/:id/surface-geology" element={<Geology/>}/>
    <Route path="/" element={<Homepage/>} />
    <Route path="/destination" element={<ChoosePlanet planets={planets}/>} />
-   <Route path="/planet/:id" element ={<PlanetPage />} />
+   <Route path="/planet/:id/overview" element ={<PlanetPage />} />
  </Routes>
 </BrowserRouter>
   )

@@ -25,7 +25,7 @@ export const ChoosePlanet = ({planets}) => {
       <Container>
        {planets.map((planet, id)=>( 
        
-       <Col onClick={() => navigate(`/planet/${planet.id}`)} key={id}>
+       <Col onClick={() => navigate(`/planet/${planet.id}/overview`)} key={id}>
           <div>
             <img src={planet.imgOv} alt="" />
             <span>{planet.name}</span>
