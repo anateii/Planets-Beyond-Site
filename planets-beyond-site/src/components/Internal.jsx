@@ -63,7 +63,7 @@ const fetchResult = async() =>{
                   
                 </div>
               </div>
-              <Button>Play me</Button>
+              <Button style={{cursor: `url(${cursor}), auto`}}>Play me <i class="bi bi-stars"></i></Button>
             </Text>
     </Container>
     <Section>
