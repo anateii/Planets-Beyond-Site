@@ -10,6 +10,7 @@ import {
 } from "../styled-components/planetpage";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Overview } from "./Overview";
 
 
 export const PlanetPage = () => {
@@ -46,7 +47,7 @@ console.log("PLANET", planet)
       }}
     >
       <Sidebar planet={planet} />
-    {
+   {/*  {
       planet && (
         <>
             <Container>
@@ -90,7 +91,8 @@ console.log("PLANET", planet)
               <h3>{planet.temperature}°C</h3>
             </div>
            </Section>
-       </>)}
+       </>)} */}
+       <Overview planet={planet}/>
     </Main>
   );
 };

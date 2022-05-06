@@ -7,6 +7,7 @@ import { PlanetPage } from './components/PlanetPage';
 import {Internal} from './components/Internal';
 import {Geology} from './components/Geology';
 import { useEffect, useState } from "react";
+import { Overview } from './components/Overview';
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
 <BrowserRouter>
 
  <Routes>
-  
+   <Route path="/overview/:id/overview" element={<Overview planets={planets}/>} />
    <Route path="/planet/:id/internal-structure" element={<Internal planets={planets}/>}/>
    <Route path="/planet/:id/surface-geology" element={<Geology planets={planets}/>}/>
    <Route path="/" element={<Homepage/>} />
