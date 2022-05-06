@@ -2,7 +2,12 @@ import { Main } from "../styled-components/homepage";
 import starsBackground from "../assets/stars.svg";
 import cursor from "../assets/cursor.png";
 import Sidebar from "./Sidebar";
-import { Container, Planet, Text } from "../styled-components/planetpage";
+import {
+  Container,
+  Planet,
+  Text,
+  Section,
+} from "../styled-components/planetpage";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -44,21 +49,42 @@ export const PlanetPage = () => {
         </Planet>
         <Text>
           <h1>{planet.name}</h1>
-          <h6>{planet.description}</h6> 
+          <h6>{planet.description}</h6>
           <div>
-          Source: 
-          <div
-            onClick={() => {
-              window.open ("https://solarsystem.nasa.gov/planets/neptune/overview/", "_blank")
-            }}
-          >
-          Nasa
-          <i class="bi bi-box-arrow-up-right"></i>
+            Source:
+            <div
+              onClick={() => {
+                window.open(
+                  "https://solarsystem.nasa.gov/planets/neptune/overview/",
+                  "_blank"
+                );
+              }}
+            >
+              Nasa
+              <i class="bi bi-box-arrow-up-right"></i>
+            </div>
           </div>
-        </div>
         </Text>
-       
       </Container>
+
+      <Section>
+        <div>
+          <h6>ROTATION TIME</h6>
+          <h3>{planet.rotation} DAYS</h3>
+        </div>
+        <div>
+          <h6>REVOLUTION TIME</h6>
+          <h3>{planet.revolution} YEARS</h3>
+        </div>
+        <div>
+          <h6>RADIUS</h6>
+          <h3>{planet.radius} KM</h3>
+        </div>
+        <div>
+          <h6>AVERAGE TEMP.</h6>
+          <h3>{planet.temperature}°C</h3>
+        </div>
+      </Section>
     </Main>
   );
 };

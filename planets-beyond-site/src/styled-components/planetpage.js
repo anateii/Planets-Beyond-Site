@@ -40,7 +40,7 @@ export const Container = styled.div`
   grid-column-gap: 0px;
   position: absolute;
   top: 2em;
-  left: 12em;
+  left: 10em;
 `;
 
 export const Planet = styled.div`
@@ -48,7 +48,7 @@ export const Planet = styled.div`
   flex-direction: column;
   justify-content: center;
   & > img {
-    width: 400px;
+    width: 370px;
   }
 `;
 
@@ -79,6 +79,48 @@ margin-left: 6px;
 
   };
   & > div > div:hover {color:#fff};
+  & > div > div > i {
+    font-size: 12px;
+    margin-left: 6px;
+  }
   display: flex;
   flex-direction: column;
 `;
+
+
+
+export const Section = styled.div `
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 15px;
+left: 8em;
+width: 80%;
+
+height: 80px;
+position: absolute;
+top: 80%;
+& > div {
+  border: 2px solid #ffffff21;
+  text-align: left;
+  
+  
+} ;
+
+& > div > h6 {
+ 
+  color: #ffffff50;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+& > div > h3 {
+   margin-left: 20px;
+   font-family: 'Antonio', sans-serif;
+   margin-bottom: 10px;
+   margin-top: -20px;
+   font-size: 36px;
+}
+
+`
