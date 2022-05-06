@@ -96,7 +96,6 @@ grid-template-rows: 1fr;
 grid-column-gap: 15px;
 left: 8em;
 width: 80%;
-
 height: 80px;
 position: absolute;
 top: 80%;
