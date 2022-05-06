@@ -9,7 +9,7 @@ import { useEffect } from "react"
 
 
 
-export const Internal =({planets}) => {
+export const Internal =() => {
    
 const params = useParams()
 console.log("Internal params", params)
@@ -19,6 +19,7 @@ const [result,setResult] = useState([])
 
 useEffect(() => {
   fetchResult()
+// eslint-disable-next-line react-hooks/exhaustive-deps
 }, [])
 
 const fetchResult = async() =>{
