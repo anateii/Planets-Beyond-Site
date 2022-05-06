@@ -15,7 +15,7 @@ const params = useParams()
 console.log("Internal params", params)
 
 
-const [result,setResult] = useState(null)
+const [result,setResult] = useState([])
 
 useEffect(() => {
   fetchResult()
@@ -42,7 +42,7 @@ const fetchResult = async() =>{
 <Sidebar />
 <Container>
    <Planet>
-       <img src={result.imgInt} alt="" />
+       <img src={result.imgInt? result.imgInt : ""} alt="" />
    </Planet> 
    <Text>
               <h1>{result.name}</h1>
