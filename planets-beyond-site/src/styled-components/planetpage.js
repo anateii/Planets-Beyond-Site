@@ -127,8 +127,8 @@ top: 80%;
 
 export const Button = styled.button `
 background-color: #fff0;
-width: 50%;
-margin-top: 25%;
+width: 70%;
+margin-top: 0;
 color: #fff;
 border: 1px solid #ffffff21;
 padding: 10px 70px;
@@ -144,4 +144,16 @@ font-size: 18px;
       color:rgb(7,7,36);
       font-family: 'League Spartan', sans-serif;
   }
+`
+
+export const ButtonContainer = styled.div `
+position: absolute;
+top: 50%;
+left: 10em;
+height: 50px;
+width: 70%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
 `

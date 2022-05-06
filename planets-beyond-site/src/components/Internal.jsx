@@ -8,6 +8,7 @@ import {
   Planet,
   Text,
   Button,
+  ButtonContainer
 } from "../styled-components/planetpage";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
@@ -72,7 +73,13 @@ export const Internal = () => {
               <i className="bi bi-box-arrow-up-right"></i>
             </div>
           </div>
-          {openModal ? (
+         
+        </Text>
+       
+      </Container>
+      <ButtonContainer>
+           <div></div>
+        {openModal ? (
             <Button
               style={{ cursor: `url(${cursor}), auto` }}
               onClick={toggleModal}
@@ -82,8 +89,7 @@ export const Internal = () => {
           ) : (
             <Modal handler={toggleModal} />
           )}
-        </Text>
-      </Container>
+      </ButtonContainer>
       <Section>
         <div>
           <h6>ROTATION TIME</h6>
