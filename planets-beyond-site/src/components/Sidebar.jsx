@@ -2,18 +2,20 @@ import { SideBar, Icon } from "../styled-components/planetpage";
 import rocket from "../assets/rocket.png";
 import { useNavigate, useParams } from "react-router-dom";
 
-const Sidebar = (props) => {
+const Sidebar = () => {
   const navigate = useNavigate();
-const params = useParams()
-console.log("THIS IS SIDEBAR PARAMS", params)
+  const params = useParams()
+ console.log("sidebar params", params)
+
+
 
 
   return (
     <>
       <SideBar>
-        <Icon onClick={()=>(navigate("/planet/overview"))}>Overview</Icon>
-        <Icon onClick={()=>(navigate("/planet/internal-structure"))}>Internal Structure</Icon>
-        <Icon onClick={()=>(navigate("/planet/surface-geology"))}>Surface Geology</Icon>
+        
+        <Icon onClick={()=>(navigate(`/planet/internal-structure`))}>Internal Structure</Icon>
+        <Icon onClick={()=>(navigate("/planet/:id/surface-geology"))}>Surface Geology</Icon>
         <Icon>Reviews</Icon>
         
         <Icon

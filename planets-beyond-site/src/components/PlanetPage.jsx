@@ -43,7 +43,7 @@ export const PlanetPage = () => {
         cursor: `url(${cursor}), auto`,
       }}
     >
-      <Sidebar />
+      <Sidebar planet={planet} />
     {
       planet && (
         <>
