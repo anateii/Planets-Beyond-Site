@@ -16,7 +16,7 @@ export const PlanetPage = () => {
   const params = useParams();
   console.log("THIS IS PARAMS", params);
 
-  const [planet, setPlanet] = useState([]);
+  const [planet, setPlanet] = useState(null);
 
   const fetchPlanet = async () => {
     let id = params.id;
@@ -44,7 +44,9 @@ export const PlanetPage = () => {
       }}
     >
       <Sidebar />
-    
+    {
+      planet && (
+        <>
             <Container>
             <Planet>
               <img src={planet.imgOv} alt="" />
@@ -86,7 +88,7 @@ export const PlanetPage = () => {
               <h3>{planet.temperature}°C</h3>
             </div>
            </Section>
-       
+       </>)}
     </Main>
   );
 };

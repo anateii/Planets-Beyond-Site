@@ -16,8 +16,6 @@ export const ChoosePlanet = ({planets}) => {
 
 
 
-  
-
   return (
     <Main style={{backgroundImage: `url(${starsBackground})`, cursor: `url(${cursor}), auto`}}>
       <Title>Where next?</Title>

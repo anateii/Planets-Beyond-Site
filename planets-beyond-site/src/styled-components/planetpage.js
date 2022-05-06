@@ -63,6 +63,7 @@ export const Text = styled.div`
     text-align: left;
     line-height: 1.5em;
     margin-top: 0;
+    margin-bottom:0;
   };
   & > div {
     text-align: left;
