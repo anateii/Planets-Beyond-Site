@@ -7,7 +7,7 @@ import {
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-export const Overview = ({ planet }) => {
+export const Overview = () => {
   const params = useParams();
   console.log("Internal params", params);
 

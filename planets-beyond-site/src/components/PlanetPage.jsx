@@ -11,6 +11,11 @@ import {
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Overview } from "./Overview";
+import { SkeletonElement } from "../skeletons/SkeletonElement";
+
+
+
+
 
 export const PlanetPage = () => {
   const params = useParams();
@@ -46,12 +51,30 @@ export const PlanetPage = () => {
       }}
     >
       <Sidebar planet={planet} />
+
+      <Container>
+      
+        <Planet>
+            <SkeletonElement type="planet-img" /> 
+        </Planet>
+        <Text>
+         
+           <SkeletonElement type="title"/>
+          <SkeletonElement type ="body" />
+         
+        </Text>
+
+      </Container>
+
+
+
+
         {
       planet && (
         <>
             <Container>
             <Planet>
-              <img src={planet.imgOv} alt="" />
+         {/*     <img src={planet.imgOv} alt="" />  */}
             </Planet>
             <Text>
               <h1>{planet.name}</h1>
@@ -91,7 +114,12 @@ export const PlanetPage = () => {
             </div>
            </Section>
        </>)} 
-      <Overview planet={planet} />
+
+      {!planet && <Container>
+        <Planet></Planet>
+        <Text>Loading...</Text>
+      </Container>}
+      <Overview planet={planet} /> 
     </Main>
   );
 };
