@@ -5,8 +5,6 @@ import Sidebar from "./Sidebar";
 import { Container, Avatar } from "../styled-components/reviews";
 import { Carousel } from "react-bootstrap";
 import "../index.css"
-import a1 from "../assets/astronauts/A1.png"
-import a2 from "../assets/astronauts/A2.png"
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -24,6 +22,7 @@ const [result,setResult] = useState(null)
 useEffect(()=>{
 
   fetchReviews()
+// eslint-disable-next-line react-hooks/exhaustive-deps
 }, [])
 
 
