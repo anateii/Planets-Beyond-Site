@@ -19,7 +19,7 @@ const Sidebar = ({planet}) => {
           <Icon onClick={()=>(navigate(`/planet/${params.id}/overview`))}>Overview</Icon>
           <Icon onClick={()=>(navigate(`/planet/${params.id}/internal-structure`))}>Internal Structure</Icon>
           <Icon onClick={()=>(navigate(`/planet/${params.id}/surface-geology`))}>Surface Geology</Icon>
-          <Icon>Reviews</Icon>
+          <Icon onClick={()=>(navigate(`/reviews/${params.id}`))}>Reviews</Icon>
   
         
         <Icon
