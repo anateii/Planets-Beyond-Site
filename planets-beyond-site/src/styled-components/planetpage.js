@@ -86,6 +86,7 @@ margin-left: 6px;
   }
   display: flex;
   flex-direction: column;
+  justify-content:center;
 `;
 
 
@@ -119,7 +120,7 @@ top: 80%;
    margin-left: 20px;
    font-family: 'Antonio', sans-serif;
    margin-bottom: 10px;
-   margin-top: -20px;
+   margin-top: 0px;
    font-size: 36px;
 }
 

@@ -11,8 +11,6 @@ import {
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Overview } from "./Overview";
-/* import { SkeletonElement } from "../skeletons/SkeletonElement"; */
-import { motion } from "framer-motion";
 
 export const PlanetPage = () => {
   const params = useParams();
@@ -56,12 +54,9 @@ export const PlanetPage = () => {
               <img src={planet.imgOv} alt="" />
             </Planet>
             <Text>
-              <motion.h1
-              initial ={{y: '-100vh'}}
-              animate={{y: 0}}
-              whileHover={{ scale: 1.1 }}>
+              <h1>
                 {planet.name}
-              </motion.h1>
+              </h1>
               <h6>{planet.description}</h6>
               <div>
                 Source:
@@ -99,26 +94,6 @@ export const PlanetPage = () => {
           </Section>
         </>
       )}
-
-      {/*    {!planet && 
-      
-      <Main  style={{
-        backgroundImage: `url(${starsBackground})`,
-        cursor: `url(${cursor}), auto`,
-      }}>
-        <Sidebar/>
-        <Container>
-          <Planet>
-            <SkeletonElement type="planet-img" />
-           </Planet>
-          <Text>
-          <SkeletonElement type="title"/>
-          <SkeletonElement type ="body" />
-          </Text>
-        </Container>
-      </Main>
-      
-      } */}
 
       <Overview planet={planet} />
     </Main>

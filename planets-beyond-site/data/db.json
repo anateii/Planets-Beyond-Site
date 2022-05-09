@@ -12,7 +12,11 @@
       "geology": "Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s.",
       "imgOv": "https://i.ibb.co/Wsk5xJN/1-overview.png",
       "imgInt": "https://i.ibb.co/kJQtNky/1-internal.png",
-      "imgGeo": "https://i.ibb.co/6m76T4n/1-geology.png"
+      "imgGeo": "https://i.ibb.co/6m76T4n/1-geology.png",
+      "users": {
+        "review1" :"Hello",
+        "review2" : "World"
+      }
     },
 
     {
@@ -69,7 +73,18 @@
       "geology": "The best known feature of Jupiter is the Great Red Spot, a persistent anticyclonic storm located 22° south of the equator. It is known to have existed since at least 1831, and possibly since 1665.",
       "imgOv": "https://i.ibb.co/Q6Z6DNZ/5-overview.png",
       "imgInt": "https://i.ibb.co/ZXJcjNk/5-internal.png",
-      "imgGeo": "https://i.ibb.co/YhmSYDX/5-geology.png"
+      "imgGeo": "https://i.ibb.co/YhmSYDX/5-geology.png",
+      "users": 
+        {
+          "review1": "Hello",
+          "review2":"World",
+          "review3" :"Heey"
+        },
+        "images":{
+          "img1": "https://i.ibb.co/RjBy9g3/A1.png",
+          "img2" : "https://i.ibb.co/L0FY3HQ/A2.png",
+          "img3" : "https://i.ibb.co/L0FY3HQ/A2.png"
+        }
     },
     {
       "id": 6,
@@ -113,5 +128,5 @@
       "imgInt": "https://i.ibb.co/jLSw72m/8-internal.png",
       "imgGeo": "https://i.ibb.co/P6SQK4c/8-geology.png"
     }
-  ]
+  ] 
 }
