@@ -16,7 +16,7 @@ height: 500px;
 
 export const Avatar = styled.div `
 background-color:#ffffff10;
-width: 70%;
+width: 80%;
 border: 2px solid #ffffff21;
 margin:0 auto;
 display: flex;
@@ -25,6 +25,3 @@ justify-content: center;
 
 `
 
-export const Image = styled.div `
-
-`

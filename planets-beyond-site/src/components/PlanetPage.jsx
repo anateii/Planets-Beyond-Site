@@ -1,5 +1,5 @@
 import { Main } from "../styled-components/homepage";
-import starsBackground from "../assets/stars.svg";
+import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
 import Sidebar from "./Sidebar";
 import {
@@ -12,10 +12,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Overview } from "./Overview";
 /* import { SkeletonElement } from "../skeletons/SkeletonElement"; */
-
-
-
-
+import { motion } from "framer-motion";
 
 export const PlanetPage = () => {
   const params = useParams();
@@ -46,21 +43,25 @@ export const PlanetPage = () => {
   return (
     <Main
       style={{
-        backgroundImage: `url(${starsBackground})`,
+        backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
       }}
     >
       <Sidebar planet={planet} />
 
-        {
-      planet && (
+      {planet && (
         <>
-            <Container>
+          <Container>
             <Planet>
-             <img src={planet.imgOv} alt="" /> 
+              <img src={planet.imgOv} alt="" />
             </Planet>
             <Text>
-              <h1>{planet.name}</h1>
+              <motion.h1
+              initial ={{y: '-100vh'}}
+              animate={{y: 0}}
+              whileHover={{ scale: 1.1 }}>
+                {planet.name}
+              </motion.h1>
               <h6>{planet.description}</h6>
               <div>
                 Source:
@@ -77,7 +78,7 @@ export const PlanetPage = () => {
                 </div>
               </div>
             </Text>
-           </Container>
+          </Container>
           <Section>
             <div>
               <h6>ROTATION TIME</h6>
@@ -95,10 +96,11 @@ export const PlanetPage = () => {
               <h6>AVERAGE TEMP.</h6>
               <h3>{planet.temperature}°C</h3>
             </div>
-           </Section>
-       </>)} 
+          </Section>
+        </>
+      )}
 
-   {/*    {!planet && 
+      {/*    {!planet && 
       
       <Main  style={{
         backgroundImage: `url(${starsBackground})`,
@@ -118,10 +120,7 @@ export const PlanetPage = () => {
       
       } */}
 
-
-
-      
-      <Overview planet={planet} /> 
+      <Overview planet={planet} />
     </Main>
   );
 };

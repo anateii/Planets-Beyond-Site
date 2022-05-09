@@ -1,5 +1,5 @@
 import { Main } from "../styled-components/homepage";
-import starsBackground from "../assets/stars.svg";
+import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
 import Sidebar from "./Sidebar";
 import { useParams } from "react-router-dom";
@@ -39,7 +39,7 @@ export const Geology = () => {
   return (
     <Main
       style={{
-        backgroundImage: `url(${starsBackground})`,
+        backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
       }}
     >

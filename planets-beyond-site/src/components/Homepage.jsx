@@ -1,5 +1,5 @@
 import { Main, Title, Button, Subtitle } from "../styled-components/homepage";
-import starsBackground from "../assets/stars.svg";
+import background from "../assets/background3.jpg"
 import { useNavigate } from "react-router-dom";
 import cursor from "../assets/cursor.png";
 
@@ -9,7 +9,8 @@ export const Homepage = () => {
   return (
     <Main
       style={{
-        backgroundImage: `url(${starsBackground})`,
+        backgroundImage: `url(${background})`,
+       objectFit:"cover",
         cursor: `url(${cursor}), auto`,
       }}
     >
