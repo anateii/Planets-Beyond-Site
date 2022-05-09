@@ -12,7 +12,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Overview } from "./Overview";
 
-
 export const PlanetPage = () => {
   const params = useParams();
   console.log("THIS IS PARAMS", params);
@@ -37,7 +36,7 @@ export const PlanetPage = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-console.log("PLANET", planet)
+  console.log("PLANET", planet);
 
   return (
     <Main
@@ -47,7 +46,7 @@ console.log("PLANET", planet)
       }}
     >
       <Sidebar planet={planet} />
-   {/*  {
+        {
       planet && (
         <>
             <Container>
@@ -91,8 +90,8 @@ console.log("PLANET", planet)
               <h3>{planet.temperature}°C</h3>
             </div>
            </Section>
-       </>)} */}
-       <Overview planet={planet}/>
+       </>)} 
+      <Overview planet={planet} />
     </Main>
   );
 };

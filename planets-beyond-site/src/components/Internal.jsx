@@ -65,9 +65,7 @@ export const Internal = () => {
               <i className="bi bi-box-arrow-up-right"></i>
             </div>
           </div>
-         
         </Text>
-       
       </Container>
       <Section>
         <div>
