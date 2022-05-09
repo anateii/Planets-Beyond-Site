@@ -7,24 +7,16 @@ import {
   Section,
   Planet,
   Text,
-  Button,
-  ButtonContainer
 } from "../styled-components/planetpage";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
-import Modal from "./Modal";
 
 export const Internal = () => {
   const params = useParams();
   console.log("Internal params", params);
 
   const [result, setResult] = useState([]);
-  const [openModal, setOpenModal] = useState(true);
-
-  const toggleModal = () => {
-    setOpenModal(!openModal);
-  };
 
   useEffect(() => {
     fetchResult();
@@ -77,19 +69,6 @@ export const Internal = () => {
         </Text>
        
       </Container>
-      <ButtonContainer>
-           <div></div>
-        {openModal ? (
-            <Button
-              style={{ cursor: `url(${cursor}), auto` }}
-              onClick={toggleModal}
-            >
-              Play me <i class="bi bi-stars"></i>
-            </Button>
-          ) : (
-            <Modal handler={toggleModal} />
-          )}
-      </ButtonContainer>
       <Section>
         <div>
           <h6>ROTATION TIME</h6>

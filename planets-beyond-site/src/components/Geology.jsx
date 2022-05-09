@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar"
 import { useParams } from "react-router-dom"
 import { useState } from "react"
 import { useEffect } from "react"
-import { Container, Section, Planet, Text, Button } from "../styled-components/planetpage"
+import { Container, Section, Planet, Text} from "../styled-components/planetpage"
 
 export const Geology =() => {
 
@@ -62,7 +62,6 @@ export const Geology =() => {
                   <i className="bi bi-box-arrow-up-right"></i>
                 </div>
               </div>
-              <Button style={{cursor: `url(${cursor}), auto`}}>Play me <i class="bi bi-stars"></i></Button>
             </Text>
     </Container>
     <Section>
