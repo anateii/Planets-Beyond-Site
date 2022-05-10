@@ -9,7 +9,6 @@ export const Main = styled.main`
   right: 0px;
   bottom: 0px;
   left: 0px;
-  cursor: url('https://image.similarpng.com/very-thumbnail/2021/07/Cursor-icon-illustration.png'), auto;
 `;
 
 export const Title = styled.h1`
