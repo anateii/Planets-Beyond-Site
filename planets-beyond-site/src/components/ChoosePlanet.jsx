@@ -19,8 +19,10 @@ export const ChoosePlanet = ({ planets }) => {
         cursor: `url(${cursor}), auto`,
       }}
     >
-      <Title>Where next?</Title>
-      <Subtitle>Choose your destination</Subtitle>
+    
+        <Title>Where next?</Title>
+        <Subtitle>Choose your destination</Subtitle>
+    
       <Container>
         {planets.map((planet, id) => (
           <Col

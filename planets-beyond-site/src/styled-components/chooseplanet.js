@@ -6,7 +6,7 @@ const BACKGROUND = 'transparent';
 
 export const Title= styled.h1 `
 text-align: left;
-padding-left: 4rem;
+padding-left: 8rem;
 font-family: 'Antonio', sans-serif;
 letter-spacing: 0.1rem;
 font-size: 4rem;
@@ -16,13 +16,14 @@ margin-top: 0.5rem;
 
 export const Subtitle= styled.h4 `
 text-align: left;
-padding-left: 4rem;
+padding-left: 8rem;
 font-family: 'League Spartan', sans-serif;
 font-weight: 400;
-margin-top: -1rem;
+margin-top: 0.5rem;
 position: relative;
 
 `;
+
 
 
 export const Container = styled.div `
@@ -43,7 +44,7 @@ grid-row-gap: 20px;
 export const Col = styled.div `
 
 /* &:hover {cursor:pointer;}; */
-background-color: transparent;
+background-color: ${BACKGROUND};
 font-family: 'Antonio', sans-serif;
 font-size: 25px;  
 display: flex;
