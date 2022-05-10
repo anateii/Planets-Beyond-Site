@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Main = styled.main`
   font-size: 1.5em;
@@ -11,14 +12,27 @@ export const Main = styled.main`
   left: 0px;
 `;
 
-export const Title = styled.h1`
-  position: relative;
+export const Title = styled(motion.h1)`
+ position: relative;
   top: 30%;
-  font-family: 'League Spartan', sans-serif;
+ font-family: 'League Spartan', sans-serif;
   font-size: 4em;
 `;
 
-export const Button = styled.button`
+export const Subtitle = styled(motion.h3) `
+position: absolute;
+top: 45%;
+left: 37%;
+font-family: 'Antonio', sans-serif;
+font-size: 2rem;
+font-weight: 400;
+margin: 0 auto;
+
+`;
+
+
+
+export const Button = styled(motion.button)`
   background-color: #fff0;
   color: #fff;
   top: 45%;
@@ -42,11 +56,3 @@ export const Button = styled.button`
     }
 `;
 
-export const Subtitle = styled.span `
-font-family: 'Antonio', sans-serif;
-font-size: 2rem;
-display: block;
-font-weight: 400;
-
-
-`;
