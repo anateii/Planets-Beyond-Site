@@ -29,6 +29,7 @@ code {
 
 .carousel-item> div > img {
   width:300px;
+  margin-left: 3rem;
 }
 
 .carousel-item > div:nth-of-type(2) {
@@ -37,8 +38,20 @@ code {
   width:70%;
   margin: 0 auto;
   text-align: left;
-  font-size: 18px;
-  font-family: 'League Spartan';
-  font-weight: 400;
   color: #ffffff;
 }
+
+.carousel-item > div:nth-of-type(2) > div > p {
+  font-size: 18px;
+  font-family: 'League Spartan';  
+  font-weight: 300;
+  padding-left: 1em;
+  padding-top: 1em;
+  line-break: auto;
+}
+
+
+.carousel-item > div:nth-of-type(2) > div {
+  width: 50%;
+}
+

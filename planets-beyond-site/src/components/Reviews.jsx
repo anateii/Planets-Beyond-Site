@@ -54,19 +54,32 @@ const fetchReviews = async() => {
               <div>
                 <img src={result.images.img1} alt="" />
               </div>
-              <div><h4>{result.users.review1}</h4></div>
+              <div>
+               <div>
+                  <p><i class="bi bi-quote"></i>{result.users.review1}</p>
+               </div>
+                </div>
             </Carousel.Item>
             <Carousel.Item>
             <div>
                 <img src={result.images.img2} alt="" />
               </div>
-              <div><h4>{result.users.review2}</h4></div>
+              <div>
+                <div>
+                  <p><i class="bi bi-quote"></i>{result.users.review2}</p>
+                </div>
+                </div>
             </Carousel.Item>
             <Carousel.Item>
             <div>
                 <img src={result.images.img3} alt="" />
               </div>
-              <div><h4>{result.users.review3}</h4></div>
+              <div>
+                <div>
+                  <p><i class="bi bi-quote"></i>{result.users.review3}</p>
+                </div>
+                
+                </div>
             </Carousel.Item>
           </Carousel>)}
         </Avatar>

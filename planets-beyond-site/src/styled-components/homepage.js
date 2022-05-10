@@ -37,6 +37,9 @@ export const Button = styled.button`
         background-color: #ddd;
         color:rgb(7,7,36);
         font-family: 'League Spartan', sans-serif;
+    };
+    &:focus {
+      outline:none;
     }
 `;
 
