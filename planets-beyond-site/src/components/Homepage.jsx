@@ -15,10 +15,10 @@ export const Homepage = () => {
         cursor: `url(${cursor}), auto`,
       }}
     >
-      <Title animate={{y:[-300, 0]}}>
+      <Title animate={{y: [-300, 0], opacity:[0,1]}}>
        Planets Beyond
         </Title>
-        <Subtitle animate={{y:[-350,0]}}>  
+        <Subtitle  animate={{y: [-350, 0], opacity:[0,1]}} >  
             Curious about our Neighboors?
             </Subtitle>
    
