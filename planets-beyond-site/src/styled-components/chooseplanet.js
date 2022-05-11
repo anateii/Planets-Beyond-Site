@@ -59,7 +59,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
+&> h4{
+    color: #ffffff;
+};
 &>img{
     width: 150px;
 };

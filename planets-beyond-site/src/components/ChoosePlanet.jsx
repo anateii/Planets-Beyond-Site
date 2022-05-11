@@ -38,12 +38,11 @@ export const ChoosePlanet = ({ planets }) => {
             key={id}
             whileHover={{
               scale: 1.3,
-              color: '#fff8',
             }}
           >
             <div>
               <img src={planet.imgOv} alt="" />
-              <span>{planet.name}</span>
+              <h4>{planet.name}</h4>
             </div>
           </Col>
         ))}

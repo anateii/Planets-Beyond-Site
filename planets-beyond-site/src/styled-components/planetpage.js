@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import {motion} from "framer-motion"
 
+
+
 /*SIDEBAR*/
 
 export const SideBar = styled.div`
@@ -53,7 +55,10 @@ export const Planet = styled.div`
   }
 `;
 
-export const Text = styled.div`
+
+
+
+export const Text = styled(motion.div)`
   & > h1 {
     font-family: "Antonio", sans-serif;
     text-align: left; 

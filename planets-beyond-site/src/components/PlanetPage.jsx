@@ -53,7 +53,7 @@ export const PlanetPage = () => {
             <Planet>
               <img src={planet.imgOv} alt="" />
             </Planet>
-            <Text>
+            <Text animate={{x: [200,0]}}>
               <h1>
                 {planet.name}
               </h1>
