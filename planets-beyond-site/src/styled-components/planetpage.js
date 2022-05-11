@@ -58,7 +58,7 @@ export const Planet = styled.div`
 
 
 
-export const Text = styled(motion.div)`
+export const Text = styled.div`
   & > h1 {
     font-family: "Antonio", sans-serif;
     text-align: left; 

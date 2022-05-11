@@ -14,6 +14,12 @@ const mainVariants = {
       type: "spring",
     },
   },
+  exit: {
+    opacity: [0.6,0],
+    transition: {
+      ease: [0.17, 0.67, 0.83, 0.67]
+    } 
+  }
 };
 
 const buttonVariants = {
@@ -53,6 +59,7 @@ export const Homepage = () => {
       variants={mainVariants}
       initial="initial"
       animate="animated"
+      exit="exit"
     >
       <Title animate={{ y: [-300, 0] }} transition={{ duration: 2.5 }}>
         Planets Beyond

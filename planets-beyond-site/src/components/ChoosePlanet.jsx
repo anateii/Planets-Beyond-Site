@@ -21,6 +21,13 @@ const mainVariants ={
       duration: 0.7,
        type: 'spring'
      }
+  },
+  exit: {
+    opacity: [0.6,0],
+    transition: {
+      delay: 4,
+      ease: [0.17, 0.67, 0.83, 0.67]
+    } 
   }
 }
 
@@ -38,6 +45,7 @@ export const ChoosePlanet = ({ planets }) => {
       variants={mainVariants}
       initial="initial"
       animate= "animated"
+      exit="exit"
      
     >
     
