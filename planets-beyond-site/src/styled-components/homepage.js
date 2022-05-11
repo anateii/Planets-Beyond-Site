@@ -44,6 +44,7 @@ export const Button = styled(motion.button)`
   &:hover {
       background-color: #ffffff21;
       border: #ffffff21;
+      scale: 1;
       
     };
     &:active {
