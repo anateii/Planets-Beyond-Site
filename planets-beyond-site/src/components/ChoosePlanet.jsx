@@ -9,6 +9,23 @@ import {
 } from "../styled-components/chooseplanet";
 import { useNavigate } from "react-router-dom";
 
+
+
+const mainVariants ={
+  initial: {
+    opacity: 0.6
+  },
+  animated: {
+    opacity: 1,
+     transition: {
+      duration: 0.7,
+       type: 'spring'
+     }
+  }
+}
+
+
+
 export const ChoosePlanet = ({ planets }) => {
   const navigate = useNavigate();
 
@@ -18,8 +35,10 @@ export const ChoosePlanet = ({ planets }) => {
         backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
       }}
-      animate={{ opacity: [0.6, 1]}}
-      transition={{duration: 0.7, type: 'spring'}}
+      variants={mainVariants}
+      initial="initial"
+      animate= "animated"
+     
     >
     
         <Title
@@ -38,6 +57,7 @@ export const ChoosePlanet = ({ planets }) => {
             key={id}
             whileHover={{
               scale: 1.3,
+              fontWeight: 600
             }}
           >
             <div>

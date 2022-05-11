@@ -29,6 +29,15 @@ const buttonVariants = {
       type: "spring",
     },
   },
+  hover: {
+    scale: 1.1,
+    textShadow: "0px 0px 10px rgb(7,7,36,0.5)",
+    boxShadow: "0px 0px 8px 1px #fff",
+   /*  transition:{
+      duraton:0.2,
+      yoyo: Infinity
+    } */
+  }
 };
 
 export const Homepage = () => {
@@ -56,13 +65,9 @@ export const Homepage = () => {
         onClick={() => navigate("/destination")}
         style={{ cursor: `url(${cursor}), auto` }}
         variants={buttonVariants}
-        initial="initial"
-        animate="animated"
-        whileHover={{
-          scale: 1.1,
-          textShadow: "0px 0px 15px rgb(7,7,36,0.5)",
-          boxShadow: "0px 0px 15px 1px rgb(7,7,36,0.3)",
-        }}
+       initial="initial"
+        animate="animated" 
+        whileHover= "hover"
       >
         Start your Journey
       </Button>

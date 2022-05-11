@@ -61,6 +61,7 @@ justify-content: center;
 align-items: center;
 &> h4{
     color: #ffffff;
+    font-weight: 400;
 };
 &>img{
     width: 150px;
