@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const Main = styled.main`
+export const Main = styled(motion.main)`
   font-size: 1.5em;
   text-align: center;
   color: #fff;
