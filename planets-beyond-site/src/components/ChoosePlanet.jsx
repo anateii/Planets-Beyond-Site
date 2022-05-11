@@ -18,16 +18,28 @@ export const ChoosePlanet = ({ planets }) => {
         backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
       }}
+      animate={{ opacity: [0.6, 1]}}
+      transition={{duration: 0.7, type: 'spring'}}
     >
     
-        <Title>Where next?</Title>
-        <Subtitle>Choose your destination</Subtitle>
+        <Title
+        animate={{x:[ -300, 0]}}
+        transition={{type: "spring", duration: 1 }}
+        >Where next?</Title>
+        <Subtitle
+        animate={{x:[ -150, 0]}}
+        transition={{type: "spring", duration: 1 }}
+        >Choose your destination</Subtitle>
     
       <Container>
         {planets.map((planet, id) => (
           <Col
             onClick={() => navigate(`/planet/${planet.id}/overview`)}
             key={id}
+            whileHover={{
+              scale: 1.3,
+              color: '#fff8',
+            }}
           >
             <div>
               <img src={planet.imgOv} alt="" />

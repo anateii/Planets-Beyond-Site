@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const BACKGROUND = 'transparent';
 
 
 
-export const Title= styled.h1 `
+export const Title= styled(motion.h1) `
 text-align: left;
 padding-left: 8rem;
 font-family: 'Antonio', sans-serif;
@@ -14,7 +15,7 @@ margin-top: 0.5rem;
 
 `;
 
-export const Subtitle= styled.h4 `
+export const Subtitle= styled(motion.h4) `
 text-align: left;
 padding-left: 8rem;
 font-family: 'League Spartan', sans-serif;
@@ -41,7 +42,7 @@ grid-row-gap: 20px;
 `;
 
 
-export const Col = styled.div `
+export const Col = styled(motion.div) `
 
 /* &:hover {cursor:pointer;}; */
 background-color: ${BACKGROUND};
