@@ -49,7 +49,7 @@ const fetchReviews = async() => {
       <Sidebar />
       <Container>
         <Avatar>
-        {result && ( <Carousel fade>
+        {result && ( <Carousel fade >
             <Carousel.Item>
               <div>
                 <img src={result.images.img1} alt="" />
@@ -81,6 +81,7 @@ const fetchReviews = async() => {
                 
                 </div>
             </Carousel.Item>
+            
           </Carousel>)}
         </Avatar>
       </Container>

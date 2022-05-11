@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import {motion} from "framer-motion"
 
 /*SIDEBAR*/
 
 export const SideBar = styled.div`
-  background-color: #ffffff21;
+  background-color: #ffffff11;
   height: 100%;
   width: 4em;
   display: grid;
@@ -15,7 +16,7 @@ export const SideBar = styled.div`
   border-right: 2px solid #ffffff21;
 `;
 
-export const Icon = styled.div`
+export const Icon = styled(motion.div)`
   & > div {
     display: flex;
     flex-direction: column;

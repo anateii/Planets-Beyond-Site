@@ -25,3 +25,8 @@ justify-content: center;
 
 `
 
+export const AddReview = styled.div `
+background-color: #ffffff10;
+height: 150px:
+width: 100%;
+`
