@@ -1,6 +1,6 @@
 import "./App.css";
 import { Homepage } from "./components/Homepage.jsx";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation} from "react-router-dom";
 import { ChoosePlanet } from "./components/ChoosePlanet";
 import { PlanetPage } from "./components/PlanetPage";
 import { Internal } from "./components/Internal";
@@ -12,11 +12,16 @@ import {AnimatePresence} from "framer-motion"
 import { PageNotFound } from "./components/PageNotFound";
 
 
+
 function App() {
 
 const location= useLocation()
 
+
   const [planets, setPlanets] = useState([]);
+
+
+
 
   const fetchPlanets = async () => {
     let response = await fetch("http://localhost:8000/planets/");
@@ -31,10 +36,12 @@ const location= useLocation()
 
   useEffect(() => {
     fetchPlanets();
-  }, []);
+  
+  });
 
   return (
     <AnimatePresence exitBeforeEnter>
+    
       
         <Routes location={location} key={location.pathname} >
           <Route path="*" element={<PageNotFound/>} />

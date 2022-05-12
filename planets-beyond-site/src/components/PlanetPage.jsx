@@ -1,4 +1,4 @@
-import { Main } from "../styled-components/homepage";
+import { Main} from "../styled-components/homepage";
 import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
 import Sidebar from "./Sidebar";
@@ -11,7 +11,6 @@ import {
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Overview } from "./Overview";
-
 
 
 const mainVariants ={
@@ -67,6 +66,7 @@ export const PlanetPage = () => {
         
     >
       <Sidebar planet={planet} />
+          
 
       {planet && (
         <>
@@ -79,6 +79,7 @@ export const PlanetPage = () => {
               <h1>
                 {planet.name}
               </h1>
+              
               <h6>{planet.description}</h6>
               <div>
                 Source:
@@ -95,6 +96,7 @@ export const PlanetPage = () => {
                 </div>
               </div>
             </Text>
+            
           </Container>
           <Section>
             <div>

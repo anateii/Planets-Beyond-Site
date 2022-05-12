@@ -39,6 +39,8 @@ code {
   margin: 0 auto;
   text-align: left;
   color: #ffffff;
+  display: flex;
+    flex-direction: column;
 }
 
 .carousel-item > div:nth-of-type(2) > div > p {
@@ -53,5 +55,9 @@ code {
 
 .carousel-item > div:nth-of-type(2) > div {
   width: 50%;
+}
+
+.bi-hearts {
+  padding-left: 1em;
 }
 

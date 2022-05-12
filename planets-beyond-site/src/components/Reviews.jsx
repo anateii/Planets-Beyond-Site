@@ -76,7 +76,8 @@ const fetchReviews = async() => {
               <div>
                <div>
                   <p><i class="bi bi-quote"></i>{result.users.review1}</p>
-               </div>
+                 
+               </div> <i class="bi bi-hearts"></i>
                 </div>
             </Carousel.Item>
             <Carousel.Item>
@@ -97,10 +98,9 @@ const fetchReviews = async() => {
                 <div>
                   <p><i class="bi bi-quote"></i>{result.users.review3}</p>
                 </div>
-                
                 </div>
             </Carousel.Item>
-            
+        
           </Carousel>)}
         </Avatar>
       </Container>
