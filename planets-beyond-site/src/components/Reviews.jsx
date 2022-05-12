@@ -18,15 +18,10 @@ const mainVariants ={
   animated: {
     opacity: 1,
      transition: {
-      duration: 0.7,
-       type: 'spring'
+      duration: 1,
+       type: 'tweed'
      }
-  },
-  exit: {
-    opacity: [0.6,0],
-    transition: {ease: "easeIn", duration: 2}
-      
-    } 
+  }
   }
 
 
@@ -68,7 +63,7 @@ const fetchReviews = async() => {
       variants={mainVariants}
       initial="initial"
       animate= "animated"
-      exit="exit"
+      
     >
       <Sidebar />
       <Container>

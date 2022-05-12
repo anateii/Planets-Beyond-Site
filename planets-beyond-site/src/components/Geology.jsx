@@ -21,15 +21,11 @@ const mainVariants ={
   animated: {
     opacity: 1,
      transition: {
-      duration: 0.7,
-       type: 'spring'
-     }
-  },
-  exit: {
-    opacity: [0.6,0],
-    transition: {ease: "easeIn", duration: 2}
+      duration: 1,
+      type: 'tweed',
       
-    } 
+     }
+  }
   }
 
 
