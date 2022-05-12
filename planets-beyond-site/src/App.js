@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { Overview } from "./components/Overview";
 import { Reviews } from "./components/Reviews";
 import {AnimatePresence} from "framer-motion"
-
+import { PageNotFound } from "./components/PageNotFound";
 
 
 function App() {
@@ -34,9 +34,10 @@ const location= useLocation()
   }, []);
 
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
       
         <Routes location={location} key={location.pathname} >
+          <Route path="*" element={<PageNotFound/>} />
           <Route path="/reviews/:id" element={<Reviews />} />
           <Route
             path="/overview/:id/overview"

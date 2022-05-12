@@ -72,7 +72,7 @@ export const Internal = () => {
       variants={mainVariants}
         initial="initial"
         animate= "animated"
-        exit="exit"
+        
     >
       <Sidebar />
       <Container>

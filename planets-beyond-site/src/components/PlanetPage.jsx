@@ -69,15 +69,16 @@ export const PlanetPage = () => {
       variants={mainVariants}
         initial="initial"
         animate= "animated"
-        exit="exit"
+        
     >
       <Sidebar planet={planet} />
 
       {planet && (
         <>
           <Container>
-            <Planet>
-              <img src={planet.imgOv} alt="" />
+            <Planet >
+              <img src={planet.imgOv} alt="" 
+            />
             </Planet>
             <Text>
               <h1>

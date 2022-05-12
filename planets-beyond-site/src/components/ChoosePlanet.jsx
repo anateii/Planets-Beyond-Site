@@ -66,6 +66,7 @@ export const ChoosePlanet = ({ planets }) => {
               scale: 1.3,
               fontWeight: 600
             }}
+
           >
             <div>
               <img src={planet.imgOv} alt="" />

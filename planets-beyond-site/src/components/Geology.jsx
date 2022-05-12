@@ -73,7 +73,7 @@ export const Geology = () => {
       variants={mainVariants}
         initial="initial"
         animate= "animated"
-        exit="exit"
+       
     >
       <Sidebar />
       <Container>

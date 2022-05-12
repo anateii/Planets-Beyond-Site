@@ -20,8 +20,8 @@
         "review3" :"Did you know? Freddie Mercury is not from planet Mercury."
       },
       "images":{
-        "img1": "https://i.ibb.co/10zm3RP/A6.png",
-        "img2" : "https://i.ibb.co/tPJQqm6/A3.png",
+        "img1": "https://i.ibb.co/QMYps2c/A13.png",
+        "img2" : "https://i.ibb.co/Gkjn6Ms/A11.png",
         "img3" : "https://i.ibb.co/RjBy9g3/A1.pngh"
       }
     },
@@ -46,9 +46,9 @@
           "review3" :"Go read Men are from Mars and Women are from Venus, instead of getting relationship advice from Reddit..."
         },
         "images":{
-          "img1": "https://i.ibb.co/RjBy9g3/A1.png",
-          "img2" : "https://i.ibb.co/L0FY3HQ/A2.png",
-          "img3" : "https://i.ibb.co/10zm3RP/A6.png"
+          "img1": "https://i.ibb.co/wsggRXS/A23.png",
+          "img2" : "https://i.ibb.co/Gkjn6Ms/A11.png",
+          "img3" : "https://i.ibb.co/RTvnSV1/A21.png"
         }
     },
     {
@@ -71,8 +71,8 @@
           "review3" :"It's the coolest planet in the Universe...everyone wants to go to Mars."
         },
         "images":{
-          "img1": "https://i.ibb.co/10zm3RP/A6.png",
-          "img2" : "https://i.ibb.co/RjBy9g3/A1.png",
+          "img1": "https://i.ibb.co/nLjPXCW/A10.png",
+          "img2" : "https://i.ibb.co/sPrqw5d/A5.png",
           "img3" : "https://i.ibb.co/L0FY3HQ/A2.png"
         }
 
@@ -97,9 +97,9 @@
           "review3" :"Because ruining another planet is better than keeping this one tidy!"
         },
         "images":{
-          "img1": "https://i.ibb.co/RjBy9g3/A1.png",
-          "img2" : "https://i.ibb.co/L0FY3HQ/A2.png",
-          "img3" : "https://i.ibb.co/L0FY3HQ/A2.png"
+          "img1": "https://i.ibb.co/r0JQQgc/A15.png",
+          "img2" : "https://i.ibb.co/10zm3RP/A6.png",
+          "img3" : "https://i.ibb.co/MsVY9ZT/A9.png"
         }
     },
     {
@@ -122,9 +122,9 @@
           "review3" :"About 1000 Earths would fit inside Jupiter. That's about 23.768.000 Starbucks locations."
         },
         "images":{
-          "img1": "https://i.ibb.co/RjBy9g3/A1.png",
-          "img2" : "https://i.ibb.co/L0FY3HQ/A2.png",
-          "img3" : "https://i.ibb.co/10zm3RP/A6.png"
+          "img1": "https://i.ibb.co/0jX7bm2/A22.png",
+          "img2" : "https://i.ibb.co/V2RHCZs/A17.png",
+          "img3" : "https://i.ibb.co/y4GkxtX/A26.png"
         }
     },
     {
@@ -147,9 +147,9 @@
           "review3" :"Saturn's moon, Titan, has 100 times more oil than Earth? America: Sounds like Titan needs some freedom..."
         },
         "images":{
-          "img1": "https://i.ibb.co/RjBy9g3/A1.png",
-          "img2" : "https://i.ibb.co/L0FY3HQ/A2.png",
-          "img3" : "https://i.ibb.co/10zm3RP/A6.png"
+          "img1": "https://i.ibb.co/yNypSzt/A8.png",
+          "img2" : "https://i.ibb.co/Y2ZtSp9/A16.png",
+          "img3" : "https://i.ibb.co/jMDf29X/A25.png"
         }
     },
     {
@@ -172,9 +172,9 @@
           "review3" :"2022 can't be any worse, right? 2022: Uranus, no joke, is leaking Gas!"
         },
         "images":{
-          "img1": "https://i.ibb.co/RjBy9g3/A1.png",
-          "img2" : "https://i.ibb.co/L0FY3HQ/A2.png",
-          "img3" : "https://i.ibb.co/10zm3RP/A6.png"
+          "img1": "https://i.ibb.co/MsVY9ZT/A9.png",
+          "img2" : "https://i.ibb.co/58tHGDb/A14.png",
+          "img3" : "https://i.ibb.co/1MrtB8x/A18.png"
         }
     },
     {
@@ -192,14 +192,14 @@
       "imgGeo": "https://i.ibb.co/P6SQK4c/8-geology.png" ,
       "users": 
         {
-          "review1": "If you ever feel forgotten, remember, Neptune exists.",
-          "review2":"Humans: call Earth the \"blue planet\". Neptune: am I a joke to you?",
-          "review3" :"It rain diamonds on Neptune. You're not poor, you're just born on the wrong planet."
+          "review1": "Humans: call Earth the \"blue planet\". Neptune: am I a joke to you?",
+          "review2":"It rain diamonds on Neptune. You're not poor, you're just born on the wrong planet.",
+          "review3" :"If you ever feel forgotten, remember, Neptune exists."
         },
         "images":{
-          "img1": "https://i.ibb.co/GRhM0Wz/A5.png",
-          "img2" : "https://i.ibb.co/1JpfGPr/A4.png",
-          "img3" : "https://i.ibb.co/fM06yvq/A7.png"
+          "img1": "https://i.ibb.co/10zm3RP/A6.png",
+          "img2" : "https://i.ibb.co/fM06yvq/A7.png",
+          "img3" : "https://i.ibb.co/Z1SsmV3/A12.png"
         }
     }
   ] 
