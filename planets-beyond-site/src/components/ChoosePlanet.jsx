@@ -24,12 +24,11 @@ const mainVariants ={
   },
   exit: {
     opacity: [0.6,0],
-    transition: {
-      delay: 4,
-      ease: [0.17, 0.67, 0.83, 0.67]
+    transition: {ease: "easeIn"}
+      
     } 
   }
-}
+
 
 
 

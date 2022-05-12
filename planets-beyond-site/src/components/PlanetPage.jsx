@@ -12,6 +12,27 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Overview } from "./Overview";
 
+
+
+const mainVariants ={
+  initial: {
+    opacity: 0.6
+  },
+  animated: {
+    opacity: 1,
+     transition: {
+      duration: 0.7,
+       type: 'spring'
+     }
+  },
+  exit: {
+    opacity: [0.6,0],
+    transition: {ease: "easeIn"}
+      
+    } 
+  }
+
+
 export const PlanetPage = () => {
   const params = useParams();
   console.log("THIS IS PARAMS", params);
@@ -44,6 +65,11 @@ export const PlanetPage = () => {
         backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
       }}
+      
+      variants={mainVariants}
+        initial="initial"
+        animate= "animated"
+        exit="exit"
     >
       <Sidebar planet={planet} />
 

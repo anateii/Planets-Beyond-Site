@@ -12,6 +12,33 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 
+
+
+const mainVariants ={
+  initial: {
+    opacity: 0.6
+  },
+  animated: {
+    opacity: 1,
+     transition: {
+      duration: 0.7,
+       type: 'spring'
+     }
+  },
+  exit: {
+    opacity: [0.6,0],
+    transition: {ease: "easeIn", duration: 2}
+      
+    } 
+  }
+
+
+
+
+
+
+
+
 export const Internal = () => {
   const params = useParams();
   console.log("Internal params", params);
@@ -42,6 +69,10 @@ export const Internal = () => {
         backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
       }}
+      variants={mainVariants}
+        initial="initial"
+        animate= "animated"
+        exit="exit"
     >
       <Sidebar />
       <Container>
