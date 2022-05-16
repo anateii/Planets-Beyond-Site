@@ -2,9 +2,7 @@ import { Main } from "../styled-components/homepage";
 import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
 import Sidebar from "./Sidebar";
-import {
-  Container
-} from "../styled-components/buyticket";
+import { Container } from "../styled-components/buyticket";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -48,28 +46,42 @@ export const BuyTicket = () => {
   };
 
   return (
-   
-        <Main
-          style={{
-            backgroundImage: `url(${background})`,
-            cursor: `url(${cursor}), auto`,
-          }}
-          variants={mainVariants}
-          initial="initial"
-          animate="animated"
-        > 
-        
-        
-        <Sidebar />
-         <Container>
-         {result && (
-         
-         <div>{result.name}</div>
-         
-         )}
-         </Container>
-        </Main>
-        
-
+    <Main
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundPositionX: '20%',
+        backgroundPositionY: '0%',
+        cursor: `url(${cursor}), auto`,
+      }}
+      variants={mainVariants}
+      initial="initial"
+      animate="animated"
+    >
+      <Sidebar />
+      <Container>
+        {result && (
+          <>
+            <div>
+              <h3>Suite for {result.name}</h3>
+              <span className="bar"></span>
+              <p className="btc">Price: 2 BTC</p>
+              <p>Lodging: 3 Days -</p>
+              <p>- Views -</p>
+              <p>- Featured -</p>
+              <p> Private Quarters: </p>
+            </div>
+            <div>
+              <h3> Basic for {result.name}</h3>
+              <span className="bar"></span>
+              <p className="btc">Price: 1 BTC</p>
+              <p> Lodging: 3 Days -</p>
+              <p>- Views -</p>
+              <p>- Featured -</p>
+              <p> Private Quarters:</p>
+            </div>
+          </>
+        )}
+      </Container>
+    </Main>
   );
 };

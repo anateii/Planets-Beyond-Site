@@ -11,7 +11,7 @@ import {
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Overview } from "./Overview";
-
+import { motion } from "framer-motion";
 
 const mainVariants ={
   initial: {
@@ -74,16 +74,16 @@ export const PlanetPage = () => {
         <>
           <Container>
             <Planet >
-              <img src={planet.imgOv} alt="" 
+              <motion.img src={planet.imgOv} alt="" initial={{filter: "blur(8px)"}} animate={{filter: "blur(0px)"}}
             />
             </Planet>
             <Text>
-              <h1>
+              <motion.h1 initial={{filter: "blur(8px)"}} animate={{filter: "blur(0px)"}}>
                 {planet.name}
-              </h1>
+              </motion.h1>
               
-              <h6>{planet.description}</h6>
-              <div>
+              <motion.h6 initial={{filter: "blur(8px)"}} animate={{filter: "blur(0px)"}}>{planet.description}</motion.h6>
+              <motion.div initial={{filter: "blur(8px)"}} animate={{filter: "blur(0px)"}}>
                 Source:
                 <div
                   onClick={() => {
@@ -96,7 +96,7 @@ export const PlanetPage = () => {
                   Nasa
                   <i className="bi bi-box-arrow-up-right"></i>
                 </div>
-              </div>
+              </motion.div>
             </Text>
             
           </Container>
@@ -121,7 +121,7 @@ export const PlanetPage = () => {
         </>
       )}
 
-      <Overview planet={planet} />
+      {/* <Overview planet={planet} /> */}
     </Main>
   );
 };

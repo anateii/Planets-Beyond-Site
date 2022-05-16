@@ -1,4 +1,4 @@
-import {
+/* import {
   Container,
   Planet,
   Text,
@@ -77,3 +77,4 @@ export const Overview = () => {
     </>
   );
 };
+ */

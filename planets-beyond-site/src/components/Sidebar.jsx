@@ -11,7 +11,7 @@ const Sidebar = ({ planet }) => {
   return (
     <>
       <SideBar>
-        <Icon
+      {/*   <Icon
           onClick={() => navigate(`/planet/${params.id}/overview`)}
           whileHover={{
             scale: 1.1,
@@ -23,7 +23,7 @@ const Sidebar = ({ planet }) => {
           transition={{ type: "spring", stiffness: 200 }}
         >
           Overview
-        </Icon>
+        </Icon> */}
         <Icon
           onClick={() => navigate(`/planet/${params.id}/internal-structure`)}
           whileHover={{
@@ -74,7 +74,7 @@ const Sidebar = ({ planet }) => {
           }}
           transition={{ type: "spring", stiffness: 200 }}
         >
-          Buy Ticket
+         Pricing
         </Icon>
 
         <Icon
