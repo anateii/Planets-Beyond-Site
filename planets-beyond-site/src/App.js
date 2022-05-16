@@ -10,13 +10,13 @@ import { Overview } from "./components/Overview";
 import { Reviews } from "./components/Reviews";
 import {AnimatePresence} from "framer-motion"
 import { PageNotFound } from "./components/PageNotFound";
+import { Intro } from "./components/Intro";
 
 
 
 function App() {
 
 const location= useLocation()
-
 
   const [planets, setPlanets] = useState([]);
 
@@ -58,7 +58,8 @@ const location= useLocation()
             path="/planet/:id/surface-geology"
             element={<Geology planets={planets} />}
           />
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Intro/>} />
+          <Route path="/homepage" element={<Homepage />} />
           <Route
             path="/destination"
             element={<ChoosePlanet planets={planets} />}

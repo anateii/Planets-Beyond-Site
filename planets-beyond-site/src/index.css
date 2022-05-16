@@ -29,7 +29,7 @@ code {
 
 .carousel-item> div > img {
   width:300px;
-  margin-left: 3rem;
+  margin-left: 3.5rem;
 }
 
 .carousel-item > div:nth-of-type(2) {
