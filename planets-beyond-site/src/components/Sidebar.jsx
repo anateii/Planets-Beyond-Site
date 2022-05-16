@@ -63,6 +63,19 @@ const Sidebar = ({ planet }) => {
         >
           Reviews
         </Icon>
+        <Icon
+          onClick={() => navigate(`/buy-ticket/${params.id}`)}
+          whileHover={{
+            scale: 1.1,
+            originX: 0,
+            color: ["#ffffff60", "#fff"],
+            textShadow: "0px 0px 15px rgb(7,7,36,0.5)",
+            fontWeight: 600
+          }}
+          transition={{ type: "spring", stiffness: 200 }}
+        >
+          Buy Ticket
+        </Icon>
 
         <Icon
           onClick={() => {

@@ -10,6 +10,11 @@ export const Main = styled(motion.main)`
   right: 0px;
   bottom: 0px;
   left: 0px;
+  background-repeat: no-repeat;
+  @media (max-width:435px) {
+    height: 1900px;
+    width: fit-content;
+  }
 `;
 
 export const Title = styled(motion.h1)`
@@ -26,21 +31,14 @@ export const Title = styled(motion.h1)`
 `;
 
 export const Subtitle = styled(motion.h3) `
-position: absolute;
-top: 45%;
-left: 37%;
+position: relative;
+top: 30%;
 font-family: 'Antonio', sans-serif;
 font-size: 2rem;
 font-weight: 400;
 margin: 0 auto;
-@media screen and (max-width: 425px) {
-  left: 10%;
-  top: 55%;
-  font-size: 1em;
-};
-@media screen and (min-width: 425px, max-width: 768px) {
-  left: 28%
-};
+
+
 
 
 `;
