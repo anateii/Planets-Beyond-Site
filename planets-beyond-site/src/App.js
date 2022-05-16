@@ -6,7 +6,7 @@ import { PlanetPage } from "./components/PlanetPage";
 import { Internal } from "./components/Internal";
 import { Geology } from "./components/Geology";
 import { useEffect, useState } from "react";
-import { Overview } from "./components/Overview";
+/* import { Overview } from "./components/Overview"; */
 import { Reviews } from "./components/Reviews";
 import {AnimatePresence} from "framer-motion"
 import { PageNotFound } from "./components/PageNotFound";

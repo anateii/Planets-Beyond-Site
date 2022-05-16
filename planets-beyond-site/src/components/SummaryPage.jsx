@@ -1,8 +1,8 @@
-import { Main } from "../styled-components/homepage";
+import { Button, Main } from "../styled-components/homepage";
 import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
 import Sidebar from "./Sidebar";
-import { Container } from "../styled-components/buyticket";
+import { Container } from "../styled-components/summary";
 import { useParams } from "react-router-dom";
 
 export const SummaryPage = () => {
@@ -20,7 +20,10 @@ console.log("PARAMS OF SUMMARY", params)
     >
       <Sidebar />
       <Container>
-          Hello
+         <div>
+
+         </div>
+         <Button>Let's gooo!</Button>
       </Container>
     </Main>
   );
