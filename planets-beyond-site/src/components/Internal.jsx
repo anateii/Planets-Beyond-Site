@@ -11,6 +11,10 @@ import {
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
+
+
+
 
 const mainVariants = {
   initial: {
@@ -62,7 +66,7 @@ export const Internal = () => {
       <Sidebar />
       <Container>
         <Planet>
-          <img src={result.imgInt ? result.imgInt : ""} alt="" />
+          <motion.img src={result.imgInt ? result.imgInt : ""} alt="" animate={{scale: [0,1.1]}}/>
         </Planet>
         <Text>
           <h1>{result.name}</h1>

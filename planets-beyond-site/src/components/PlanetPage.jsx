@@ -74,7 +74,8 @@ export const PlanetPage = () => {
         <>
           <Container>
             <Planet >
-              <motion.img src={planet.imgOv} alt="" initial={{filter: "blur(8px)"}} animate={{filter: "blur(0px)"}}
+              <motion.img src={planet.imgOv} alt="" initial={{filter: "blur(8px)"}} animate={{filter: "blur(0px)", scale: [0,1.1]}} 
+             
             />
             </Planet>
             <Text>

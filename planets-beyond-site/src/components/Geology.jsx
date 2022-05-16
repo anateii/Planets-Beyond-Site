@@ -11,7 +11,7 @@ import {
   Planet,
   Text,
 } from "../styled-components/planetpage";
-
+import { motion } from "framer-motion";
 
 
 const mainVariants ={
@@ -73,7 +73,7 @@ export const Geology = () => {
       <Sidebar />
       <Container>
         <Planet>
-          <img src={result.imgGeo ? result.imgGeo : ""} alt="" />
+          <motion.img src={result.imgGeo ? result.imgGeo : ""} alt="" animate={{scale: [0,1.1]}}/>
         </Planet>
         <Text>
           <h1>{result.name}</h1>
