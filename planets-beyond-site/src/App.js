@@ -41,8 +41,6 @@ const location= useLocation()
 
   return (
     <AnimatePresence exitBeforeEnter>
-    
-      
         <Routes location={location} key={location.pathname} >
           <Route path="*" element={<PageNotFound/>} />
           <Route path="/reviews/:id" element={<Reviews />} />
