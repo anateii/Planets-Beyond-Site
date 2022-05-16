@@ -13,19 +13,20 @@ import { useNavigate } from "react-router-dom";
 
 const mainVariants ={
   initial: {
-    opacity: 0.6
+    opacity: 0.6,
+    filter: "blur(8px)"
   },
   animated: {
+    filter: "blur(0px)", 
     opacity: 1,
+    duration: 2,
      transition: {
       duration: 0.7,
        type: 'spring'
      }
   },
   exit: {
-    opacity: [0.6,0],
-    transition: {ease: "easeIn"}
-      
+    transition: {ease: "easeInAndOut"}
     } 
   }
 
@@ -43,7 +44,7 @@ export const ChoosePlanet = ({ planets }) => {
       }}
       variants={mainVariants}
       initial="initial"
-      animate= "animated"
+      animate= "animated" 
       exit="exit"
      
     >

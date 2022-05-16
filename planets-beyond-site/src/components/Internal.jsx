@@ -12,27 +12,18 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 
-
-
-const mainVariants ={
+const mainVariants = {
   initial: {
-    opacity: 0.6
+    filter: "blur(8px)",
   },
   animated: {
-    opacity: 1,
-     transition: {
-      duration: 1,
-       type: 'tweed'
-     }
-  }
-  }
-
-
-
-
-
-
-
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.5,
+      type: "tweed",
+    },
+  },
+};
 
 export const Internal = () => {
   const params = useParams();
@@ -65,9 +56,8 @@ export const Internal = () => {
         cursor: `url(${cursor}), auto`,
       }}
       variants={mainVariants}
-        initial="initial"
-        animate= "animated"
-        
+      initial="initial"
+      animate="animated"
     >
       <Sidebar />
       <Container>

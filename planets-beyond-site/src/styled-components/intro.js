@@ -15,7 +15,7 @@ margin-top: 15%;
 }
 `
 
-export const Main2 = styled(motion.div)`
+export const MainIntro = styled(motion.div)`
 
 font-size: 1.5em;
   text-align: center;

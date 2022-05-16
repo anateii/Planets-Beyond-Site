@@ -1,5 +1,5 @@
 
-import { Main2, Container } from "../styled-components/intro";
+import { MainIntro, Container } from "../styled-components/intro";
 import background from "../assets/background3.jpg";
 import cursor from "../assets/cursor.png";
 import { useState } from "react";
@@ -8,39 +8,44 @@ import astronaut from "../assets/astronauts/IntroA1.png"
 import {motion} from "framer-motion"
 
 
-const h5Variants ={
+const mainIntroVariants ={
    exit: {
     opacity: [0.6,0],
-    transition: {ease: "easeIn"}
+    filter: "blur(8px, 0px)",
+    transition: {
+        duration: 3,
+        type: "easeOut" },
+        transitionEnd: { display: "none" }
    }
 }
 
 
 export const Intro =() =>{
 
-
   const navigate=useNavigate()
 
     const [redirectNow, setRedirectNow] = useState(false);
-    setTimeout(() => setRedirectNow(true), 5000);
+    setTimeout(() => setRedirectNow(true), 3000);
     return redirectNow ? (
       navigate('/homepage')
     ) : (
       <>
-          <Main2  style={{
+          <MainIntro  style={{
             backgroundImage: `url(${background})`,
             objectFit: "cover",
             cursor: `url(${cursor}), auto`,
           }}
+          variants ={mainIntroVariants}
+
+          
+                exit="exit"
           >
-          </Main2> 
+          </MainIntro> 
           <Container>
-                <img src={astronaut} alt="" style={{width: "auto"}}/>
+                <img src={astronaut} alt="" style={{width: "auto"}}  />
                  <motion.h5
                 animate={{y: [10,0,10], opacity: [0.4,1,0.4], duration: 5}}
                 transition={{yoyo: Infinity }}
-                variants ={h5Variants}
-                exit="exit"
                  >LOADING...</motion.h5>
               </Container>
       </>

@@ -15,12 +15,14 @@ import { Overview } from "./Overview";
 
 const mainVariants ={
   initial: {
-    opacity: 0.6
+    opacity: 0.6,
+    filter: "blur(8px)"
   },
   animated: {
     opacity: 1,
+    filter: "blur(0px)",
      transition: {
-      duration: 1,
+      duration: 0.5,
       type: 'tweed'
      }
   }
