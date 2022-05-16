@@ -16,7 +16,13 @@ right: 6rem;
     background-color: #ffffff11;
     border: 2px solid #ffffff21;
     width:90%;
+    position: relative;
+    
     &> h3 {
+        margin-top: 2em;
+        text-align: center;
+    };
+    &>p:nth-of-type(1) {
         margin-top: 2em;
     }
     
@@ -35,4 +41,45 @@ right: 6rem;
   
 }
 
+& > div:nth-of-type(3) {
+   background-color: red;
+   width: 100px;
+   height: 100px;
+   top:0;
+   left: 0;
+   bottom: 0;
+   right: 0,
+
+  
+}
+
 `
+
+
+export const Button = styled.div`
+background-color: #fff0;
+  color: #fff;
+  top: 45%;
+width: 50%;
+margin: 0 auto;
+  border: 1px solid #ffffff21;
+  padding: 10px 50px;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 18px;
+  &:hover {
+      background-color: #ffffff21;
+      border: #ffffff21;
+      scale: 1;
+      
+    };
+    &:active {
+        background-color: #ddd;
+        color:rgb(7,7,36);
+        font-family: 'League Spartan', sans-serif;
+    };
+    &:focus {
+      outline:none;
+    }
+
+`
+

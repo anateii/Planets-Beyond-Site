@@ -2,9 +2,11 @@ import { Main } from "../styled-components/homepage";
 import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
 import Sidebar from "./Sidebar";
-import { Container } from "../styled-components/buyticket";
+import { Container, Button } from "../styled-components/buyticket";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const mainVariants = {
   initial: {
@@ -22,6 +24,7 @@ const mainVariants = {
 };
 
 export const BuyTicket = () => {
+  const navigate = useNavigate()
   const params = useParams();
   console.log("REVIEW PARAMS", params);
 
@@ -60,25 +63,27 @@ export const BuyTicket = () => {
       <Sidebar />
       <Container>
         {result && (
-          <>
+          <> 
+         
             <div>
               <h3>Suite for {result.name}</h3>
-              <span className="bar"></span>
               <p className="btc">Price: 2 BTC</p>
-              <p>Lodging: 3 Days -</p>
-              <p>- Views -</p>
-              <p>- Featured -</p>
-              <p> Private Quarters: </p>
+              <p>Lodging: 3 Days</p>
+              <p>Views: </p>
+              <p>Featured: </p>
+              <p>Private Quarters: </p>
+              <Button onClick={()=> navigate(`/summary/${result.id}`)}>I want Suite</Button>
             </div>
             <div>
               <h3> Basic for {result.name}</h3>
-              <span className="bar"></span>
               <p className="btc">Price: 1 BTC</p>
-              <p> Lodging: 3 Days -</p>
-              <p>- Views -</p>
-              <p>- Featured -</p>
-              <p> Private Quarters:</p>
+              <p>Lodging: 10 Days </p>
+              <p>Views </p>
+              <p>Featured </p>
+              <p>Private Quarters:</p>
+              <Button>I want Basic</Button>
             </div>
+           
           </>
         )}
       </Container>

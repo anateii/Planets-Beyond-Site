@@ -1,5 +1,5 @@
 import { SideBar, Icon } from "../styled-components/planetpage";
-import rocket from "../assets/rocket.png";
+import rocket from "../assets/astronauts/IntroA1.png";
 import { useNavigate, useParams } from "react-router-dom";
 
 const Sidebar = ({ planet }) => {

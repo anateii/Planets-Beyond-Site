@@ -12,6 +12,7 @@ import {AnimatePresence} from "framer-motion"
 import { PageNotFound } from "./components/PageNotFound";
 import { Intro } from "./components/Intro";
 import { BuyTicket } from "./components/BuyTicket";
+import { SummaryPage } from "./components/SummaryPage";
 
 
 function App() {
@@ -43,13 +44,14 @@ const location= useLocation()
     <AnimatePresence exitBeforeEnter>
 
         <Routes location={location} key={location.pathname} >
+          <Route path="/summary/:id" element={<SummaryPage/>}/>
           <Route path="/buy-ticket/:id" element={<BuyTicket/>}/>
           <Route path="*" element={<PageNotFound/>} />
           <Route path="/reviews/:id" element={<Reviews />} />
-          <Route
+         {/*  <Route
             path="/overview/:id/overview"
             element={<Overview planets={planets} />}
-          />
+          /> */}
           <Route
             path="/planet/:id/internal-structure"
             element={<Internal planets={planets} />}
