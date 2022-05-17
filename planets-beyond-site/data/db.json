@@ -23,6 +23,13 @@
         "img1": "https://i.ibb.co/QMYps2c/A13.png",
         "img2" : "https://i.ibb.co/Gkjn6Ms/A11.png",
         "img3" : "https://i.ibb.co/RjBy9g3/A1.pngh"
+      },
+      "ticket": {
+        "price": 1,
+        "time": "365 days",
+        "spacecraft": "Virgin-X",
+        "quarters": "",
+        "features": ""
       }
     },
 
@@ -49,6 +56,13 @@
           "img1": "https://i.ibb.co/wsggRXS/A23.png",
           "img2" : "https://i.ibb.co/Gkjn6Ms/A11.png",
           "img3" : "https://i.ibb.co/RTvnSV1/A21.png"
+        },
+        "ticket": {
+          "price": 1,
+          "time": "365 days",
+          "spacecraft": "Virgin-X",
+          "quarters": "",
+          "features": ""
         }
     },
     {
@@ -74,6 +88,13 @@
           "img1": "https://i.ibb.co/nLjPXCW/A10.png",
           "img2" : "https://i.ibb.co/sPrqw5d/A5.png",
           "img3" : "https://i.ibb.co/L0FY3HQ/A2.png"
+        },
+        "ticket": {
+          "price": 1,
+          "time": "365 days",
+          "spacecraft": "Virgin-X",
+          "quarters": "",
+          "features": ""
         }
 
     },
@@ -100,6 +121,13 @@
           "img1": "https://i.ibb.co/r0JQQgc/A15.png",
           "img2" : "https://i.ibb.co/10zm3RP/A6.png",
           "img3" : "https://i.ibb.co/MsVY9ZT/A9.png"
+        },
+        "ticket": {
+          "price": 1,
+          "time": "365 days",
+          "spacecraft": "Virgin-X",
+          "quarters": "",
+          "features": ""
         }
     },
     {
@@ -125,6 +153,13 @@
           "img1": "https://i.ibb.co/0jX7bm2/A22.png",
           "img2" : "https://i.ibb.co/V2RHCZs/A17.png",
           "img3" : "https://i.ibb.co/y4GkxtX/A26.png"
+        },
+        "ticket": {
+          "price": 1,
+          "time": "365 days",
+          "spacecraft": "Virgin-X",
+          "quarters": "",
+          "features": ""
         }
     },
     {
@@ -150,6 +185,13 @@
           "img1": "https://i.ibb.co/yNypSzt/A8.png",
           "img2" : "https://i.ibb.co/Y2ZtSp9/A16.png",
           "img3" : "https://i.ibb.co/jMDf29X/A25.png"
+        },
+        "ticket": {
+          "price": 1,
+          "time": "365 days",
+          "spacecraft": "Virgin-X",
+          "quarters": "",
+          "features": ""
         }
     },
     {
@@ -175,6 +217,13 @@
           "img1": "https://i.ibb.co/MsVY9ZT/A9.png",
           "img2" : "https://i.ibb.co/58tHGDb/A14.png",
           "img3" : "https://i.ibb.co/1MrtB8x/A18.png"
+        },
+        "ticket": {
+          "price": 1,
+          "time": "365 days",
+          "spacecraft": "Virgin-X",
+          "quarters": "",
+          "features": ""
         }
     },
     {
@@ -200,6 +249,13 @@
           "img1": "https://i.ibb.co/10zm3RP/A6.png",
           "img2" : "https://i.ibb.co/fM06yvq/A7.png",
           "img3" : "https://i.ibb.co/Z1SsmV3/A12.png"
+        },
+        "ticket": {
+          "price": 1,
+          "time": "365 days",
+          "spacecraft": "Virgin-X",
+          "quarters": "",
+          "features": ""
         }
     }
   ] 

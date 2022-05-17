@@ -28,7 +28,6 @@ const location= useLocation()
     let response = await fetch("http://localhost:8000/planets/");
     try {
       let data = await response.json();
-      console.log("DATA", data);
       setPlanets(data);
     } catch (error) {
       console.log("There was an error", error);
@@ -38,7 +37,7 @@ const location= useLocation()
   useEffect(() => {
     fetchPlanets();
   
-  });
+  },[]);
 
   return (
     <AnimatePresence exitBeforeEnter>

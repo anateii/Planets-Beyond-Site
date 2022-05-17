@@ -67,20 +67,20 @@ export const BuyTicket = () => {
          
             <div>
               <h3>Suite for {result.name}</h3>
-              <p className="btc">Price: 2 BTC</p>
-              <p>Lodging: 3 Days</p>
-              <p>Views: </p>
-              <p>Featured: </p>
+              <p className="btc">Price: </p>
+              <p>Time in space: </p>
+              <p>Spacecraft: </p>
               <p>Private Quarters: </p>
+              <p>Featured: </p> 
               <Button onClick={()=> navigate(`/summary/${result.id}`)}>I want Suite</Button>
             </div>
             <div>
               <h3> Basic for {result.name}</h3>
-              <p className="btc">Price: 1 BTC</p>
-              <p>Lodging: 10 Days </p>
-              <p>Views </p>
-              <p>Featured </p>
-              <p>Private Quarters:</p>
+              <p className="btc">Price: </p>
+              <p>Time in space: </p>
+              <p>Spacecraft: </p>
+              <p>Private Quarters:</p> 
+              <p>Features: </p>
               <Button>I want Basic</Button>
             </div>
            
