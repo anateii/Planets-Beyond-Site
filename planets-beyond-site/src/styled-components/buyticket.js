@@ -13,8 +13,8 @@ top: 15%;
 left: 14rem;
 right: 6rem;
 & > div {
-    background-color: #ffffff11;
-    border: 2px solid #ffffff21;
+    background-color: #ffffff61;
+    border: 2px solid transparent;
     width:90%;
     position: relative;
     
@@ -25,7 +25,13 @@ right: 6rem;
     &>p:nth-of-type(1) {
         margin-top: 2em;
     }
-    
+    &>p:nth-of-type(4) {
+        margin-bottom: 3em;
+    }
+    &> p {
+        font-size: 20px;
+        font-weight: 300;
+    }
 
 }
 &> div:nth-of-type(1) {
@@ -36,9 +42,7 @@ right: 6rem;
 }
 
 & > div:nth-of-type(2) {
-    grid-area: 1 / 1 / 2 / 2;
-   
-  
+    grid-area: 1 / 1 / 2 / 2;   
 }
 
 & > div:nth-of-type(3) {
@@ -57,8 +61,9 @@ right: 6rem;
 
 
 export const Button = styled.div`
-background-color: #fff0;
-  color: #fff;
+background-color: #fff8;
+color:rgb(7,7,36);
+  margin-top: 2.5em;
   top: 45%;
 width: 50%;
 margin: 0 auto;
@@ -67,13 +72,13 @@ margin: 0 auto;
   font-family: 'League Spartan', sans-serif;
   font-size: 18px;
   &:hover {
-      background-color: #ffffff21;
+      background-color: #ffffff;
       border: #ffffff21;
       scale: 1;
       
     };
     &:active {
-        background-color: #ddd;
+        background-color: #fff;
         color:rgb(7,7,36);
         font-family: 'League Spartan', sans-serif;
     };

@@ -59,6 +59,8 @@ const fetchReviews = async() => {
       style={{
         backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
+        backgroundPositionX: '40%',
+        backgroundPositionY: '0%',
       }}
       variants={mainVariants}
       initial="initial"

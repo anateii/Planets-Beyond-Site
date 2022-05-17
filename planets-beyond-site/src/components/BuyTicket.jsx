@@ -23,6 +23,30 @@ const mainVariants = {
   },
 };
 
+
+const buttonVariants = {
+  initial: {
+    y: "-300vw",
+    opacity: 0,
+  },
+  animated: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 2,
+      type: "spring",
+    },
+  },
+  hover: {
+    scale: 1.1,
+    textShadow: "0px 0px 10px rgb(7,7,36,0.5)",
+    boxShadow: "0px 0px 8px 1px #fff",
+  },
+
+}
+
+
+
 export const BuyTicket = () => {
   const navigate = useNavigate()
   const params = useParams();
@@ -52,9 +76,9 @@ export const BuyTicket = () => {
     <Main
       style={{
         backgroundImage: `url(${background})`,
-        backgroundPositionX: '20%',
-        backgroundPositionY: '0%',
         cursor: `url(${cursor}), auto`,
+        backgroundPositionX: '100%',
+        backgroundPositionY: '45%',
       }}
       variants={mainVariants}
       initial="initial"
@@ -67,21 +91,26 @@ export const BuyTicket = () => {
          
             <div>
               <h3>Suite for {result.name}</h3>
-              <p>Price: {result.ticketSuite.price} ETH</p>
+              <span>Price: {result.ticketSuite.price} ETH</span>
               <p>Time in space: {result.ticketSuite.time} </p>
               <p>Spacecraft: {result.ticketSuite.spacecraft}</p>
               <p>Private Quarters: {result.ticketSuite.quarters} </p>
               <p>Mission: {result.ticketSuite.mission}</p> 
-              <Button onClick={()=> navigate(`/summary/${result.id}`)}>Launch Suite</Button>
+              <Button 
+              onClick={()=> navigate(`/summary/${result.id}`)}
+              variants={buttonVariants}
+              whileHover="hover"
+              
+              >Launch Suite</Button>
             </div>
             <div>
               <h3> Basic for {result.name}</h3>
-              <p>Price: {result.ticketBasic.price} ETH</p>
+              <span>Price: {result.ticketBasic.price} ETH</span>
               <p>Time in space: {result.ticketBasic.time}</p>
               <p>Spacecraft: {result.ticketBasic.spacecraft}</p>
               <p>Private Quarters: {result.ticketBasic.quarters}</p> 
               <p>Mission: {result.ticketBasic.mission}</p>
-              <Button>Launch Basic</Button>
+              <Button onClick={()=> navigate(`/summary/${result.id}`)}>Launch Basic</Button>
             </div>
            
           </>

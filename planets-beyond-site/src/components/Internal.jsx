@@ -58,6 +58,8 @@ export const Internal = () => {
       style={{
         backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
+        backgroundPositionX: '10%',
+        backgroundPositionY: '0%',
       }}
       variants={mainVariants}
       initial="initial"

@@ -41,6 +41,8 @@ export const ChoosePlanet = ({ planets }) => {
       style={{
         backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
+        backgroundPositionX: '0%',
+        backgroundPositionY: '20%',
       }}
       variants={mainVariants}
       initial="initial"
