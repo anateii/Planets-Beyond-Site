@@ -25,17 +25,17 @@
         "img3" : "https://i.ibb.co/RjBy9g3/A1.pngh"
       },
       "ticketBasic": {
-        "price": 1,
-        "time": "365 days",
-        "spacecraft": "Virgin-X",
-        "quarters": "",
+        "price": 67,
+        "time": "6.5 years",
+        "spacecraft": "Messenger-M1",
+        "quarters": "1",
         "features": ""
       },
       "ticketSuite": {
-        "price": 1,
-        "time": "",
-        "spacecraft": "",
-        "quarters": "",
+        "price": 88,
+        "time": "5.5 years",
+        "spacecraft": "Messenger-M2",
+        "quarters": "2",
         "features": ""
       }
     },
@@ -65,16 +65,16 @@
           "img3" : "https://i.ibb.co/RTvnSV1/A21.png"
         },
         "ticketBasic": {
-          "price": 1,
-          "time": "365 days",
-          "spacecraft": "Virgin-X",
+          "price": 35,
+          "time": "15 months",
+          "spacecraft": "Magellan-V1",
           "quarters": "",
           "features": ""
         },
         "ticketSuite": {
-          "price": 1,
-          "time": "",
-          "spacecraft": "",
+          "price": 55,
+          "time": "12 months",
+          "spacecraft": "Magellan-V2",
           "quarters": "",
           "features": ""
         }
@@ -104,16 +104,16 @@
           "img3" : "https://i.ibb.co/L0FY3HQ/A2.png"
         },
         "ticketBasic": {
-          "price": 1,
+          "price": 5,
           "time": "365 days",
-          "spacecraft": "Virgin-X",
+          "spacecraft": "Origin-E1",
           "quarters": "",
           "features": ""
         },
         "ticketSuite": {
-          "price": 1,
-          "time": "",
-          "spacecraft": "",
+          "price": 15,
+          "time": "9 months",
+          "spacecraft": "Origin-E2",
           "quarters": "",
           "features": ""
         }
@@ -144,16 +144,16 @@
           "img3" : "https://i.ibb.co/MsVY9ZT/A9.png"
         },
         "ticketBasic": {
-          "price": 1,
-          "time": "365 days",
-          "spacecraft": "Virgin-X",
+          "price": 99,
+          "time": "11 months",
+          "spacecraft": "Space-X",
           "quarters": "",
           "features": ""
         },
         "ticketSuite": {
-          "price": 1,
-          "time": "",
-          "spacecraft": "",
+          "price": 149,
+          "time": "8 months",
+          "spacecraft": "Space-Y",
           "quarters": "",
           "features": ""
         }
@@ -183,16 +183,16 @@
           "img3" : "https://i.ibb.co/y4GkxtX/A26.png"
         },
         "ticketBasic": {
-          "price": 1,
-          "time": "365 days",
-          "spacecraft": "Virgin-X",
+          "price": 199,
+          "time": "6 years",
+          "spacecraft": "Galileo-J1",
           "quarters": "",
           "features": ""
         },
         "ticketSuite": {
-          "price": 1,
-          "time": "",
-          "spacecraft": "",
+          "price": 249,
+          "time": "4 years",
+          "spacecraft": "Galileo-J2",
           "quarters": "",
           "features": ""
         }
@@ -222,16 +222,16 @@
           "img3" : "https://i.ibb.co/jMDf29X/A25.png"
         },
         "ticketBasic": {
-          "price": 1,
-          "time": "365 days",
-          "spacecraft": "Virgin-X",
+          "price": 199,
+          "time": "7 years",
+          "spacecraft": "Cassini-S1",
           "quarters": "",
           "features": ""
         },
         "ticketSuite": {
-          "price": 1,
-          "time": "",
-          "spacecraft": "",
+          "price": 249,
+          "time": "5 years",
+          "spacecraft": "Cassini-S2",
           "quarters": "",
           "features": ""
         }
@@ -261,16 +261,16 @@
           "img3" : "https://i.ibb.co/1MrtB8x/A18.png"
         },
         "ticketBasic": {
-          "price": 1,
-          "time": "365 days",
-          "spacecraft": "Virgin-X",
+          "price": 199,
+          "time": "8.5 years",
+          "spacecraft": "Voyager-U1",
           "quarters": "",
           "features": ""
         },
         "ticketSuite": {
-          "price": 1,
-          "time": "",
-          "spacecraft": "",
+          "price": 249,
+          "time": "7.5 years",
+          "spacecraft": "Voyager-U2",
           "quarters": "",
           "features": ""
         }
@@ -300,16 +300,16 @@
           "img3" : "https://i.ibb.co/Z1SsmV3/A12.png"
         },
         "ticketBasic": {
-          "price": 1,
-          "time": "365 days",
-          "spacecraft": "Virgin-X",
+          "price": 199,
+          "time": "12 years",
+          "spacecraft": "Voyager-N1",
           "quarters": "",
           "features": ""
         },
         "ticketSuite": {
-          "price": 1,
-          "time": "",
-          "spacecraft": "",
+          "price": 249,
+          "time": "9 years",
+          "spacecraft": "Voyager-N2",
           "quarters": "",
           "features": ""
         }

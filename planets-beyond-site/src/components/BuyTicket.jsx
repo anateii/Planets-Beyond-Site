@@ -67,21 +67,21 @@ export const BuyTicket = () => {
          
             <div>
               <h3>Suite for {result.name}</h3>
-              <p className="btc">Price: </p>
-              <p>Time in space: </p>
-              <p>Spacecraft: </p>
-              <p>Private Quarters: </p>
-              <p>Featured: </p> 
-              <Button onClick={()=> navigate(`/summary/${result.id}`)}>I want Suite</Button>
+              <p>Price: {result.ticketSuite.price} ETH</p>
+              <p>Time in space: {result.ticketSuite.time} </p>
+              <p>Spacecraft: {result.ticketSuite.spacecraft}</p>
+              <p>Private Quarters: {result.ticketSuite.quarters} </p>
+              <p>Features: </p> 
+              <Button onClick={()=> navigate(`/summary/${result.id}`)}>Launch Suite</Button>
             </div>
             <div>
               <h3> Basic for {result.name}</h3>
-              <p className="btc">Price: </p>
-              <p>Time in space: </p>
-              <p>Spacecraft: </p>
-              <p>Private Quarters:</p> 
+              <p>Price: {result.ticketBasic.price} ETH</p>
+              <p>Time in space: {result.ticketBasic.time}</p>
+              <p>Spacecraft: {result.ticketBasic.spacecraft}</p>
+              <p>Private Quarters: {result.ticketBasic.quarters}</p> 
               <p>Features: </p>
-              <Button>I want Basic</Button>
+              <Button>Launch Basic</Button>
             </div>
            
           </>
