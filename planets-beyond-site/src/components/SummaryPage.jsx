@@ -13,17 +13,18 @@ console.log("PARAMS OF SUMMARY", params)
     <Main
       style={{
         backgroundImage: `url(${background})`,
-        backgroundPositionX: "20%",
-        backgroundPositionY: "0%",
+        backgroundPositionX: '100%',
+        backgroundPositionY: '45%',
         cursor: `url(${cursor}), auto`,
       }}
     >
       <Sidebar />
       <Container>
          <div>
-
+          <h3>Congratulations!
+          </h3>
+          <h6>Your next departure is scheduled for: </h6>
          </div>
-         <Button>Let's gooo!</Button>
       </Container>
     </Main>
   );
