@@ -27,16 +27,18 @@
       "ticketBasic": {
         "price": 67,
         "time": "6.5 years",
-        "spacecraft": "Messenger-M1",
+        "spacecraft": "Icarus-M1",
         "quarters": "1",
-        "features": ""
+        "mission": "Flying around Mercury's polar regions"
+        
       },
       "ticketSuite": {
         "price": 88,
         "time": "5.5 years",
-        "spacecraft": "Messenger-M2",
+        "spacecraft": "Icarus-M2",
         "quarters": "2",
-        "features": ""
+        "mission": "Flying around Mercury's polar regions + Landing on the surface for 10 minutes"
+       
       }
     },
 
@@ -67,16 +69,18 @@
         "ticketBasic": {
           "price": 35,
           "time": "15 months",
-          "spacecraft": "Magellan-V1",
-          "quarters": "",
-          "features": ""
+          "spacecraft": "DaVinci-V1",
+          "quarters": "1",
+          "mission": "42-minute flyby"
+      
         },
         "ticketSuite": {
           "price": 55,
           "time": "12 months",
-          "spacecraft": "Magellan-V2",
-          "quarters": "",
-          "features": ""
+          "spacecraft": "DaVinci-V2",
+          "quarters": "2",
+          "mission": "1 hour flyby between the planet's clouds"
+        
         }
     },
     {
@@ -107,15 +111,17 @@
           "price": 5,
           "time": "365 days",
           "spacecraft": "Origin-E1",
-          "quarters": "",
-          "features": ""
+          "quarters": "1",
+          "mission": "First civilian space travel around the planet"
+         
         },
         "ticketSuite": {
           "price": 15,
           "time": "9 months",
           "spacecraft": "Origin-E2",
-          "quarters": "",
-          "features": ""
+          "quarters": "3",
+          "mission": "First civilian space travel around the planet aboard with Jeff Bezos, Elon Musk and other billionaires"
+          
         }
 
     },
@@ -147,15 +153,17 @@
           "price": 99,
           "time": "11 months",
           "spacecraft": "Space-X",
-          "quarters": "",
-          "features": ""
+          "quarters": "2",
+          "mission" : "One-way ticket to the Planet that will save us all"
+         
         },
         "ticketSuite": {
           "price": 149,
           "time": "8 months",
           "spacecraft": "Space-Y",
-          "quarters": "",
-          "features": ""
+          "quarters": "3",
+          "mission": "One-way ticket to the Planet that will save us all + Colony property"
+          
         }
     },
     {
@@ -186,15 +194,15 @@
           "price": 199,
           "time": "6 years",
           "spacecraft": "Galileo-J1",
-          "quarters": "",
-          "features": ""
+          "quarters": "2",
+          "mission": "3 hours flyby"
         },
         "ticketSuite": {
           "price": 249,
           "time": "4 years",
           "spacecraft": "Galileo-J2",
-          "quarters": "",
-          "features": ""
+          "quarters": "3",
+          "mission": "The pursuit of the Oort Cloud"
         }
     },
     {
@@ -225,15 +233,15 @@
           "price": 199,
           "time": "7 years",
           "spacecraft": "Cassini-S1",
-          "quarters": "",
-          "features": ""
+          "quarters": "2",
+          "mission" : "Flying around Saturn's 82 moons"
         },
         "ticketSuite": {
           "price": 249,
           "time": "5 years",
           "spacecraft": "Cassini-S2",
-          "quarters": "",
-          "features": ""
+          "quarters": "3",
+          "mission": "3 hour flyby between the planet's rings"
         }
     },
     {
@@ -264,15 +272,15 @@
           "price": 199,
           "time": "8.5 years",
           "spacecraft": "Voyager-U1",
-          "quarters": "",
-          "features": ""
+          "quarters": "2",
+          "mission" : "Flying around the Ice Giant"
         },
         "ticketSuite": {
           "price": 249,
           "time": "7.5 years",
           "spacecraft": "Voyager-U2",
-          "quarters": "",
-          "features": ""
+          "quarters": "3",
+          "mission" : "Flyby the 2 sets of rings"
         }
     },
     {
@@ -303,15 +311,15 @@
           "price": 199,
           "time": "12 years",
           "spacecraft": "Voyager-N1",
-          "quarters": "",
-          "features": ""
+          "quarters": "2",
+          "mission" : "Flyby around Triton, Neptune's moon"
         },
         "ticketSuite": {
           "price": 249,
           "time": "9 years",
           "spacecraft": "Voyager-N2",
-          "quarters": "",
-          "features": ""
+          "quarters": "3",
+          "mission" : "3 hours flyby"
         }
     }
   ] 
