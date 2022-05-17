@@ -25,7 +25,7 @@ const location= useLocation()
 
 
   const fetchPlanets = async () => {
-    let response = await fetch("http://localhost:8000/planets/");
+    let response = await fetch("https://json-server-demoday.herokuapp.com/planets");
     try {
       let data = await response.json();
       setPlanets(data);

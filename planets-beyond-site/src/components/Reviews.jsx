@@ -43,7 +43,7 @@ useEffect(()=>{
 
 const fetchReviews = async() => {
   let id = params.id;
-  let response = await fetch("http://localhost:8000/planets/" + id);
+  let response = await fetch("https://json-server-demoday.herokuapp.com/planets/" + id);
 
   try {
     const data = await response.json()
