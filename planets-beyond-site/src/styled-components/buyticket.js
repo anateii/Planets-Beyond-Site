@@ -12,6 +12,7 @@ position: absolute;
 top: 15%;
 left: 14rem;
 right: 6rem;
+color: rgb(7,7,36);
 & > div {
     background-color: #ffffff61;
     border: 2px solid transparent;
@@ -21,6 +22,7 @@ right: 6rem;
     &> h3 {
         margin-top: 2em;
         text-align: center;
+        color: rgb(7,7,36);
     };
     &>p:nth-of-type(1) {
         margin-top: 2em;
@@ -61,18 +63,19 @@ right: 6rem;
 
 
 export const Button = styled.div`
-background-color: #fff8;
-color:rgb(7,7,36);
+background-color: #CE57BB;
+color:#fff;
   margin-top: 2.5em;
   top: 45%;
 width: 50%;
 margin: 0 auto;
-  border: 1px solid #ffffff21;
+  border: 1px solid transparent;
   padding: 10px 50px;
   font-family: 'League Spartan', sans-serif;
   font-size: 18px;
   &:hover {
-      background-color: #ffffff;
+      background-color: rgb(7,7,36);
+      color: #fff;
       border: #ffffff21;
       scale: 1;
       

@@ -92,10 +92,10 @@ export const BuyTicket = () => {
             <div>
               <h3>Suite for {result.name}</h3>
               <span>Price: {result.ticketSuite.price} ETH</span>
-              <p>Time in space: {result.ticketSuite.time} </p>
-              <p>Spacecraft: {result.ticketSuite.spacecraft}</p>
-              <p>Private Quarters: {result.ticketSuite.quarters} </p>
-              <p>Mission: {result.ticketSuite.mission}</p> 
+              <p><strong>Time in space:</strong> {result.ticketSuite.time} </p>
+              <p><strong>Spacecraft:</strong> {result.ticketSuite.spacecraft}</p>
+              <p><strong>Private Quarters:</strong> {result.ticketSuite.quarters} </p>
+              <p><strong>Mission:</strong> {result.ticketSuite.mission}</p> 
               <Button 
               onClick={()=> navigate(`/summary/${result.id}`)}
               variants={buttonVariants}
@@ -106,10 +106,10 @@ export const BuyTicket = () => {
             <div>
               <h3> Basic for {result.name}</h3>
               <span>Price: {result.ticketBasic.price} ETH</span>
-              <p>Time in space: {result.ticketBasic.time}</p>
-              <p>Spacecraft: {result.ticketBasic.spacecraft}</p>
-              <p>Private Quarters: {result.ticketBasic.quarters}</p> 
-              <p>Mission: {result.ticketBasic.mission}</p>
+              <p><strong>Time in space:</strong> {result.ticketBasic.time} </p>
+              <p><strong>Spacecraft:</strong> {result.ticketBasic.spacecraft}</p>
+              <p><strong>Private Quarters:</strong> {result.ticketBasic.quarters} </p>
+              <p><strong>Mission:</strong> {result.ticketBasic.mission}</p> 
               <Button onClick={()=> navigate(`/summary/${result.id}`)}>Launch Basic</Button>
             </div>
            
