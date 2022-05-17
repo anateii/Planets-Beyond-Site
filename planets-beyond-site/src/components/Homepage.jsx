@@ -64,7 +64,7 @@ export const Homepage = () => {
         Planets Beyond
       </Title>
       <Subtitle animate={{ y: [-350, 0] }} transition={{ duration: 1.5 }}>
-        Curious about our Neighboors?
+        World's first Civilian Space Travel in the Solar System
       </Subtitle>
 
       <Button
