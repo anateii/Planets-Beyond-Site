@@ -4,6 +4,25 @@ import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
 import { Container } from "../styled-components/summary";
 
+
+
+const mainVariants = {
+  initial: {
+    opacity: 0.6,
+    filter: "blur(8px)",
+  },
+  animated: {
+    opacity: 1,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.5,
+      type: "tweed",
+    },
+  },
+};
+
+
+
 export const ThankYouPage =() => {
 
     return(
@@ -15,7 +34,11 @@ export const ThankYouPage =() => {
             backgroundPositionX: '40%',
             backgroundPositionY: '0%',
             cursor: `url(${cursor}), auto`,
-          }}>
+          }}
+          variants={mainVariants}
+          initial="initial"
+          animate="animated"
+          >
             <Sidebar/>
             <Container style={{height: "400px", top: "25%" }}>
               <h3 style={{marginLeft:"2em", transform: "translateY(130px)", fontFamily:"League Spartan"}}>Congratulations <br /> on your new adventure!!</h3>

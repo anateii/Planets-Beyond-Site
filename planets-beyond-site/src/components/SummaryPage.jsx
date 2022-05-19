@@ -5,6 +5,20 @@ import Sidebar from "./Sidebar";
 import { Container, Button } from "../styled-components/summary";
 import { useParams, useNavigate } from "react-router-dom";
 
+const mainVariants = {
+  initial: {
+    opacity: 0.6,
+    filter: "blur(8px)",
+  },
+  animated: {
+    opacity: 1,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.5,
+      type: "tweed",
+    },
+  },
+};
 
 
 const buttonVariants = {
@@ -15,7 +29,7 @@ const buttonVariants = {
   },
   animated: {
     x: 0,
-    y: "-30px",
+    y: "20px",
     opacity: 1,
     transition: {
       duration: 2,
@@ -48,6 +62,9 @@ console.log("SUMMARY PLANETS", planets[2])
         backgroundPositionY: '45%',
         cursor: `url(${cursor}), auto`,
       }}
+      variants={mainVariants}
+      initial="initial"
+      animate="animated"
     >
       <Sidebar />
       <Container>
