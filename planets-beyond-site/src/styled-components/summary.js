@@ -33,7 +33,7 @@ export const Container = styled.div`
       flex-direction: row;
       justify-content: flex-start;
       column-gap: 20px;
-      margin-left: 4.6em;
+      margin-left: 4.7em;
       width: 60%;
       & label {
         font-family: "League Spartan";
