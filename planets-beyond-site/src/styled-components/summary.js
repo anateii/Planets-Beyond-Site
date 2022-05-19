@@ -19,13 +19,16 @@ export const Container = styled.div`
       justify-content: flex-start;
       column-gap: 20px;
       margin-left: 5em;
+      &>input:nth-of-type(1) {
+        margin-left: -0.5em;
+      }
     }
     & > label {
       display: block;
       font-family: "League Spartan";
       font-size: 20px;
       margin-bottom: -0.5em;
-      margin-left: -19em;
+      margin-left: -21em;
       margin-top: 0.5em;
     }
     & > div {
