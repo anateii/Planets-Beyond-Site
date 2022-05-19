@@ -43,7 +43,7 @@ const location= useLocation()
     <AnimatePresence exitBeforeEnter>
 
         <Routes location={location} key={location.pathname} >
-          <Route path="/summary/:id" element={<SummaryPage/>}/>
+          <Route path="/summary/:id" element={<SummaryPage planets={planets}/>}/>
           <Route path="/buy-ticket/:id" element={<BuyTicket/>}/>
           <Route path="*" element={<PageNotFound/>} />
           <Route path="/reviews/:id" element={<Reviews />} />

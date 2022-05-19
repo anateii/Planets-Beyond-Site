@@ -5,9 +5,14 @@ import Sidebar from "./Sidebar";
 import { Container } from "../styled-components/summary";
 import { useParams } from "react-router-dom";
 
-export const SummaryPage = () => {
+
+
+export const SummaryPage = ({planets} ) => {
  const params = useParams()
 console.log("PARAMS OF SUMMARY", params)
+console.log("SUMMARY PLANETS", planets[2])
+
+
 
   return (
     <Main
@@ -20,11 +25,12 @@ console.log("PARAMS OF SUMMARY", params)
     >
       <Sidebar />
       <Container>
-         <div>
-          <h3>Congratulations!
-          </h3>
-          <h6>Your next departure is scheduled for: </h6>
-         </div>
+        <form>
+          <input type="text" placeholder="First Name"/>
+          <input type="text" placeholder="Last Name"/>
+          <input type="email" placeholder="Email" />
+        </form>
+       <Button>Confirm</Button>
       </Container>
     </Main>
   );

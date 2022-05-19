@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-
 const mainVariants = {
   initial: {
     opacity: 0.6,
@@ -23,32 +22,8 @@ const mainVariants = {
   },
 };
 
-
-const buttonVariants = {
-  initial: {
-    y: "-300vw",
-    opacity: 0,
-  },
-  animated: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 2,
-      type: "spring",
-    },
-  },
-  hover: {
-    scale: 1.1,
-    textShadow: "0px 0px 10px rgb(7,7,36,0.5)",
-    boxShadow: "0px 0px 8px 1px #fff",
-  },
-
-}
-
-
-
 export const BuyTicket = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const params = useParams();
   console.log("REVIEW PARAMS", params);
 
@@ -61,7 +36,9 @@ export const BuyTicket = () => {
 
   const fetchReviews = async () => {
     let id = params.id;
-    let response = await fetch("https://json-server-demoday.herokuapp.com/planets/" + id);
+    let response = await fetch(
+      "https://json-server-demoday.herokuapp.com/planets/" + id
+    );
 
     try {
       const data = await response.json();
@@ -77,8 +54,8 @@ export const BuyTicket = () => {
       style={{
         backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
-        backgroundPositionX: '100%',
-        backgroundPositionY: '45%',
+        backgroundPositionX: "100%",
+        backgroundPositionY: "45%",
       }}
       variants={mainVariants}
       initial="initial"
@@ -87,32 +64,45 @@ export const BuyTicket = () => {
       <Sidebar />
       <Container>
         {result && (
-          <> 
-         
+          <>
             <div>
               <h3>Suite for {result.name}</h3>
               <span>Price: {result.ticketSuite.price} ETH</span>
-              <p><strong>Time in space:</strong> {result.ticketSuite.time} </p>
-              <p><strong>Spacecraft:</strong> {result.ticketSuite.spacecraft}</p>
-              <p><strong>Private Quarters:</strong> {result.ticketSuite.quarters} </p>
-              <p><strong>Mission:</strong> {result.ticketSuite.mission}</p> 
-              <Button 
-              onClick={()=> navigate(`/summary/${result.id}`)}
-              variants={buttonVariants}
-              whileHover="hover"
-              
-              >Launch Suite</Button>
+              <p>
+                <strong>Time in space:</strong> {result.ticketSuite.time}{" "}
+              </p>
+              <p>
+                <strong>Spacecraft:</strong> {result.ticketSuite.spacecraft}
+              </p>
+              <p>
+                <strong>Private Quarters:</strong> {result.ticketSuite.quarters}{" "}
+              </p>
+              <p>
+                <strong>Mission:</strong> {result.ticketSuite.mission}
+              </p>
+              <Button onClick={() => navigate(`/summary/${result.id}`)}>
+                Launch Suite
+              </Button>
             </div>
             <div>
               <h3> Basic for {result.name}</h3>
               <span>Price: {result.ticketBasic.price} ETH</span>
-              <p><strong>Time in space:</strong> {result.ticketBasic.time} </p>
-              <p><strong>Spacecraft:</strong> {result.ticketBasic.spacecraft}</p>
-              <p><strong>Private Quarters:</strong> {result.ticketBasic.quarters} </p>
-              <p><strong>Mission:</strong> {result.ticketBasic.mission}</p> 
-              <Button onClick={()=> navigate(`/summary/${result.id}`)}>Launch Basic</Button>
+              <p>
+                <strong>Time in space:</strong> {result.ticketBasic.time}{" "}
+              </p>
+              <p>
+                <strong>Spacecraft:</strong> {result.ticketBasic.spacecraft}
+              </p>
+              <p>
+                <strong>Private Quarters:</strong> {result.ticketBasic.quarters}{" "}
+              </p>
+              <p>
+                <strong>Mission:</strong> {result.ticketBasic.mission}
+              </p>
+              <Button onClick={() => navigate(`/summary/${result.id}`)}>
+                Launch Basic
+              </Button>
             </div>
-           
           </>
         )}
       </Container>
