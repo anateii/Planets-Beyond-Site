@@ -18,7 +18,7 @@ export const Container = styled.div`
     & > div:nth-of-type(2) {
       justify-content: flex-start;
       column-gap: 20px;
-      margin-left: 4.6em;
+      margin-left: 5em;
     }
     & > label {
       display: block;
@@ -33,7 +33,7 @@ export const Container = styled.div`
       flex-direction: row;
       justify-content: flex-start;
       column-gap: 20px;
-      margin-left: 4.7em;
+      margin-left: 4.6em;
       width: 60%;
       & label {
         font-family: "League Spartan";
