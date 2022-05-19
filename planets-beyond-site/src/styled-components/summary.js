@@ -68,9 +68,10 @@ export const Button = styled.div`
   transform: translateY(-30px);
   color: #fff;
   margin-top: 2em;
+  margin-left: 14.8em;
   top: 40%;
   width: 20%;
-  margin: 0 auto;
+  
   border: 1px solid transparent;
   padding: 10px 50px;
   font-family: "League Spartan", sans-serif;

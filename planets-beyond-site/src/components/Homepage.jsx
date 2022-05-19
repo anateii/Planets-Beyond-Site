@@ -38,10 +38,6 @@ const buttonVariants = {
     scale: 1.1,
     textShadow: "0px 0px 10px rgb(7,7,36,0.5)",
     boxShadow: "0px 0px 8px 1px #fff",
-    /*  transition:{
-      duraton:0.2,
-      yoyo: Infinity
-    } */
   },
 };
 

@@ -7,6 +7,9 @@ import { useParams } from "react-router-dom";
 
 
 
+
+
+
 export const SummaryPage = ({planets} ) => {
  const params = useParams()
 console.log("PARAMS OF SUMMARY", params)
