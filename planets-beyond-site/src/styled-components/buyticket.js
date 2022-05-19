@@ -23,9 +23,13 @@ color: rgb(7,7,36);
         margin-top: 2em;
         text-align: center;
         color: rgb(7,7,36);
+        font-family: 'League Spartan';
+       
     };
+    &>span {    font-family: 'League Spartan';};
     &>p:nth-of-type(1) {
         margin-top: 2em;
+        
     }
     &>p:nth-of-type(4) {
         margin-bottom: 3em;
@@ -33,6 +37,11 @@ color: rgb(7,7,36);
     &> p {
         font-size: 20px;
         font-weight: 300;
+       
+        &> strong {
+            font-family: 'League Spartan';
+           font-weight: 400;
+        }
     }
 
 }

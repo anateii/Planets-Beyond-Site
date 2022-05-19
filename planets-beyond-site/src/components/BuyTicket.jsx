@@ -66,7 +66,7 @@ export const BuyTicket = () => {
         {result && (
           <>
             <div>
-              <h3>Suite for {result.name}</h3>
+              <h3>Suite for <strong>{result.name}</strong></h3>
               <span>Price: {result.ticketSuite.price} ETH</span>
               <p>
                 <strong>Time in space:</strong> {result.ticketSuite.time}{" "}
@@ -85,7 +85,7 @@ export const BuyTicket = () => {
               </Button>
             </div>
             <div>
-              <h3> Basic for {result.name}</h3>
+              <h3> Basic for <strong>{result.name}</strong></h3>
               <span>Price: {result.ticketBasic.price} ETH</span>
               <p>
                 <strong>Time in space:</strong> {result.ticketBasic.time}{" "}

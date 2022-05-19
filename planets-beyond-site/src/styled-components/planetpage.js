@@ -28,10 +28,8 @@ export const Icon = styled(motion.div)`
     width: 56px;
   }
   font-size: 16px;
-  color: #ffffff60;
-  &:hover {
-    color: #fff;
-  }
+  font-family: 'League Spartan', sans-serif;
+  color: #ffffff70;
 `;
 
 export const Container = styled.div`
