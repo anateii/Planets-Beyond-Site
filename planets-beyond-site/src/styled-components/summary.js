@@ -90,6 +90,7 @@ export const Button = styled(motion.div)`
   color: #fff;
   margin-top: 0;
   margin-left: 14.8em;
+  margin-bottom: 2em;
   top: 40%;
   width: 20%;
 

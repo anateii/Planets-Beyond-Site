@@ -106,7 +106,7 @@ export const BuyTicket = () => {
               initial="initial"
               animate="animated"
               whileHover="hover"
-              
+              style={{marginBottom:"2em"}}
               >
                 Launch Suite
               </Button>
@@ -131,6 +131,7 @@ export const BuyTicket = () => {
               initial="initial"
               animate="animated"
               whileHover="hover"
+              style={{marginBottom:"2em"}}
               >
                 Launch Basic
               </Button>

@@ -13,7 +13,7 @@ import { PageNotFound } from "./components/PageNotFound";
 import { Intro } from "./components/Intro";
 import { BuyTicket } from "./components/BuyTicket";
 import { SummaryPage } from "./components/SummaryPage";
-
+import { ThankYouPage } from "./components/ThankYouPage";
 
 function App() {
 
@@ -43,6 +43,7 @@ const location= useLocation()
     <AnimatePresence exitBeforeEnter>
 
         <Routes location={location} key={location.pathname} >
+          <Route path="thank-you-page" element={<ThankYouPage/>}/>
           <Route path="/summary/:id" element={<SummaryPage planets={planets}/>}/>
           <Route path="/buy-ticket/:id" element={<BuyTicket/>}/>
           <Route path="*" element={<PageNotFound/>} />

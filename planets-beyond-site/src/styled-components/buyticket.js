@@ -10,7 +10,7 @@ grid-row-gap: 0px;
 background-color: transparent;
 height: 500px;
 position: absolute;
-top: 15%;
+top: 10%;
 left: 14rem;
 right: 6rem;
 color: rgb(7,7,36);

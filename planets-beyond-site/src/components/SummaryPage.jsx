@@ -72,7 +72,7 @@ console.log("SUMMARY PLANETS", planets[2])
           
         </form>
        <Button
-onClick={() => navigate("/checkout")}
+onClick={() => navigate("/thank-you-page")}
 style={{ cursor: `url(${cursor}), auto` }}
 variants={buttonVariants}
 initial="initial"
