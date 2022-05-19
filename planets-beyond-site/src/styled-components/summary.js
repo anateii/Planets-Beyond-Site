@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
   display: grid;
@@ -34,6 +35,26 @@ export const Container = styled.div`
       column-gap: 20px;
       margin-left: 4.6em;
       width: 60%;
+      & label {
+        font-family: "League Spartan";
+        font-size: 20px;
+        margin-bottom: 1em;
+        margin-top: 0.5em;
+       
+      }
+      & > select {
+        font-size: 18px;
+        margin-top: 0.3em;
+        height: 40px;
+        font-family: "League Spartan";
+        color: #fff;
+        background-color: rgb(7, 7, 36, 0.5);
+        border-color: transparent;
+        outline: none;
+        & > option:selected {
+          background-color: rgb(7,7,36,0.5);
+        }
+      }
       & > input {
         width: 20%;
         font-size: 18px;
@@ -63,15 +84,15 @@ export const Container = styled.div`
   }
 `;
 
-export const Button = styled.div`
+export const Button = styled(motion.div)`
   background-color: #ce57bb;
-  transform: translateY(-30px);
+  transform: translateY(-50px);
   color: #fff;
-  margin-top: 2em;
+  margin-top: 0;
   margin-left: 14.8em;
   top: 40%;
   width: 20%;
-  
+
   border: 1px solid transparent;
   padding: 10px 50px;
   font-family: "League Spartan", sans-serif;

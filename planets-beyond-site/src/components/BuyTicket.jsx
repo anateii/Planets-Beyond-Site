@@ -22,6 +22,27 @@ const mainVariants = {
   },
 };
 
+
+const buttonVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animated: {
+    opacity: 1,
+    transition: {
+      duration: 2,
+      type: "spring",
+    },
+  },
+  hover: {
+    scale: 1.1,
+    textShadow: "0px 0px 10px rgb(7,7,36,0.5)",
+    boxShadow: "0px 0px 8px 1px #fff5",
+  },
+};
+
+
+
 export const BuyTicket = () => {
   const navigate = useNavigate();
   const params = useParams();
@@ -80,7 +101,13 @@ export const BuyTicket = () => {
               <p>
                 <strong>Mission:</strong> {result.ticketSuite.mission}
               </p>
-              <Button onClick={() => navigate(`/summary/${result.id}`)}>
+              <Button onClick={() => navigate(`/summary/${result.id}`)}
+              variants={buttonVariants}
+              initial="initial"
+              animate="animated"
+              whileHover="hover"
+              
+              >
                 Launch Suite
               </Button>
             </div>
@@ -99,7 +126,12 @@ export const BuyTicket = () => {
               <p>
                 <strong>Mission:</strong> {result.ticketBasic.mission}
               </p>
-              <Button onClick={() => navigate(`/summary/${result.id}`)}>
+              <Button onClick={() => navigate(`/summary/${result.id}`)}
+              variants={buttonVariants}
+              initial="initial"
+              animate="animated"
+              whileHover="hover"
+              >
                 Launch Basic
               </Button>
             </div>

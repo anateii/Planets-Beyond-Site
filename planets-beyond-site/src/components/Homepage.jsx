@@ -1,7 +1,7 @@
 import { Main, Title, Button, Subtitle } from "../styled-components/homepage";
 import background from "../assets/background3.jpg";
-import { useNavigate } from "react-router-dom";
 import cursor from "../assets/cursor.png";
+import { useNavigate } from "react-router-dom";
 
 const mainVariants = {
   initial: {

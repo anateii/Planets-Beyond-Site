@@ -3,14 +3,37 @@ import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
 import Sidebar from "./Sidebar";
 import { Container, Button } from "../styled-components/summary";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 
 
+const buttonVariants = {
+  initial: {
+    x: "-300vw",
+    y: 0,
+    opacity: 0,
+  },
+  animated: {
+    x: 0,
+    y: "-30px",
+    opacity: 1,
+    transition: {
+      duration: 2,
+      type: "spring",
+    },
+  },
+  hover: {
+    scale: 1.1,
+    textShadow: "0px 0px 10px rgb(7,7,36,0.5)",
+    boxShadow: "0px 0px 8px 1px #fff5",
+  },
+};
 
 
 
 export const SummaryPage = ({planets} ) => {
+
+  const navigate= useNavigate()
  const params = useParams()
 console.log("PARAMS OF SUMMARY", params)
 console.log("SUMMARY PLANETS", planets[2])
@@ -34,9 +57,11 @@ console.log("SUMMARY PLANETS", planets[2])
           <input type="text" placeholder="Last Name"/>
           <input type="email" placeholder="Email" />
          <div>
-            <input type="text" placeholder="DD"/>
-            <input type="text" placeholder="MM"/>
-            <input type="text" placeholder="YYYY"/>
+            <label>Choose your plan</label>
+            <select name="Plan">
+              <option value="Basic">Basic</option>
+              <option value="Suite">Suite</option>
+            </select>
          </div>
          <label>Payment Details</label>
          <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"  maxlength="19" placeholder="xxxx xxxx xxxx xxxx"></input>
@@ -46,7 +71,15 @@ console.log("SUMMARY PLANETS", planets[2])
          </div>
           
         </form>
-       <Button>Confirm</Button>
+       <Button
+onClick={() => navigate("/checkout")}
+style={{ cursor: `url(${cursor}), auto` }}
+variants={buttonVariants}
+initial="initial"
+animate="animated"
+whileHover="hover"
+
+       >Confirm</Button>
       </Container>
     </Main>
   );

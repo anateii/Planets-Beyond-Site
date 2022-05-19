@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {motion} from "framer-motion"
 
 export const Container = styled.div`
 display: grid;
@@ -71,7 +72,7 @@ color: rgb(7,7,36);
 `
 
 
-export const Button = styled.div`
+export const Button = styled(motion.div)`
 background-color: #CE57BB;
 color:#fff;
   margin-top: 2.5em;
