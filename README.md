@@ -6,7 +6,7 @@
 <a href="https://planets-beyond.vercel.app/" target="_blank"><img src="https://i.ibb.co/gVHsHQY/Screenshot-1.png" alt="planets-homepage-homepage"></a>
 
 
-## Getting started
+## About
 
 This project was inspired by the <a href="https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f" target="_blank">Frontend Mentor</a> challenge "Planets Fact Site". Starting point: Figma UI mockups. In the screenshot below you can find the Design System used throughout the whole application.</br>
 
@@ -26,3 +26,5 @@ Final modifications:
 
 ## Technologies
 
+	![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  
