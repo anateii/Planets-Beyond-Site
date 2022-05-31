@@ -16,3 +16,10 @@ Originally, for each Planet there were 3 buttons to display 3 different sections
 <img src="https://i.ibb.co/G0rck9s/Screenshot-4.png" width="300">
 </br>
 
+Final modifications:
+* ![image](https://user-images.githubusercontent.com/97735587/171283238-0a659875-fb7e-44f5-9c46-6ba93f947f68.png) Set the Navbar vertical
+* ![image](https://user-images.githubusercontent.com/97735587/171283249-6faf1c3c-d53c-4598-aba9-2026de62b592.png) Added "Pricing" and "Reviews" section for each planet
+* ![image](https://user-images.githubusercontent.com/97735587/171283255-76dab992-8676-4f82-a4e8-8eeb56c401fe.png) Added "Homepage" and "Choose destination" pages
+
+## Technologies
+
