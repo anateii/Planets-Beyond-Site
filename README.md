@@ -5,7 +5,8 @@
 <a href="https://planets-beyond.vercel.app/" target="_blank"><img src="https://i.ibb.co/gVHsHQY/Screenshot-1.png" alt="planets-homepage-homepage"></a>
 
 
-### Getting started
+## Getting started
 
 This project was inspired by the <a href="https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f" target="_blank">Frontend Mentor</a> challenge "Planets Fact Site". Starting point: Figma UI mockups. </br>
-<img src="https://i.ibb.co/jZwCrMg/Screenshot-3.png" width="200" margin="0 auto">
+<img src="https://i.ibb.co/jZwCrMg/Screenshot-3.png" width="200">
+<img src="https://i.ibb.co/G0rck9s/Screenshot-4.png" width="200">
