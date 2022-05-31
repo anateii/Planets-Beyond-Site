@@ -18,14 +18,16 @@ Originally, for each Planet there were 3 buttons to display 3 different sections
 <img src="https://i.ibb.co/G0rck9s/Screenshot-4.png" width="300">
 </br>
 
-Final modifications:
+## Final modifications:
 
 * <img src="https://user-images.githubusercontent.com/97735587/171283238-0a659875-fb7e-44f5-9c46-6ba93f947f68.png" width="20"> Set the Navbar vertical
 * <img src="https://user-images.githubusercontent.com/97735587/171283238-0a659875-fb7e-44f5-9c46-6ba93f947f68.png" width="20"> Added "Pricing" and "Reviews" section for each planet
 * <img src="https://user-images.githubusercontent.com/97735587/171283238-0a659875-fb7e-44f5-9c46-6ba93f947f68.png" width="20"> Added "Homepage" and "Choose destination" pages
+ </br>
+<img src="https://i.ibb.co/HB4dGpr/Screenshot-5.png" width="300">
 
 ## Technologies
 * ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-* ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 * ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
 * ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+* ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
