@@ -12,6 +12,7 @@ This project was inspired by the <a href="https://www.frontendmentor.io/challeng
 <img src="https://i.ibb.co/jZwCrMg/Screenshot-3.png" width="200">
 </br>
 
-Originally, for each Planet there were 3 buttons to display 3 different sections: the Overview, the Internal Structure and the Surface Geology. Tha navbar was positioned horizontally at the top-left of the page. </br>
-<img src="https://i.ibb.co/G0rck9s/Screenshot-4.png" width="200">
+Originally, for each Planet there were 3 buttons to display 3 different sections: the Overview, the Internal Structure and the Surface Geology. Tha navbar was positioned horizontally at the top-left of the page.</br>
+<img src="https://i.ibb.co/G0rck9s/Screenshot-4.png" width="300">
 </br>
+
