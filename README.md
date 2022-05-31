@@ -18,6 +18,8 @@ Originally, for each Planet there were 3 buttons to display 3 different sections
 <img src="https://i.ibb.co/G0rck9s/Screenshot-4.png" width="300">
 </br>
 
+All the data is coming from Nasa, but I used JSON Server to create a custom REST database, which was then hosted on Heroku. The project is deployed on Vercel. 
+
 ## Final modifications:
 
 * <img src="https://user-images.githubusercontent.com/97735587/171283238-0a659875-fb7e-44f5-9c46-6ba93f947f68.png" width="20"> Set the Navbar vertical
@@ -29,5 +31,7 @@ Originally, for each Planet there were 3 buttons to display 3 different sections
 ## Technologies
 * ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 * ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
+* ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 * ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+* ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 * ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
