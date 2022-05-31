@@ -7,5 +7,5 @@
 
 ### Getting started
 
-This project was inspired by the <a href="https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f" target="_blank">Frontend Mentor</a> challenge "Planets Fact Site". Starting point: Figma UI mockups. 
+This project was inspired by the <a href="https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f" target="_blank">Frontend Mentor</a> challenge "Planets Fact Site". Starting point: Figma UI mockups. </br>
 <img src="https://i.ibb.co/jZwCrMg/Screenshot-3.png" width="200" margin="0 auto">
