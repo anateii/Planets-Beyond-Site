@@ -45,10 +45,6 @@ function App() {
         <Route path="/buy-ticket/:id" element={<BuyTicket />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/reviews/:id" element={<Reviews />} />
-        {/*  <Route
-            path="/overview/:id/overview"
-            element={<Overview planets={planets} />}
-          /> */}
         <Route
           path="/planet/:id/internal-structure"
           element={<Internal planets={planets} />}
