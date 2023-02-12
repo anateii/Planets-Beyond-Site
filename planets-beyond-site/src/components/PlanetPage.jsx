@@ -1,4 +1,4 @@
-import { Main} from "../styled-components/homepage";
+import { Main } from "../styled-components/homepage";
 import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
 import Sidebar from "./Sidebar";
@@ -10,24 +10,23 @@ import {
 } from "../styled-components/planetpage";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Overview } from "./Overview";
+// import { Overview } from "./Overview";
 import { motion } from "framer-motion";
 
-const mainVariants ={
+const mainVariants = {
   initial: {
     opacity: 0.6,
-    filter: "blur(8px)"
+    filter: "blur(8px)",
   },
   animated: {
     opacity: 1,
     filter: "blur(0px)",
-     transition: {
+    transition: {
       duration: 0.5,
-      type: 'tweed'
-     }
-  }
-  }
-
+      type: "tweed",
+    },
+  },
+};
 
 export const PlanetPage = () => {
   const params = useParams();
@@ -37,7 +36,7 @@ export const PlanetPage = () => {
 
   const fetchPlanet = async () => {
     let id = params.id;
-    let response = await fetch("https://json-server-demoday.herokuapp.com/planets/" + id);
+    let response = await fetch("http://localhost:8000/planets/" + id);
     try {
       let data = await response.json();
       console.log("DATA", data);
@@ -60,33 +59,44 @@ export const PlanetPage = () => {
       style={{
         backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
-        backgroundPositionX: '10%',
-        backgroundPositionY: '0%'
+        backgroundPositionX: "10%",
+        backgroundPositionY: "0%",
       }}
-      
       variants={mainVariants}
-        initial="initial"
-        animate= "animated"
-        
+      initial="initial"
+      animate="animated"
     >
       <Sidebar planet={planet} />
-          
 
       {planet && (
         <>
           <Container>
-            <Planet >
-              <motion.img src={planet.imgOv} alt="" initial={{filter: "blur(8px)"}} animate={{filter: "blur(0px)", scale: [0,1.1]}} 
-             
-            />
+            <Planet>
+              <motion.img
+                src={planet.imgOv}
+                alt=""
+                initial={{ filter: "blur(8px)" }}
+                animate={{ filter: "blur(0px)", scale: [0, 1.1] }}
+              />
             </Planet>
             <Text>
-              <motion.h1 initial={{filter: "blur(8px)"}} animate={{filter: "blur(0px)"}}>
+              <motion.h1
+                initial={{ filter: "blur(8px)" }}
+                animate={{ filter: "blur(0px)" }}
+              >
                 {planet.name}
               </motion.h1>
-              
-              <motion.h6 initial={{filter: "blur(8px)"}} animate={{filter: "blur(0px)"}}>{planet.description}</motion.h6>
-              <motion.div initial={{filter: "blur(8px)"}} animate={{filter: "blur(0px)"}}>
+
+              <motion.h6
+                initial={{ filter: "blur(8px)" }}
+                animate={{ filter: "blur(0px)" }}
+              >
+                {planet.description}
+              </motion.h6>
+              <motion.div
+                initial={{ filter: "blur(8px)" }}
+                animate={{ filter: "blur(0px)" }}
+              >
                 Source:
                 <div
                   onClick={() => {
@@ -101,7 +111,6 @@ export const PlanetPage = () => {
                 </div>
               </motion.div>
             </Text>
-            
           </Container>
           <Section>
             <div>

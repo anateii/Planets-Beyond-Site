@@ -13,27 +13,18 @@ import {
 } from "../styled-components/planetpage";
 import { motion } from "framer-motion";
 
-
-const mainVariants ={
+const mainVariants = {
   initial: {
-    filter: "blur(8px)"
+    filter: "blur(8px)",
   },
   animated: {
     filter: "blur(0px)",
-     transition: {
+    transition: {
       duration: 0.5,
-       type: 'tweed'
-     }
-  }
-  }
-
-
-
-
-
-
-
-
+      type: "tweed",
+    },
+  },
+};
 
 export const Geology = () => {
   const params = useParams();
@@ -48,7 +39,7 @@ export const Geology = () => {
 
   const fetchResult = async () => {
     let id = params.id;
-    let response = await fetch("https://json-server-demoday.herokuapp.com/planets/" + id);
+    let response = await fetch("http://localhost:8000/planets/" + id);
 
     try {
       let data = await response.json();
@@ -64,18 +55,21 @@ export const Geology = () => {
       style={{
         backgroundImage: `url(${background})`,
         cursor: `url(${cursor}), auto`,
-        backgroundPositionX: '10%',
-        backgroundPositionY: '0%',
+        backgroundPositionX: "10%",
+        backgroundPositionY: "0%",
       }}
       variants={mainVariants}
-        initial="initial"
-        animate= "animated"
-       
+      initial="initial"
+      animate="animated"
     >
       <Sidebar />
       <Container>
         <Planet>
-          <motion.img src={result.imgGeo ? result.imgGeo : ""} alt="" animate={{scale: [0,1.1]}}/>
+          <motion.img
+            src={result.imgGeo ? result.imgGeo : ""}
+            alt=""
+            animate={{ scale: [0, 1.1] }}
+          />
         </Planet>
         <Text>
           <h1>{result.name}</h1>

@@ -22,7 +22,6 @@ const mainVariants = {
   },
 };
 
-
 const buttonVariants = {
   initial: {
     opacity: 0,
@@ -41,8 +40,6 @@ const buttonVariants = {
   },
 };
 
-
-
 export const BuyTicket = () => {
   const navigate = useNavigate();
   const params = useParams();
@@ -57,9 +54,7 @@ export const BuyTicket = () => {
 
   const fetchReviews = async () => {
     let id = params.id;
-    let response = await fetch(
-      "https://json-server-demoday.herokuapp.com/planets/" + id
-    );
+    let response = await fetch("http://localhost:8000/planets/" + id);
 
     try {
       const data = await response.json();
@@ -87,7 +82,9 @@ export const BuyTicket = () => {
         {result && (
           <>
             <div>
-              <h3>Suite for <strong>{result.name}</strong></h3>
+              <h3>
+                Suite for <strong>{result.name}</strong>
+              </h3>
               <span>Price: {result.ticketSuite.price} ETH</span>
               <p>
                 <strong>Time in space:</strong> {result.ticketSuite.time}{" "}
@@ -101,18 +98,22 @@ export const BuyTicket = () => {
               <p>
                 <strong>Mission:</strong> {result.ticketSuite.mission}
               </p>
-              <Button onClick={() => navigate(`/summary/${result.id}`)}
-              variants={buttonVariants}
-              initial="initial"
-              animate="animated"
-              whileHover="hover"
-              style={{marginBottom:"2em"}}
+              <Button
+                onClick={() => navigate(`/summary/${result.id}`)}
+                variants={buttonVariants}
+                initial="initial"
+                animate="animated"
+                whileHover="hover"
+                style={{ marginBottom: "2em" }}
               >
                 Launch Suite
               </Button>
             </div>
             <div>
-              <h3> Basic for <strong>{result.name}</strong></h3>
+              <h3>
+                {" "}
+                Basic for <strong>{result.name}</strong>
+              </h3>
               <span>Price: {result.ticketBasic.price} ETH</span>
               <p>
                 <strong>Time in space:</strong> {result.ticketBasic.time}{" "}
@@ -126,12 +127,13 @@ export const BuyTicket = () => {
               <p>
                 <strong>Mission:</strong> {result.ticketBasic.mission}
               </p>
-              <Button onClick={() => navigate(`/summary/${result.id}`)}
-              variants={buttonVariants}
-              initial="initial"
-              animate="animated"
-              whileHover="hover"
-              style={{marginBottom:"2em"}}
+              <Button
+                onClick={() => navigate(`/summary/${result.id}`)}
+                variants={buttonVariants}
+                initial="initial"
+                animate="animated"
+                whileHover="hover"
+                style={{ marginBottom: "2em" }}
               >
                 Launch Basic
               </Button>

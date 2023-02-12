@@ -1,0 +1,309 @@
+{
+  "planets": [
+    {
+      "id": 1,
+      "name": "MERCURY",
+      "description": "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth. From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter. Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system – that title belongs to nearby Venus, thanks to its dense atmosphere.Because of Mercury's elliptical – egg-shaped – orbit, and sluggish rotation, the Sun appears to rise briefly, set, and rise again from some parts of the planet's surface. The same thing happens in reverse at sunset.",
+      "rotation": 58.6,
+      "revolution": 0.24,
+      "radius": 2439.7,
+      "temperature": 430,
+      "internal": "Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density.",
+      "geology": "Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s.",
+      "imgOv": "https://i.ibb.co/Wsk5xJN/1-overview.png",
+      "imgInt": "https://i.ibb.co/kJQtNky/1-internal.png",
+      "imgGeo": "https://i.ibb.co/6m76T4n/1-geology.png",
+      "users": {
+        "review1": "A day on Mercury lasts exactly 1408 hours..About the same time as a Monday on Earth.",
+        "review2": "Closest Planet to the Sun.... -173°C at night.. Am I missing something? ",
+        "review3": "Did you know? Freddie Mercury is not from planet Mercury."
+      },
+      "images": {
+        "img1": "https://i.ibb.co/QMYps2c/A13.png",
+        "img2": "https://i.ibb.co/Gkjn6Ms/A11.png",
+        "img3": "https://i.ibb.co/RjBy9g3/A1.pngh"
+      },
+      "ticketBasic": {
+        "price": 67,
+        "time": "6.5 years",
+        "spacecraft": "Icarus-M1",
+        "quarters": "1",
+        "mission": "Flying around Mercury's polar regions"
+      },
+      "ticketSuite": {
+        "price": 88,
+        "time": "5.5 years",
+        "spacecraft": "Icarus-M2",
+        "quarters": "2",
+        "mission": "Flying around Mercury's polar regions + Landing on the surface for 10 minutes"
+      }
+    },
+
+    {
+      "id": 2,
+      "name": "VENUS",
+      "description": "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight. It’s often called Earth’s twin because it’s similar in size and density. These are not identical twins, however – there are radical differences between the two worlds. Venus was the first planet to be explored by a spacecraft – NASA’s Mariner 2 successfully flew by and scanned the cloud-covered world on Dec. 14, 1962. Since then, numerous spacecraft from the U.S. and other space agencies have explored Venus, including NASA’s Magellan, which mapped the planet's surface with radar.",
+      "rotation": 243,
+      "revolution": 0.62,
+      "radius": 6051.8,
+      "temperature": 471,
+      "internal": "The similarity in size and density between Venus and Earth suggests they share a similar internal structure: a core, mantle, and crust. Like that of Earth, Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate.",
+      "geology": "Much of the Venusian surface appears to have been shaped by volcanic activity. Venus has several times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.",
+      "imgOv": "https://i.ibb.co/q59NRVZ/2-overview.png",
+      "imgInt": "https://i.ibb.co/GQnwt9f/2-internal.png",
+      "imgGeo": "https://i.ibb.co/P1n16f6/2-geology.pngb",
+      "users": {
+        "review1": "Venus is Earth on Climate Change. Any question?",
+        "review2": "Middle name is flirt, obsessed with aesthetics, hotter than Mercury..Wait what?",
+        "review3": "Go read Men are from Mars and Women are from Venus, instead of getting relationship advice from Reddit..."
+      },
+      "images": {
+        "img1": "https://i.ibb.co/wsggRXS/A23.png",
+        "img2": "https://i.ibb.co/Gkjn6Ms/A11.png",
+        "img3": "https://i.ibb.co/RTvnSV1/A21.png"
+      },
+      "ticketBasic": {
+        "price": 35,
+        "time": "15 months",
+        "spacecraft": "DaVinci-V1",
+        "quarters": "1",
+        "mission": "42-minute flyby"
+      },
+      "ticketSuite": {
+        "price": 55,
+        "time": "12 months",
+        "spacecraft": "DaVinci-V2",
+        "quarters": "2",
+        "mission": "1 hour flyby between the planet's clouds"
+      }
+    },
+    {
+      "id": 3,
+      "name": "EARTH",
+      "description": "Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal. The name Earth is at least 1,000 years old. All of the planets, except for Earth, were named after Greek and Roman gods and goddesses. However, the name Earth is a Germanic word, which simply means 'the ground'. ",
+      "rotation": 0.99,
+      "revolution": 1,
+      "radius": 6371,
+      "temperature": 16,
+      "internal": "Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle.",
+      "geology": "The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors.",
+      "imgOv": "https://i.ibb.co/jfNWmfC/3-overview.png",
+      "imgInt": "https://i.ibb.co/8jW1Nb0/3-internal.png",
+      "imgGeo": "https://i.ibb.co/25d9swN/3-geology.png",
+      "users": {
+        "review1": "After one look at this Planet, any visitor from outer space would say : I want to see the manager!",
+        "review2": "I love the way the Earth rotates, it really makes my day.",
+        "review3": "It's the coolest planet in the Universe...everyone wants to go to Mars."
+      },
+      "images": {
+        "img1": "https://i.ibb.co/nLjPXCW/A10.png",
+        "img2": "https://i.ibb.co/sPrqw5d/A5.png",
+        "img3": "https://i.ibb.co/L0FY3HQ/A2.png"
+      },
+      "ticketBasic": {
+        "price": 5,
+        "time": "365 days",
+        "spacecraft": "Origin-E1",
+        "quarters": "1",
+        "mission": "First civilian space travel around the planet"
+      },
+      "ticketSuite": {
+        "price": 15,
+        "time": "9 months",
+        "spacecraft": "Origin-E2",
+        "quarters": "3",
+        "mission": "First civilian space travel around the planet aboard with Jeff Bezos, Elon Musk and other billionaires"
+      }
+    },
+    {
+      "id": 4,
+      "name": "MARS",
+      "description": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the `Red Planet`. Mars is a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.  Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape. NASA currently has two rovers (Curiosity and Perseverance), one lander (InSight), and one helicopter (Ingenuity) exploring the surface of Mars.",
+      "rotation": 1.03,
+      "revolution": 1.88,
+      "radius": 3389.5,
+      "temperature": -28,
+      "internal": "Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.",
+      "geology": "Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.",
+      "imgOv": "https://i.ibb.co/3p4psKj/4-overview.png",
+      "imgInt": "https://i.ibb.co/xHd9VYC/4-internal.png",
+      "imgGeo": "https://i.ibb.co/3hjp3Lw/4-geology.png",
+      "users": {
+        "review1": "Elon on Earth: nothing to see here. Elon on Mars: I'm coming!",
+        "review2": "Mars is the only known planet inhabited by solely robots.",
+        "review3": "Because ruining another planet is better than keeping this one tidy!"
+      },
+      "images": {
+        "img1": "https://i.ibb.co/r0JQQgc/A15.png",
+        "img2": "https://i.ibb.co/10zm3RP/A6.png",
+        "img3": "https://i.ibb.co/MsVY9ZT/A9.png"
+      },
+      "ticketBasic": {
+        "price": 99,
+        "time": "11 months",
+        "spacecraft": "Space-X",
+        "quarters": "2",
+        "mission": "One-way ticket to the Planet that will save us all"
+      },
+      "ticketSuite": {
+        "price": 149,
+        "time": "8 months",
+        "spacecraft": "Space-Y",
+        "quarters": "3",
+        "mission": "One-way ticket to the Planet that will save us all + Colony property"
+      }
+    },
+    {
+      "id": 5,
+      "name": "JUPITER",
+      "description": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun. Jupiter has a long history of surprising scientists – all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe. Jupiter's familiar stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiter’s iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years. One spacecraft – NASA's Juno orbiter – is currently exploring this giant world.",
+      "rotation": 0.41,
+      "revolution": 11.86,
+      "radius": 69.911,
+      "temperature": -108,
+      "internal": "When the Juno arrived in 2016, it found that Jupiter has a very diffuse core that mixes into its mantle. A possible cause is an impact from a planet of about ten Earth masses a few million years after Jupiter's formation, which would have disrupted an originally solid Jovian core.",
+      "geology": "The best known feature of Jupiter is the Great Red Spot, a persistent anticyclonic storm located 22° south of the equator. It is known to have existed since at least 1831, and possibly since 1665.",
+      "imgOv": "https://i.ibb.co/Q6Z6DNZ/5-overview.png",
+      "imgInt": "https://i.ibb.co/ZXJcjNk/5-internal.png",
+      "imgGeo": "https://i.ibb.co/YhmSYDX/5-geology.png",
+      "users": {
+        "review1": "Earth: thank you for protecting me from asteroids. Jupiter: Bruh, I'm just a big planet with the highest gravity in our Solar System..",
+        "review2": "A day on Jupiter's moon lasts 5 hours, just like Saturday and Sunday on Earth.",
+        "review3": "About 1000 Earths would fit inside Jupiter. That's about 23.768.000 Starbucks locations."
+      },
+      "images": {
+        "img1": "https://i.ibb.co/0jX7bm2/A22.png",
+        "img2": "https://i.ibb.co/V2RHCZs/A17.png",
+        "img3": "https://i.ibb.co/y4GkxtX/A26.png"
+      },
+      "ticketBasic": {
+        "price": 199,
+        "time": "6 years",
+        "spacecraft": "Galileo-J1",
+        "quarters": "2",
+        "mission": "3 hours flyby"
+      },
+      "ticketSuite": {
+        "price": 249,
+        "time": "4 years",
+        "spacecraft": "Galileo-J2",
+        "quarters": "3",
+        "mission": "The pursuit of the Oort Cloud"
+      }
+    },
+    {
+      "id": 6,
+      "name": "SATURN",
+      "description": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth. Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. It is not the only planet to have rings – made of chunks of ice and rock – but none are as spectacular or as complicated as Saturn's. Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.",
+      "rotation": 0.45,
+      "revolution": 29.46,
+      "radius": 58.232,
+      "temperature": -138,
+      "internal": "Despite consisting mostly of hydrogen and helium, most of Saturn's mass is not in the gas phase, because hydrogen becomes a non-ideal liquid when the density is above 0.01 g/cm3, which is reached at a radius containing 99.9% of Saturn's mass.",
+      "geology": "The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust. ",
+      "imgOv": "https://i.ibb.co/3k1rqgg/6-overview.png",
+      "imgInt": "https://i.ibb.co/ZLCCkyy/6-internal.png",
+      "imgGeo": "https://i.ibb.co/mJd4M50/6-geology.png",
+      "users": {
+        "review1": "And then God created Saturn, and he liked it so much he put a ring on it.",
+        "review2": "Well...God created Uranus too..",
+        "review3": "Saturn's moon, Titan, has 100 times more oil than Earth? America: Sounds like Titan needs some freedom..."
+      },
+      "images": {
+        "img1": "https://i.ibb.co/yNypSzt/A8.png",
+        "img2": "https://i.ibb.co/Y2ZtSp9/A16.png",
+        "img3": "https://i.ibb.co/jMDf29X/A25.png"
+      },
+      "ticketBasic": {
+        "price": 199,
+        "time": "7 years",
+        "spacecraft": "Cassini-S1",
+        "quarters": "2",
+        "mission": "Flying around Saturn's 82 moons"
+      },
+      "ticketSuite": {
+        "price": 249,
+        "time": "5 years",
+        "spacecraft": "Cassini-S2",
+        "quarters": "3",
+        "mission": "3 hour flyby between the planet's rings"
+      }
+    },
+    {
+      "id": 7,
+      "name": "URANUS",
+      "description": "Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. It was the first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star. It was two years later that the object was universally accepted as a new planet, in part because of observations by astronomer Johann Elert Bode. Herschel tried unsuccessfully to name his discovery Georgium Sidus after King George III. Instead, the scientific community accepted Bode's suggestion to name it Uranus as suggested by Bode.​",
+      "rotation": 0.72,
+      "revolution": 84,
+      "radius": 25.362,
+      "temperature": -195,
+      "internal": "The standard model of Uranus's structure is that it consists of three layers: a rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and an outer gaseous hydrogen/helium envelope. The core is relatively small, with a mass of only 0.55 Earth masses.",
+      "geology": "The composition of Uranus's atmosphere is different from its bulk, consisting mainly of molecular hydrogen and helium. The helium molar fraction, i.e. the number of helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.",
+      "imgOv": "https://i.ibb.co/2gH5PCp/7-overview.png",
+      "imgInt": "https://i.ibb.co/nktMHh6/7-internal.png",
+      "imgGeo": "https://i.ibb.co/bQfwhkN/7-geology.png",
+      "users": {
+        "review1": "63 Earths can fit inside Uranus... 64 if you really relax.",
+        "review2": "When William Herschel discovered Uranus in 1781, he wanted to name it \"George\",  still think \"Uranus\" is a bad name?",
+        "review3": "2022 can't be any worse, right? 2022: Uranus, no joke, is leaking Gas!"
+      },
+      "images": {
+        "img1": "https://i.ibb.co/MsVY9ZT/A9.png",
+        "img2": "https://i.ibb.co/58tHGDb/A14.png",
+        "img3": "https://i.ibb.co/1MrtB8x/A18.png"
+      },
+      "ticketBasic": {
+        "price": 199,
+        "time": "8.5 years",
+        "spacecraft": "Voyager-U1",
+        "quarters": "2",
+        "mission": "Flying around the Ice Giant"
+      },
+      "ticketSuite": {
+        "price": 249,
+        "time": "7.5 years",
+        "spacecraft": "Voyager-U2",
+        "quarters": "3",
+        "mission": "Flyby the 2 sets of rings"
+      }
+    },
+    {
+      "id": 8,
+      "name": "NEPTUNE",
+      "description": "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus. Dark, cold, and whipped by supersonic winds, ice giant Neptune is the only planet in our solar system not visible to the naked eye and the first predicted by mathematics before its discovery. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846. NASA's Voyager 2 is the only spacecraft to have visited Neptune up close. It flew past in 1989 on its way out of the solar system.",
+      "rotation": 0.7,
+      "revolution": 164.79,
+      "radius": 24.662,
+      "temperature": -201,
+      "internal": "Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.",
+      "geology": "Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.",
+      "imgOv": "https://i.ibb.co/3Y9f14s/8-overview.png",
+      "imgInt": "https://i.ibb.co/jLSw72m/8-internal.png",
+      "imgGeo": "https://i.ibb.co/P6SQK4c/8-geology.png",
+      "users": {
+        "review1": "Humans: call Earth the \"blue planet\". Neptune: am I a joke to you?",
+        "review2": "It rain diamonds on Neptune. You're not poor, you're just born on the wrong planet.",
+        "review3": "If you ever feel forgotten, remember, Neptune exists."
+      },
+      "images": {
+        "img1": "https://i.ibb.co/10zm3RP/A6.png",
+        "img2": "https://i.ibb.co/fM06yvq/A7.png",
+        "img3": "https://i.ibb.co/Z1SsmV3/A12.png"
+      },
+      "ticketBasic": {
+        "price": 199,
+        "time": "12 years",
+        "spacecraft": "Voyager-N1",
+        "quarters": "2",
+        "mission": "Flyby around Triton, Neptune's moon"
+      },
+      "ticketSuite": {
+        "price": 249,
+        "time": "9 years",
+        "spacecraft": "Voyager-N2",
+        "quarters": "3",
+        "mission": "3 hours flyby"
+      }
+    }
+  ]
+}
