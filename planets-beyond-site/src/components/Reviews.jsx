@@ -35,7 +35,9 @@ export const Reviews = () => {
 
   const fetchReviews = async () => {
     let id = params.id;
-    let response = await fetch("http://localhost:8000/planets/" + id);
+    let response = await fetch(
+      "https://planets-beyond-app.onrender.com/planets/" + id
+    );
 
     try {
       const data = await response.json();

@@ -8,7 +8,6 @@ import {
   Col,
 } from "../styled-components/chooseplanet";
 import { useNavigate } from "react-router-dom";
-import planets from "../data/db.json";
 
 const mainVariants = {
   initial: {
@@ -29,7 +28,7 @@ const mainVariants = {
   },
 };
 
-export const ChoosePlanet = () => {
+export const ChoosePlanet = ({ planets }) => {
   const navigate = useNavigate();
   console.log("THIS IS  PLANETS DB", planets);
   return (
@@ -60,7 +59,7 @@ export const ChoosePlanet = () => {
 
       <Container>
         {planets &&
-          planets.planets.map((planet) => (
+          planets.map((planet) => (
             <Col
               onClick={() => navigate(`/planet/${planet.id}/overview`)}
               key={planet.id}

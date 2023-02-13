@@ -11,19 +11,6 @@ const Sidebar = ({ planet }) => {
   return (
     <>
       <SideBar>
-      {/*   <Icon
-          onClick={() => navigate(`/planet/${params.id}/overview`)}
-          whileHover={{
-            scale: 1.1,
-            originX: 0,
-            color: ["#ffffff60", "#fff"],
-            textShadow: "0px 0px 15px rgb(7,7,36,0.5)",
-            fontWeight: 600
-          }}
-          transition={{ type: "spring", stiffness: 200 }}
-        >
-          Overview
-        </Icon> */}
         <Icon
           onClick={() => navigate(`/planet/${params.id}/internal-structure`)}
           whileHover={{
@@ -31,9 +18,9 @@ const Sidebar = ({ planet }) => {
             originX: 0,
             color: "#fff",
             textShadow: "0px 0px 15px rgb(7,7,36,0.5)",
-            fontWeight: 600
+            fontWeight: 600,
           }}
-          transition={{ type: "tweed"}}
+          transition={{ type: "tweed" }}
         >
           Internal Structure
         </Icon>
@@ -44,9 +31,9 @@ const Sidebar = ({ planet }) => {
             originX: 0,
             color: "#fff",
             textShadow: "0px 0px 15px rgb(7,7,36,0.5)",
-            fontWeight: 600
+            fontWeight: 600,
           }}
-          transition={{ type: "tweed"}}
+          transition={{ type: "tweed" }}
         >
           Surface Geology
         </Icon>
@@ -57,10 +44,9 @@ const Sidebar = ({ planet }) => {
             originX: 0,
             color: "#fff",
             textShadow: "0px 0px 15px rgb(7,7,36,0.5)",
-            fontWeight: 600
+            fontWeight: 600,
           }}
-          transition={{ type: "tweed"}}
-        
+          transition={{ type: "tweed" }}
         >
           Reviews
         </Icon>
@@ -69,13 +55,13 @@ const Sidebar = ({ planet }) => {
           whileHover={{
             scale: 1.1,
             originX: 0,
-            color:"#fff",
+            color: "#fff",
             textShadow: "0px 0px 15px rgb(7,7,36,0.5)",
-            fontWeight: 600
+            fontWeight: 600,
           }}
-          transition={{ type: "tweed"}}
+          transition={{ type: "tweed" }}
         >
-         Pricing
+          Pricing
         </Icon>
 
         <Icon
@@ -87,9 +73,9 @@ const Sidebar = ({ planet }) => {
             originX: 0,
             color: "#fff",
             textShadow: "0px 0px 15px rgb(7,7,36,0.5)",
-            fontWeight: 600
+            fontWeight: 600,
           }}
-          transition={{ type: "tweed"}}
+          transition={{ type: "tweed" }}
         >
           <div>
             <img src={rocket} alt="" />

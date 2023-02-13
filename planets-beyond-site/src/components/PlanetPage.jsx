@@ -36,7 +36,9 @@ export const PlanetPage = () => {
 
   const fetchPlanet = async () => {
     let id = params.id;
-    let response = await fetch("http://localhost:8000/planets/" + id);
+    let response = await fetch(
+      "https://planets-beyond-app.onrender.com/planets/" + id
+    );
     try {
       let data = await response.json();
       console.log("DATA", data);

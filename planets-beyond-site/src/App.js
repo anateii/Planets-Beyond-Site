@@ -21,7 +21,9 @@ function App() {
   const [planets, setPlanets] = useState([]);
 
   const fetchPlanets = async () => {
-    let response = await fetch("http://localhost:8000/planets");
+    let response = await fetch(
+      "https://planets-beyond-app.onrender.com/planets"
+    );
     try {
       let data = await response.json();
       setPlanets(data);
