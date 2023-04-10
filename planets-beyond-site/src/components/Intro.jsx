@@ -1,4 +1,4 @@
-import { MainIntro, Container } from "../styled-components/intro";
+import { Container } from "../styled-components/intro";
 import background from "../assets/background3.jpg";
 import cursor from "../assets/cursor.png";
 import { useState } from "react";

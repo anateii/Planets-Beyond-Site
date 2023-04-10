@@ -19,6 +19,56 @@ export const Main = styled(motion.main)`
   }
 `;
 
+export const MainContainer = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+`;
+
+export const MainTitle = styled(motion.h1)`
+  color: #fff;
+  font-size: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: initial;
+`;
+
+export const MainSubtitle = styled(motion.h3)`
+  color: #fff;
+  font-family: "Antonio", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+`;
+
+export const MainButton = styled(motion.button)`
+  background-color: #fff0;
+  color: #fff;
+
+  border: 1px solid #ffffff21;
+  padding: 10px 70px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 18px;
+  &:hover {
+    background-color: #ffffff21;
+    border: #ffffff21;
+    scale: 1;
+  }
+  &:active {
+    background-color: #ddd;
+    color: rgb(7, 7, 36);
+    font-family: "League Spartan", sans-serif;
+  }
+  &:focus {
+    outline: none;
+  }
+`;
+
 export const Title = styled(motion.h1)`
   position: relative;
   top: 30%;

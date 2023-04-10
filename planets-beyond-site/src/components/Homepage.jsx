@@ -1,4 +1,9 @@
-import { Main, Title, Button, Subtitle } from "../styled-components/homepage";
+import {
+  MainTitle,
+  MainButton,
+  MainSubtitle,
+  MainContainer,
+} from "../styled-components/homepage";
 import background from "../assets/background3.jpg";
 import cursor from "../assets/cursor.png";
 import { useNavigate } from "react-router-dom";
@@ -45,7 +50,7 @@ export const Homepage = () => {
   const navigate = useNavigate();
 
   return (
-    <Main
+    <MainContainer
       style={{
         backgroundImage: `url(${background})`,
         objectFit: "cover",
@@ -56,14 +61,14 @@ export const Homepage = () => {
       animate="animated"
       exit="exit"
     >
-      <Title animate={{ y: [-300, 0] }} transition={{ duration: 2.5 }}>
+      <MainTitle animate={{ y: [-300, 0] }} transition={{ duration: 2.5 }}>
         Planets Beyond
-      </Title>
-      <Subtitle animate={{ y: [-350, 0] }} transition={{ duration: 1.5 }}>
+      </MainTitle>
+      <MainSubtitle animate={{ y: [-350, 0] }} transition={{ duration: 1.5 }}>
         World's first Civilian Space Travel in the Solar System
-      </Subtitle>
+      </MainSubtitle>
 
-      <Button
+      <MainButton
         onClick={() => navigate("/destination")}
         style={{ cursor: `url(${cursor}), auto` }}
         variants={buttonVariants}
@@ -72,7 +77,7 @@ export const Homepage = () => {
         whileHover="hover"
       >
         Start your Journey
-      </Button>
-    </Main>
+      </MainButton>
+    </MainContainer>
   );
 };
