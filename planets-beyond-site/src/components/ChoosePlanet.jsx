@@ -61,7 +61,12 @@ export const ChoosePlanet = ({ planets, loading }) => {
       <Container>
         {loading ? (
           <Container>
-            <Skeleton width={"150px"} height={"150px"} number={8} />
+            <Skeleton
+              width={"150px"}
+              height={"150px"}
+              borderRadius={"100%"}
+              number={8}
+            />
           </Container>
         ) : (
           <>

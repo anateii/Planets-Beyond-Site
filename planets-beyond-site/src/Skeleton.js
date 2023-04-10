@@ -15,7 +15,7 @@ const StyledSkeleton = styled.div`
   width: ${({ width }) => width};
   height: ${({ height }) => height};
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 100%;
+  border-radius: ${({ borderRadius }) => borderRadius};
   background: #fff !important;
   position: relative;
   overflow: hidden;
@@ -35,13 +35,20 @@ const StyledSkeleton = styled.div`
   }
 `;
 
-const Skeleton = ({ width, height, number }) => {
+const Skeleton = ({ width, height, number, borderRadius }) => {
   return number ? (
     [...Array(number)].map((skeleton, index) => {
-      return <StyledSkeleton width={width} height={height} key={index} />;
+      return (
+        <StyledSkeleton
+          width={width}
+          height={height}
+          key={index}
+          borderRadius={borderRadius}
+        />
+      );
     })
   ) : (
-    <StyledSkeleton width={width} height={height} />
+    <StyledSkeleton width={width} height={height} borderRadius={borderRadius} />
   );
 };
 
