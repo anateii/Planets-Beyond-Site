@@ -20,7 +20,6 @@ const mainVariants = {
   },
 };
 
-
 const buttonVariants = {
   initial: {
     x: "-300vw",
@@ -43,23 +42,18 @@ const buttonVariants = {
   },
 };
 
-
-
-export const SummaryPage = ({planets} ) => {
-
-  const navigate= useNavigate()
- const params = useParams()
-console.log("PARAMS OF SUMMARY", params)
-console.log("SUMMARY PLANETS", planets[2])
-
-
+export const SummaryPage = ({ planets }) => {
+  const navigate = useNavigate();
+  const params = useParams();
+  console.log("PARAMS OF SUMMARY", params);
+  console.log("SUMMARY PLANETS", planets[2]);
 
   return (
     <Main
       style={{
         backgroundImage: `url(${background})`,
-        backgroundPositionX: '100%',
-        backgroundPositionY: '45%',
+        backgroundPositionX: "100%",
+        backgroundPositionY: "45%",
         cursor: `url(${cursor}), auto`,
       }}
       variants={mainVariants}
@@ -70,33 +64,40 @@ console.log("SUMMARY PLANETS", planets[2])
       <Container>
         <form>
           <label>Personal Details</label>
-          <input type="text" placeholder="First Name"/>
-          <input type="text" placeholder="Last Name"/>
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
           <input type="email" placeholder="Email" />
-         <div>
-            <label>Choose your plan</label>
+          <div>
             <select name="Plan">
-              <option value="Basic">Basic</option>
+              <option value="Basic" className="basic">
+                Basic
+              </option>
               <option value="Suite">Suite</option>
             </select>
-         </div>
-         <label>Payment Details</label>
-         <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"  maxlength="19" placeholder="xxxx xxxx xxxx xxxx"></input>
-         <div>
-           <input type="text" placeholder="CVC" />
-           <input type="text" placeholder ="MM / YYYY" />
-         </div>
-          
-        </form>
-       <Button
-onClick={() => navigate("/thank-you-page")}
-style={{ cursor: `url(${cursor}), auto` }}
-variants={buttonVariants}
-initial="initial"
-animate="animated"
-whileHover="hover"
+          </div>
+          <label>Payment Details</label>
+          <input
+            id="ccn"
+            type="tel"
+            inputmode="numeric"
+            pattern="[0-9\s]{13,19}"
+            maxlength="19"
+            placeholder="xxxx xxxx xxxx xxxx"
+          ></input>
 
-       >Confirm</Button>
+          <input type="text" placeholder="CVC" />
+          <input type="text" placeholder="MM / YYYY" />
+          <Button
+            onClick={() => navigate("/thank-you-page")}
+            style={{ cursor: `url(${cursor}), auto` }}
+            variants={buttonVariants}
+            initial="initial"
+            animate="animated"
+            whileHover="hover"
+          >
+            Confirm
+          </Button>
+        </form>
       </Container>
     </Main>
   );

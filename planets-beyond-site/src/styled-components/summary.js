@@ -7,44 +7,23 @@ export const Container = styled.div`
   grid-template-rows: 1fr;
   background-color: #ffffff21;
   height: 570px;
+  width: 400px;
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 14rem;
   right: 6rem;
-  & > form {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 2em;
-    & > div:nth-of-type(2) {
-      justify-content: flex-start;
-      column-gap: 20px;
-      margin-left: 5em;
-      &>input:nth-of-type(1) {
-        margin-left: -0.5em;
-      }
-    }
-    & > label {
-      display: block;
-      font-family: "League Spartan";
-      font-size: 20px;
-      margin-bottom: -0.5em;
-      margin-left: -21em;
-      margin-top: 0.5em;
-    }
+  margin: auto;
+
+  > form {
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+
     & > div {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      column-gap: 20px;
-      margin-left: 4.6em;
-      width: 60%;
-      & label {
-        font-family: "League Spartan";
-        font-size: 20px;
-        margin-bottom: 1em;
-        margin-top: 0.5em;
-       
-      }
       & > select {
         font-size: 18px;
         margin-top: 0.3em;
@@ -52,14 +31,13 @@ export const Container = styled.div`
         font-family: "League Spartan";
         color: #fff;
         background-color: rgb(7, 7, 36, 0.5);
-        border-color: transparent;
+        border: 1px solid transparent;
         outline: none;
-        & > option:selected {
-          background-color: rgb(7,7,36,0.5);
+        & > option:nth-child(1) {
+          background: black);
         }
       }
       & > input {
-        width: 20%;
         font-size: 18px;
         background-color: rgb(7, 7, 36, 0.5);
         color: #fff;
@@ -71,9 +49,8 @@ export const Container = styled.div`
         }
       }
     }
+
     & > input {
-      width: 70%;
-      margin: 1em 0;
       font-size: 18px;
       background-color: rgb(7, 7, 36, 0.5);
       color: #fff;
@@ -92,13 +69,14 @@ export const Button = styled(motion.div)`
   transform: translateY(-50px);
   color: #fff;
   margin-top: 0;
-  margin-left: 14.8em;
   margin-bottom: 2em;
   top: 40%;
-  width: 20%;
+  width: 8em;
+
+  text-align: center;
 
   border: 1px solid transparent;
-  padding: 10px 50px;
+  padding: 10px 10px;
   font-family: "League Spartan", sans-serif;
   font-size: 18px;
   &:hover {
