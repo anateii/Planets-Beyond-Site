@@ -31,7 +31,7 @@ function App() {
       setTimeout(() => {
         setPlanets(data);
         setLoading(false);
-      }, 3000);
+      }, 6000);
     } catch (error) {
       console.log("There was an error", error);
     }
