@@ -1,16 +1,24 @@
 import { SideBar, Icon } from "../styled-components/planetpage";
 import rocket from "../assets/astronauts/IntroA1.png";
 import { useNavigate, useParams } from "react-router-dom";
+import { useState } from "react";
+import "../index.css";
 
 const Sidebar = ({ planet }) => {
   const navigate = useNavigate();
   const params = useParams();
-  console.log("sidebar planet", planet);
-  console.log("sidebar params", params.id);
+
+  const [sidebarOpen, setSideBarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSideBarOpen(!sidebarOpen);
+  };
+
+  const sidebarClass = sidebarOpen ? "sidebar open" : "sidebar";
 
   return (
     <>
-      <SideBar>
+      <SideBar className={sidebarClass}>
         <Icon
           onClick={() => navigate(`/planet/${params.id}/internal-structure`)}
           whileHover={{
@@ -82,7 +90,22 @@ const Sidebar = ({ planet }) => {
             Go back
           </div>
         </Icon>
-      </SideBar>
+      </SideBar>{" "}
+      <Icon
+        whileHover={{
+          scale: 1.1,
+          originX: 0,
+          color: "#fff",
+          textShadow: "0px 0px 15px rgb(7,7,36,0.5)",
+          fontWeight: 600,
+        }}
+        transition={{ type: "tweed" }}
+      >
+        <i
+          className="bi bi-chevron-double-right sidebar-toggle"
+          onClick={toggleSidebar}
+        ></i>
+      </Icon>
     </>
   );
 };

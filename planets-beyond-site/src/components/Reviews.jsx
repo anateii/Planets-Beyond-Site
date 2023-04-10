@@ -72,7 +72,7 @@ export const Reviews = () => {
                 <div>
                   <div>
                     <p>
-                      <i class="bi bi-quote"></i>
+                      <i className="bi bi-quote"></i>
                       {result.users.review1}
                     </p>
                   </div>
@@ -85,7 +85,7 @@ export const Reviews = () => {
                 <div>
                   <div>
                     <p>
-                      <i class="bi bi-quote"></i>
+                      <i className="bi bi-quote"></i>
                       {result.users.review2}
                     </p>
                   </div>
@@ -98,7 +98,7 @@ export const Reviews = () => {
                 <div>
                   <div>
                     <p>
-                      <i class="bi bi-quote"></i>
+                      <i className="bi bi-quote"></i>
                       {result.users.review3}
                     </p>
                   </div>
