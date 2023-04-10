@@ -32,10 +32,14 @@ export const MainContainer = styled(motion.div)`
 
 export const MainTitle = styled(motion.h1)`
   color: #fff;
-  font-size: 3em;
+  font-size: 4em;
   display: flex;
   flex-wrap: wrap;
   line-height: initial;
+
+  @media screen and (max-width: 475px) {
+    font-size: 3em;
+  }
 `;
 
 export const MainSubtitle = styled(motion.h3)`
@@ -44,12 +48,16 @@ export const MainSubtitle = styled(motion.h3)`
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
+
+  @media screen and (max-width: 475px) {
+    font-size: 1em;
+  }
 `;
 
 export const MainButton = styled(motion.button)`
   background-color: #fff0;
   color: #fff;
-
+  margin-top: 4em;
   border: 1px solid #ffffff21;
   padding: 10px 70px;
   font-family: "League Spartan", sans-serif;
