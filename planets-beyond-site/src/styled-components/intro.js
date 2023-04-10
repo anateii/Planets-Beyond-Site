@@ -1,23 +1,24 @@
 import styled from "styled-components";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
-export const Container= styled.div`
-width: 20%;
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-margin-top: 15%;
->h5 {
+export const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #fff;
-    margin: 0 auto;
-}
-`
+  }
+`;
 
 export const MainIntro = styled(motion.div)`
-
-font-size: 1.5em;
+  font-size: 1.5em;
   text-align: center;
   color: #fff;
   position: absolute;
@@ -26,8 +27,6 @@ font-size: 1.5em;
   bottom: 0px;
   left: 0px;
   :not(#loading) {
-      filter: blur(8px)
+    filter: blur(8px);
   }
-  
-
-`
+`;

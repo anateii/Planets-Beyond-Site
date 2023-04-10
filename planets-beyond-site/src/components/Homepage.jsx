@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const mainVariants = {
   initial: {
- filter: "blur(8px)",
+    filter: "blur(8px)",
   },
   animated: {
     filter: "blur(0px)",
