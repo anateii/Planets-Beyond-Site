@@ -8,6 +8,7 @@ import {
   Col,
 } from "../styled-components/chooseplanet";
 import { useNavigate } from "react-router-dom";
+import Skeleton from "../Skeleton";
 
 const mainVariants = {
   initial: {
@@ -28,9 +29,10 @@ const mainVariants = {
   },
 };
 
-export const ChoosePlanet = ({ planets }) => {
+export const ChoosePlanet = ({ planets, loading }) => {
   const navigate = useNavigate();
   console.log("THIS IS  PLANETS DB", planets);
+
   return (
     <Main
       style={{
@@ -56,24 +58,31 @@ export const ChoosePlanet = ({ planets }) => {
       >
         Choose your destination
       </Subtitle>
-
       <Container>
-        {planets &&
-          planets.map((planet) => (
-            <Col
-              onClick={() => navigate(`/planet/${planet.id}/overview`)}
-              key={planet.id}
-              whileHover={{
-                scale: 1.3,
-                fontWeight: 600,
-              }}
-            >
-              <div>
-                <img src={planet.imgOv} alt="" />
-                <h4>{planet.name}</h4>
-              </div>
-            </Col>
-          ))}
+        {loading ? (
+          <Container>
+            <Skeleton width={"150px"} height={"150px"} number={8} />
+          </Container>
+        ) : (
+          <>
+            {planets &&
+              planets.map((planet) => (
+                <Col
+                  onClick={() => navigate(`/planet/${planet.id}/overview`)}
+                  key={planet.id}
+                  whileHover={{
+                    scale: 1.3,
+                    fontWeight: 600,
+                  }}
+                >
+                  <div>
+                    <img src={planet.imgOv} alt="" />
+                    <h4>{planet.name}</h4>
+                  </div>
+                </Col>
+              ))}
+          </>
+        )}
       </Container>
     </Main>
   );

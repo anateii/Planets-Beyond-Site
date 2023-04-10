@@ -19,6 +19,7 @@ function App() {
   const location = useLocation();
 
   const [planets, setPlanets] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const fetchPlanets = async () => {
     let response = await fetch(
@@ -26,7 +27,11 @@ function App() {
     );
     try {
       let data = await response.json();
-      setPlanets(data);
+
+      setTimeout(() => {
+        setPlanets(data);
+        setLoading(false);
+      }, 3000);
     } catch (error) {
       console.log("There was an error", error);
     }
@@ -59,7 +64,7 @@ function App() {
         <Route path="/homepage" element={<Homepage />} />
         <Route
           path="/destination"
-          element={<ChoosePlanet planets={planets} />}
+          element={<ChoosePlanet planets={planets} loading={loading} />}
         />
         <Route
           path="/planet/:id/overview"
