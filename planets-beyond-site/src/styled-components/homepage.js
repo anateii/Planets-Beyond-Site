@@ -11,11 +11,10 @@ export const Main = styled(motion.main)`
   bottom: 0px;
   left: 0px;
   background-repeat: no-repeat;
-  @media (max-width: 435px) {
+  @media (max-width: 768px) {
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     margin: auto;
-    overflow: hidden;
   }
 `;
 

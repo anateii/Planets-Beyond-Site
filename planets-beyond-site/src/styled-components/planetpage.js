@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import {motion} from "framer-motion"
-
-
+import { motion } from "framer-motion";
 
 /*SIDEBAR*/
 
@@ -28,7 +26,7 @@ export const Icon = styled(motion.div)`
     width: 56px;
   }
   font-size: 16px;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   color: #ffffff70;
 `;
 
@@ -53,13 +51,10 @@ export const Planet = styled.div`
   }
 `;
 
-
-
-
 export const Text = styled.div`
   & > h1 {
     font-family: "Antonio", sans-serif;
-    text-align: left;     
+    text-align: left;
   }
   & > h6 {
     font-family: "League Spartan", sans-serif;
@@ -67,98 +62,92 @@ export const Text = styled.div`
     text-align: left;
     line-height: 1.5em;
     margin-top: 0;
-    margin-bottom:0;
-  };
+    margin-bottom: 0;
+  }
   & > div {
     text-align: left;
     display: inline-block;
-   font-weight: 300;
-   font-size: 18px;
-   color: #ffffff60;
-  };
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff60;
+  }
   & > div > div {
-display: initial;
-font-weight: 600;
-text-decoration: underline;
-margin-left: 6px;
-
-  };
-  & > div > div:hover {color:#fff};
+    display: initial;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 6px;
+  }
+  & > div > div:hover {
+    color: #fff;
+  }
   & > div > div > i {
     font-size: 12px;
     margin-left: 6px;
   }
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
 `;
 
+export const Section = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  left: 8em;
+  width: 80%;
+  height: 80px;
+  position: absolute;
+  top: 80%;
+  & > div {
+    border: 2px solid #ffffff21;
+    text-align: left;
+  }
 
+  & > div > h6 {
+    color: #ffffff50;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: "League Spartan", sans-serif;
+  }
 
-export const Section = styled.div `
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 15px;
-left: 8em;
-width: 80%;
-height: 80px;
-position: absolute;
-top: 80%;
-& > div {
-  border: 2px solid #ffffff21;
-  text-align: left;
-  
-  
-} ;
+  & > div > h3 {
+    margin-left: 20px;
+    font-family: "Antonio", sans-serif;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 36px;
+  }
+`;
 
-& > div > h6 {
- 
-  color: #ffffff50;
-  margin-top: 20px;
-  margin-left: 20px;
-  font-family: 'League Spartan', sans-serif;
-}
-
-& > div > h3 {
-   margin-left: 20px;
-   font-family: 'Antonio', sans-serif;
-   margin-bottom: 10px;
-   margin-top: 0px;
-   font-size: 36px;
-}
-
-`
-
-export const Button = styled.button `
-background-color: #fff0;
-width: 70%;
-margin-top: 0;
-color: #fff;
-border: 1px solid #ffffff21;
-padding: 10px 70px;
-font-family: 'League Spartan', sans-serif;
-font-size: 18px;
-&:hover {
+export const Button = styled.button`
+  background-color: #fff0;
+  width: 70%;
+  margin-top: 0;
+  color: #fff;
+  border: 1px solid #ffffff21;
+  padding: 10px 70px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 18px;
+  &:hover {
     background-color: #ffffff21;
     border: #ffffff21;
-    
-  };
-  &:active {
-      background-color: #ddd;
-      color:rgb(7,7,36);
-      font-family: 'League Spartan', sans-serif;
   }
-`
+  &:active {
+    background-color: #ddd;
+    color: rgb(7, 7, 36);
+    font-family: "League Spartan", sans-serif;
+  }
+`;
 
-export const ButtonContainer = styled.div `
-position: absolute;
-top: 50%;
-left: 10em;
-height: 50px;
-width: 70%;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-`
+export const ButtonContainer = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 10em;
+  height: 50px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+`;

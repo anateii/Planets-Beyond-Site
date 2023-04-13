@@ -199,6 +199,32 @@ export const PlanetPage = () => {
         animate="animated"
       >
         <Navbars planet={planet} />
+
+        {planet && (
+          <div className="planetOverviewWrapper">
+            <img src={planet.imgOv} alt="" />
+            <h1>{planet.name}</h1>
+            <div>{planet.description}</div>
+            <section>
+              <div>
+                <h6>ROTATION TIME</h6>
+                <h3>{planet.rotation} DAYS</h3>
+              </div>
+              <div>
+                <h6>REVOLUTION TIME</h6>
+                <h3>{planet.revolution} YEARS</h3>
+              </div>
+              <div>
+                <h6>RADIUS</h6>
+                <h3>{planet.radius} KM</h3>
+              </div>
+              <div>
+                <h6>AVERAGE TEMP.</h6>
+                <h3>{planet.temperature}°C</h3>
+              </div>
+            </section>
+          </div>
+        )}
       </Main>
     );
   };

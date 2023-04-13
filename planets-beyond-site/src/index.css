@@ -107,6 +107,9 @@ code {
   border-bottom: 1px solid #ffffff21;
   font-family: "League Spartan", sans-serif;
   font-size: 20px;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
 }
 
 .navbar-collapse {
@@ -123,6 +126,51 @@ code {
   scale: 1.1;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
 .rocketImg {
   width: 56px;
+}
+
+.planetOverviewWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2em;
+  margin-top: 2em;
+  font-family: "League Spartan";
+}
+
+.planetOverviewWrapper > div:first-of-type {
+  font-size: 16px;
+  padding: 1em 1em;
+}
+
+.planetOverviewWrapper > h1 {
+  font-family: "Antonio", sans-serif;
+}
+
+.planetOverviewWrapper > section {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  width: 100%;
+  padding: 1em 1em;
+}
+
+.planetOverviewWrapper > section > div > h6 {
+  color: #ffffff76;
+  font-size: 20px;
+  font-family: "League Spartan";
+}
+
+.planetOverviewWrapper > section > div > h3 {
+  font-family: "Antonio", sans-serif;
+  font-size: 28px;
 }
