@@ -1,7 +1,7 @@
 import { Main } from "../styled-components/homepage";
 import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
-import Sidebar from "./Sidebar";
+import Navbars from "./Navbar";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -64,7 +64,7 @@ export const Geology = () => {
       initial="initial"
       animate="animated"
     >
-      <Sidebar />
+      <Navbars />
       <Container>
         <Planet>
           <motion.img

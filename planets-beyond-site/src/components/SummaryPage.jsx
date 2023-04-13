@@ -1,7 +1,7 @@
 import { Main } from "../styled-components/homepage";
 import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
-import Sidebar from "./Sidebar";
+import Navbars from "./Navbar";
 import { Container, Button } from "../styled-components/summary";
 import { useParams, useNavigate } from "react-router-dom";
 
@@ -60,7 +60,7 @@ export const SummaryPage = ({ planets }) => {
       initial="initial"
       animate="animated"
     >
-      <Sidebar />
+      <Navbars />
       <Container>
         <form>
           <label>Personal Details</label>

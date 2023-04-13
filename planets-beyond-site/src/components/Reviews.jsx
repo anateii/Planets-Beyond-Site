@@ -1,7 +1,7 @@
 import { Main } from "../styled-components/homepage";
 import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
-import Sidebar from "./Sidebar";
+import Navbars from "./Navbar";
 import { Container, Avatar } from "../styled-components/reviews";
 import { Carousel } from "react-bootstrap";
 import "../index.css";
@@ -60,7 +60,7 @@ export const Reviews = () => {
       initial="initial"
       animate="animated"
     >
-      <Sidebar />
+      <Navbars />
       <Container>
         <Avatar>
           {result && (

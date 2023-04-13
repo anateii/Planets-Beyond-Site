@@ -1,7 +1,7 @@
 import { Main } from "../styled-components/homepage";
 import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
-import Sidebar from "./Sidebar";
+import Navbars from "./Navbar";
 import { Container, Button } from "../styled-components/buyticket";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -79,7 +79,7 @@ export const BuyTicket = () => {
       initial="initial"
       animate="animated"
     >
-      <Sidebar />
+      <Navbars />
       <Container>
         {result && (
           <>

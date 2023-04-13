@@ -1,5 +1,5 @@
 import { Main } from "../styled-components/homepage";
-import Sidebar from "./Sidebar";
+import Navbars from "./Navbar";
 import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
 import { Container } from "../styled-components/thankYou";
@@ -32,7 +32,7 @@ export const ThankYouPage = () => {
       initial="initial"
       animate="animated"
     >
-      <Sidebar />
+      <Navbars />
       <Container>
         <div>
           {" "}

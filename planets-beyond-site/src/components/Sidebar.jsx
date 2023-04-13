@@ -91,21 +91,10 @@ const Sidebar = ({ planet }) => {
           </div>
         </Icon>
       </SideBar>{" "}
-      <Icon
-        whileHover={{
-          scale: 1.1,
-          originX: 0,
-          color: "#fff",
-          textShadow: "0px 0px 15px rgb(7,7,36,0.5)",
-          fontWeight: 600,
-        }}
-        transition={{ type: "tweed" }}
-      >
-        <i
-          className="bi bi-chevron-double-right sidebar-toggle"
-          onClick={toggleSidebar}
-        ></i>
-      </Icon>
+      <i
+        className="bi bi-chevron-double-right sidebar-toggle"
+        onClick={toggleSidebar}
+      ></i>
     </>
   );
 };
