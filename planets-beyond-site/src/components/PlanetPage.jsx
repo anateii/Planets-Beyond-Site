@@ -194,6 +194,7 @@ export const PlanetPage = () => {
           backgroundPositionX: "20%",
           backgroundPositionY: "10%",
           color: "white",
+          overflowY: "hidden",
         }}
         variants={mainVariants}
         initial="initial"

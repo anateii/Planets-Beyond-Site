@@ -153,6 +153,10 @@ code {
   font-family: "Antonio", sans-serif;
 }
 
+.planetOverviewWrapper > img {
+  width: 90%;
+}
+
 .planetOverviewWrapper > section {
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -162,6 +166,7 @@ code {
   align-items: stretch;
   width: 100%;
   padding: 1em 1em;
+  text-align: center;
 }
 
 .planetOverviewWrapper > section > div > h6 {
