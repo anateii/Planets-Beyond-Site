@@ -3,6 +3,7 @@ import Navbars from "./Navbar";
 import background from "../assets/background.jpg";
 import cursor from "../assets/cursor.png";
 import { Container } from "../styled-components/thankYou";
+import { useMediaQuery } from "react-responsive";
 
 const mainVariants = {
   initial: {
@@ -20,22 +21,69 @@ const mainVariants = {
 };
 
 export const ThankYouPage = () => {
-  return (
-    <Main
-      style={{
-        backgroundImage: `url(${background})`,
-        backgroundPositionX: "40%",
-        backgroundPositionY: "0%",
-        cursor: `url(${cursor}), auto`,
-      }}
-      variants={mainVariants}
-      initial="initial"
-      animate="animated"
-    >
-      <Navbars />
-      <Container>
-        <div>
-          {" "}
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isDesktop = useMediaQuery({ query: "(min-width: 769px)" });
+
+  const DesktopView = () => {
+    return (
+      <Main
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundPositionX: "40%",
+          backgroundPositionY: "0%",
+          cursor: `url(${cursor}), auto`,
+        }}
+        variants={mainVariants}
+        initial="initial"
+        animate="animated"
+      >
+        <Navbars />
+        <Container>
+          <div>
+            {" "}
+            <img
+              src="https://i.ibb.co/Gkjn6Ms/A11.png"
+              alt=""
+              style={{ width: "300px", margin: "-3em 2em" }}
+            />{" "}
+            <div>
+              <h3
+                style={{
+                  fontFamily: "League Spartan",
+                }}
+              >
+                Congratulations <br /> on your new adventure!!
+              </h3>
+              <h6
+                style={{
+                  fontWeight: "300",
+                }}
+              >
+                Check your inbox for the next steps!
+              </h6>
+            </div>
+          </div>
+        </Container>
+      </Main>
+    );
+  };
+
+  const MobileView = () => {
+    return (
+      <div
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundPositionX: "40%",
+          backgroundPositionY: "0%",
+          cursor: `url(${cursor}), auto`,
+          height: "100vh",
+        }}
+        variants={mainVariants}
+        initial="initial"
+        animate="animated"
+      >
+        <Navbars />
+        <div className="thankYouWrapper">
           <img
             src="https://i.ibb.co/Gkjn6Ms/A11.png"
             alt=""
@@ -58,7 +106,13 @@ export const ThankYouPage = () => {
             </h6>
           </div>
         </div>
-      </Container>
-    </Main>
+      </div>
+    );
+  };
+  return (
+    <>
+      {isTabletOrMobile && <MobileView />}
+      {isDesktop && <DesktopView />}
+    </>
   );
 };

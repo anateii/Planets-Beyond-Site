@@ -228,3 +228,17 @@ code {
   border: 1px solid transparent;
   outline: none;
 }
+
+.thankYouWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 2em;
+}
+
+.thankYouWrapper > img {
+  margin: 0;
+}
