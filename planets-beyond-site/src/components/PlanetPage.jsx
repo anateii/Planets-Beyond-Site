@@ -187,12 +187,13 @@ export const PlanetPage = () => {
 
   const MobileView = () => {
     return (
-      <Main
+      <div
         style={{
           backgroundImage: `url(${background})`,
           cursor: `url(${cursor}), auto`,
           backgroundPositionX: "20%",
           backgroundPositionY: "10%",
+          color: "white",
         }}
         variants={mainVariants}
         initial="initial"
@@ -225,7 +226,7 @@ export const PlanetPage = () => {
             </section>
           </div>
         )}
-      </Main>
+      </div>
     );
   };
 
