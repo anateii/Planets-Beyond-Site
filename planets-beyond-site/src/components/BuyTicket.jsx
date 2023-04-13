@@ -6,6 +6,7 @@ import { Container, Button } from "../styled-components/buyticket";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 const mainVariants = {
   initial: {
@@ -43,9 +44,10 @@ const buttonVariants = {
 export const BuyTicket = () => {
   const navigate = useNavigate();
   const params = useParams();
-  console.log("REVIEW PARAMS", params);
-
   const [result, setResult] = useState(null);
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isDesktop = useMediaQuery({ query: "(min-width: 769px)" });
 
   useEffect(() => {
     fetchReviews();
@@ -67,23 +69,109 @@ export const BuyTicket = () => {
     }
   };
 
-  return (
-    <Main
-      style={{
-        backgroundImage: `url(${background})`,
-        cursor: `url(${cursor}), auto`,
-        backgroundPositionX: "100%",
-        backgroundPositionY: "45%",
-      }}
-      variants={mainVariants}
-      initial="initial"
-      animate="animated"
-    >
-      <Navbars />
-      <Container>
+  const DesktopView = () => {
+    return (
+      <Main
+        style={{
+          backgroundImage: `url(${background})`,
+          cursor: `url(${cursor}), auto`,
+          backgroundPositionX: "100%",
+          backgroundPositionY: "45%",
+        }}
+        variants={mainVariants}
+        initial="initial"
+        animate="animated"
+      >
+        <Navbars />
+        <Container>
+          {result && (
+            <>
+              <div>
+                <h3>
+                  Suite for <strong>{result.name}</strong>
+                </h3>
+                <span>Price: {result.ticketSuite.price} ETH</span>
+                <p>
+                  <strong>Time in space:</strong> {result.ticketSuite.time}{" "}
+                </p>
+                <p>
+                  <strong>Spacecraft:</strong> {result.ticketSuite.spacecraft}
+                </p>
+                <p>
+                  <strong>Private Quarters:</strong>{" "}
+                  {result.ticketSuite.quarters}{" "}
+                </p>
+                <p>
+                  <strong>Mission:</strong> {result.ticketSuite.mission}
+                </p>
+                <Button
+                  onClick={() => navigate(`/summary/${result.id}`)}
+                  variants={buttonVariants}
+                  initial="initial"
+                  animate="animated"
+                  whileHover="hover"
+                  style={{ marginBottom: "2em" }}
+                >
+                  Launch Suite
+                </Button>
+              </div>
+              <div>
+                <h3>
+                  {" "}
+                  Basic for <strong>{result.name}</strong>
+                </h3>
+                <span>Price: {result.ticketBasic.price} ETH</span>
+                <p>
+                  <strong>Time in space:</strong> {result.ticketBasic.time}{" "}
+                </p>
+                <p>
+                  <strong>Spacecraft:</strong> {result.ticketBasic.spacecraft}
+                </p>
+                <p>
+                  <strong>Private Quarters:</strong>{" "}
+                  {result.ticketBasic.quarters}{" "}
+                </p>
+                <p>
+                  <strong>Mission:</strong> {result.ticketBasic.mission}
+                </p>
+                <Button
+                  onClick={() => navigate(`/summary/${result.id}`)}
+                  variants={buttonVariants}
+                  initial="initial"
+                  animate="animated"
+                  whileHover="hover"
+                  style={{ marginBottom: "2em" }}
+                >
+                  Launch Basic
+                </Button>
+              </div>
+            </>
+          )}
+        </Container>
+      </Main>
+    );
+  };
+
+  const MobileView = () => {
+    return (
+      <div
+        style={{
+          backgroundImage: `url(${background})`,
+          cursor: `url(${cursor}), auto`,
+          backgroundPositionX: "100%",
+          backgroundPositionY: "45%",
+          height: "100vh",
+          overflow: "auto",
+        }}
+        variants={mainVariants}
+        initial="initial"
+        animate="animated"
+      >
+        <Navbars />
+
         {result && (
           <>
-            <div>
+            <div className="package">
               <h3>
                 Suite for <strong>{result.name}</strong>
               </h3>
@@ -111,7 +199,7 @@ export const BuyTicket = () => {
                 Launch Suite
               </Button>
             </div>
-            <div>
+            <div className="package">
               <h3>
                 {" "}
                 Basic for <strong>{result.name}</strong>
@@ -142,7 +230,14 @@ export const BuyTicket = () => {
             </div>
           </>
         )}
-      </Container>
-    </Main>
+      </div>
+    );
+  };
+
+  return (
+    <>
+      {isTabletOrMobile && <MobileView />}
+      {isDesktop && <DesktopView />}
+    </>
   );
 };
