@@ -194,3 +194,37 @@ code {
   margin-bottom: 2em;
   margin: 2em 2em;
 }
+
+/*FORM*/
+
+.formMobile {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  row-gap: 1em;
+  color: white;
+  font-family: "League Spartan";
+  font-size: 20px;
+}
+
+.formMobile > div > select {
+  font-size: 18px;
+  height: 40px;
+  font-family: "League Spartan";
+  color: #fff;
+  background-color: rgb(7, 7, 36, 0.5);
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.formMobile > input {
+  font-size: 18px;
+  background-color: rgb(7, 7, 36, 0.5);
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  border: 1px solid transparent;
+  outline: none;
+}
