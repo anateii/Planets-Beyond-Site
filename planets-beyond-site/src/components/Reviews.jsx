@@ -8,6 +8,7 @@ import "../index.css";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const mainVariants = {
   initial: {
@@ -24,9 +25,10 @@ const mainVariants = {
 
 export const Reviews = () => {
   const params = useParams();
-  console.log("REVIEW PARAMS", params);
-
   const [result, setResult] = useState(null);
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isDesktop = useMediaQuery({ query: "(min-width: 769px)" });
 
   useEffect(() => {
     fetchReviews();
@@ -48,66 +50,137 @@ export const Reviews = () => {
     }
   };
 
+  const DesktopView = () => {
+    return (
+      <Main
+        style={{
+          backgroundImage: `url(${background})`,
+          cursor: `url(${cursor}), auto`,
+          backgroundPositionX: "40%",
+          backgroundPositionY: "0%",
+        }}
+        variants={mainVariants}
+        initial="initial"
+        animate="animated"
+      >
+        <Navbars />
+        <Container>
+          <Avatar>
+            {result && (
+              <Carousel fade>
+                <Carousel.Item>
+                  <div>
+                    <img src={result.images.img1} alt="" />
+                  </div>
+                  <div>
+                    <div>
+                      <p>
+                        <i className="bi bi-quote"></i>
+                        {result.users.review1}
+                      </p>
+                    </div>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div>
+                    <img src={result.images.img2} alt="" />
+                  </div>
+                  <div>
+                    <div>
+                      <p>
+                        <i className="bi bi-quote"></i>
+                        {result.users.review2}
+                      </p>
+                    </div>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div>
+                    <img src={result.images.img3} alt="" />
+                  </div>
+                  <div>
+                    <div>
+                      <p>
+                        <i className="bi bi-quote"></i>
+                        {result.users.review3}
+                      </p>
+                    </div>
+                  </div>
+                </Carousel.Item>
+              </Carousel>
+            )}
+          </Avatar>
+        </Container>
+      </Main>
+    );
+  };
+
+  const MobileView = () => {
+    return (
+      <div
+        style={{
+          backgroundImage: `url(${background})`,
+          cursor: `url(${cursor}), auto`,
+          backgroundPositionX: "40%",
+          backgroundPositionY: "0%",
+          height: "100vh",
+        }}
+        variants={mainVariants}
+        initial="initial"
+        animate="animated"
+      >
+        <Navbars />
+        {result && (
+          <Carousel fade>
+            <Carousel.Item>
+              <div>
+                <img src={result.images.img1} alt="" />
+              </div>
+              <div>
+                <div>
+                  <p>
+                    <i className="bi bi-quote"></i>
+                    {result.users.review1}
+                  </p>
+                </div>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <img src={result.images.img2} alt="" />
+              </div>
+              <div>
+                <div>
+                  <p>
+                    <i className="bi bi-quote"></i>
+                    {result.users.review2}
+                  </p>
+                </div>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div>
+                <img src={result.images.img3} alt="" />
+              </div>
+              <div>
+                <div>
+                  <p>
+                    <i className="bi bi-quote"></i>
+                    {result.users.review3}
+                  </p>
+                </div>
+              </div>
+            </Carousel.Item>
+          </Carousel>
+        )}
+      </div>
+    );
+  };
+
   return (
-    <Main
-      style={{
-        backgroundImage: `url(${background})`,
-        cursor: `url(${cursor}), auto`,
-        backgroundPositionX: "40%",
-        backgroundPositionY: "0%",
-      }}
-      variants={mainVariants}
-      initial="initial"
-      animate="animated"
-    >
-      <Navbars />
-      <Container>
-        <Avatar>
-          {result && (
-            <Carousel fade>
-              <Carousel.Item>
-                <div>
-                  <img src={result.images.img1} alt="" />
-                </div>
-                <div>
-                  <div>
-                    <p>
-                      <i className="bi bi-quote"></i>
-                      {result.users.review1}
-                    </p>
-                  </div>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div>
-                  <img src={result.images.img2} alt="" />
-                </div>
-                <div>
-                  <div>
-                    <p>
-                      <i className="bi bi-quote"></i>
-                      {result.users.review2}
-                    </p>
-                  </div>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div>
-                  <img src={result.images.img3} alt="" />
-                </div>
-                <div>
-                  <div>
-                    <p>
-                      <i className="bi bi-quote"></i>
-                      {result.users.review3}
-                    </p>
-                  </div>
-                </div>
-              </Carousel.Item>
-            </Carousel>
-          )}
-        </Avatar>
-      </Container>
-    </Main>
+    <>
+      {isTabletOrMobile && <MobileView />}
+      {isDesktop && <DesktopView />}
+    </>
   );
 };

@@ -18,26 +18,25 @@ code {
 }
 
 .carousel-item > div:first-of-type {
-  height: 100px;
-  width: 100px;
   margin: 0 auto;
   margin-bottom: 2em;
 }
 
 .carousel-item > div > img {
   width: 300px;
-  margin-left: 3.5rem;
 }
 
 .carousel-item > div:nth-of-type(2) {
   background-color: #ffffff21;
   height: 170px;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-item > div:nth-of-type(2) > div > p {
@@ -101,6 +100,8 @@ code {
   left: 15vw;
 }
 
+/*NAVBAR*/
+
 .navbar {
   background-color: #ffffff11;
   backdrop-filter: blur(5px);
@@ -133,6 +134,8 @@ code {
 .rocketImg {
   width: 56px;
 }
+
+/*PLANET OVERVIEW*/
 
 .planetOverviewWrapper {
   display: flex;
@@ -179,3 +182,5 @@ code {
   font-family: "Antonio", sans-serif;
   font-size: 28px;
 }
+
+/*REVIEWS*/
