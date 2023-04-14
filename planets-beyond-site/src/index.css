@@ -242,3 +242,32 @@ code {
 .thankYouWrapper > img {
   margin: 0;
 }
+
+.carouselPlanets {
+  position: relative;
+  top: 10%;
+}
+
+.carouselItems {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.carouselItems > div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.carousel-item > div > img {
+  width: 200px;
+}
+
+.carousel-item > div > h4 {
+  margin-top: 0.5em;
+}

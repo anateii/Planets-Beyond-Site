@@ -6,10 +6,12 @@ const BACKGROUND = "transparent";
 export const Title = styled(motion.h1)`
   text-align: left;
   padding-left: 8rem;
+  text-align: center;
   font-family: "Antonio", sans-serif;
+  color: white;
   letter-spacing: 0.1rem;
-  font-size: 4rem;
-  margin-top: 0.5rem;
+  font-size: 26px;
+  margin-top: 4rem;
   @media (max-width: 375px) {
     padding-left: 2rem;
   }
@@ -17,10 +19,12 @@ export const Title = styled(motion.h1)`
 
 export const Subtitle = styled(motion.h4)`
   text-align: left;
+  color: white;
   padding-left: 8rem;
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
   margin-top: 0.5rem;
+  text-align: center;
   position: relative;
   @media (max-width: 375px) {
     padding-left: 2rem;
