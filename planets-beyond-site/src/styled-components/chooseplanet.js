@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 const BACKGROUND = "transparent";
 
 export const Title = styled(motion.h1)`
-  text-align: left;
-  padding-left: 8rem;
   text-align: center;
   font-family: "Antonio", sans-serif;
   color: white;
@@ -18,9 +16,7 @@ export const Title = styled(motion.h1)`
 `;
 
 export const Subtitle = styled(motion.h4)`
-  text-align: left;
   color: white;
-  padding-left: 8rem;
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
   margin-top: 0.5rem;
